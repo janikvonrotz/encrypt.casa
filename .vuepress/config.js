@@ -25,5 +25,11 @@ module.exports = {
         'plausible-analytics',
         '@vuepress/back-to-top',
         '@vuepress/last-updated'
+        [
+            'vuepress-plugin-sitemap',
+            {
+                hostname: 'https://encrypt.casa/'
+            }
+        ]
     ]
 }

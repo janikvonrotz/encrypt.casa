@@ -9,7 +9,8 @@ und ein paar neue Begriffe.
 
 * Zahlung Kreditkarte
 * Verluste beim Bitcoin-Traden
-* Ausweis und Identifikation
+* Ausweisen bei
+* Mit Wifi verbinden
 
 ---
 ### Im Beruf umso wichtiger
