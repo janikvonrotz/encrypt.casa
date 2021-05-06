@@ -1,5 +1,5 @@
 # encrypt.casa
-![](letsencrypt.png)
+![](/letsencrypt.png)
 
 Kryptografie und Verschlüsselung
 
@@ -12,4 +12,4 @@ Kryptografie und Verschlüsselung
 ## Anderes
 
 [Dozent](dozent.md)  
-[Mitarbeit](mitarbeit)
+[Mitarbeit](mitarbeit.md)
