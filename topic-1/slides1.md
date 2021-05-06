@@ -47,7 +47,7 @@ und ein paar neue Begriffe.
 
 Ich zeige wie eine Klartextnachricht verschlüsselt wird.
 
-![](verschl%C3%BCsselung-und-entschl%C3%BCsselung.png)
+![](../verschl%C3%BCsselung-und-entschl%C3%BCsselung.png)
 
 **Verschlüsselung**:
 

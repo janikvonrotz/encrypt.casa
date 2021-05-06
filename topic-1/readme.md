@@ -4,7 +4,7 @@ Umfang: 4 Lektionen
 
 ## Slides
 
-* [Geschichte der Kryptografie](slides1)
+* [Geschichte der Kryptografie](slides1.md)
 * [Krypto-Primitive](slides2.md)
 
 ## Übungen
