@@ -1,5 +1,5 @@
 # encrypt.casa
-![](/letsencrypt.png)
+![](./letsencrypt.png)
 
 Kryptografie und Verschlüsselung
 

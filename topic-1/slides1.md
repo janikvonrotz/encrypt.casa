@@ -48,11 +48,7 @@ und ein paar neue Begriffe.
 
 Ich zeige wie eine Klartextnachricht verschlüsselt wird.
 
-<<<<<<< HEAD
-![verschlüsselung-und-entschlüsselung](../verschluesselung-und-entschluesselung.png)
-=======
 ![](../verschluesselung-und-entschluesselung.png)
->>>>>>> ac81003818bd0d875b549d2937630de4da71cbad
 
 **Verschlüsselung**:
 
