@@ -30,6 +30,11 @@ und ein paar neue Begriffe.
 * Wie kann Kryptografie von durchschnittlichen Benutzern verwendet werden?
 
 ---
+### Funktionsweise
+
+![](../verschluesselung-und-entschluesselung.png)
+
+---
 ### Begriffe
 
 **Verschlüsselung** 🔒: Herstellung von Klartext (lesbare) Nachricht in eine Geheimtext (nicht lesbare) Nachricht
@@ -67,7 +72,7 @@ Hat nichts mit Bitcoint zu tun.
 
 Die symmetrische Verschlüsselung:
 
-![](../verschluesselung-und-entschluesselung.png)
+![symmentrische-verschluesselung](../symmentrische-verschluesselung.png)
 
 ℹ️  Der gleiche Schlüssel wird für Ver- und Entschlüsselung verwendet
 

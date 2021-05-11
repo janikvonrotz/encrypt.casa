@@ -7,7 +7,7 @@ und wie man sie anwendet.
 
 Die Probleme der symmetrischen Krypographie können mit der asymmetrischen gelöst werden.
 
-![](../Asymmetrische%20Verschluesselung.png)
+![](../asymmetrische-verschluesselung.png)
 
 ---
 ### Asymmetrische Verschlüsselung
@@ -36,7 +36,7 @@ Es gibt noch:
 ---
 ### Hybride Verschlüsselung
 
-![](../Hybride%20Verschluesselung.png)
+![](../hybride-Verschluesselung.png)
 
 * Public/Private Key Krypto ist 1.000 mal langsamer als symmetrische Verschl.
 * Daten werden mit einem zufällig generierten Key symmetrisch verschlüsselt
