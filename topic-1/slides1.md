@@ -7,19 +7,18 @@ und ein paar neue Begriffe.
 
 > Wir begenen Krypographie jeden Tag.
 
-* Zahlung Kreditkarte
-* Verluste beim Bitcoin-Traden
-* Ausweisen bei
-* Mit Wifi verbinden
+* Zahlung Kreditkarte 💳
+* Verluste beim Bitcoin-Traden 📉
+* Mit Wifi verbinden 📶
 
 ---
-### Im Beruf umso wichtiger
+### Bei der Arbeit umso wichtiger
 
-> Digitale Inforamtionen müssen geschützt werden.
+> Digitale Informationen müssen geschützt werden.
 
-* Patientendaten im Spital
-* Login-Informationen im Browser
-* Zugang zu Geräten
+* Patientendaten im Spital 🏥
+* Login-Informationen im Browser 🔓
+* Zugang zu Geräten 💻
 
 ---
 ### Viele Fragen
@@ -29,6 +28,15 @@ und ein paar neue Begriffe.
 * Welche Arten von Kryptografie werden heute verwendet?
 * Wie wird Kryptografie in der Sicherheit eingesetzt?
 * Wie kann Kryptografie von durchschnittlichen Benutzern verwendet werden?
+
+---
+### Begriffe
+
+**Verschlüsselung** 🔒: Herstellung von Klartext (lesbare) Nachricht in eine Geheimtext (nicht lesbare) Nachricht
+
+**Entschlüsselung** 🔓: Verwendung eines geheimen Schlüssels zur Entschlüsselung eines Geheimtext
+
+**Chiffre** 🛡️: Verwendeter Algorithmus zur Verschlüsselung und Entschlüsselung einer Nachricht
 
 ---
 ### Vor dem Computer
@@ -44,12 +52,60 @@ und ein paar neue Begriffe.
 * Alan Turing hat unter anderem Techniken entwickelt um deutsche Chiffren zu brechen
 
 ---
+### Krypto-Begriffe
+
+Hat nichts mit Bitcoint zu tun.
+
+**Kryptographie**: Wissenschaft der Datensicherung
+
+**Kryptoanalyse**: Wissenschaft der Analyse und Entschlüsselung von verschlüsselter Daten
+
+**Kryptologie**: Umfasst Krtypographie und Kryptoanalyse
+
+---
 ### Wie funktioniert Krypographie?
 
-Ich zeige wie eine Klartextnachricht verschlüsselt wird.
+Die symmetrische Verschlüsselung:
 
 ![](../verschluesselung-und-entschluesselung.png)
 
-**Verschlüsselung**:
+ℹ️  Der gleiche Schlüssel wird für Ver- und Entschlüsselung verwendet
 
-Entschlüsselung**:
+---
+### Ein Beispiel mit Cäsar
+
+Einfaches Beisiel einer Ersetzungsschiffre.
+
+![](../caesar.png)
+
+Die Position der Buchstaben wird verschoben.
+
+---
+### Cäsar mit Python
+
+<iframe src="https://trinket.io/embed/python3/50ceaaf323" width="100%" height="356" frameborder="0" marginwidth="0" marginheight="0" allowfullscreen></iframe>
+
+---
+### Stärken und Schwächen
+
+der symmetrischen Verschlüsselung:
+
+➕ Ver- und Entschlüssel ist sehr schnell
+➖ Nicht geeignet für Daten, die übertragen werden
+
+* Der Sender und Empfänger müssen den Schlüssel kennen -> Austausch über separaten Kanal -> Gefahr vor Mitleser
+* Geeignet für Verschlüsselung von lokaler Datenbank, Festplatte oder Daten auf Smartphone
+
+---
+### Brute-Force Attacke
+
+Die Cäsar-Verschlüsselung kann relativ einfach geknackt werden:
+
+<iframe src="https://trinket.io/embed/python3/2805b9db5b" width="100%" height="356" frameborder="0" marginwidth="0" marginheight="0" allowfullscreen></iframe>
+
+ℹ️ Bei Brute-Force Attacke werden Schlüssel generiert und ausprobiert.
+
+---
+### Als nächstes
+
+Weiter geht es mit [Bausteine der Kryptographie](slides2.md).
