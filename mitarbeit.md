@@ -33,6 +33,8 @@ Hinweise werden mit ℹ️ markiert oder als Container dargestellt:
 Das ist ein Hinweis.
 :::
 
+Das 🧠 zeigt ein "Nice to know" an. 
+
 **Zeitlimiten**
 
 Zeitlimiten werden mit ⏱️ angeführt.

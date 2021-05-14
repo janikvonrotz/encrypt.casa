@@ -2,6 +2,8 @@
 
 und ein paar neue Begriffe.
 
+🎯 Sie verstehen was Kryptografie und die symmetrische Verschlüsselung ist.
+
 ---
 ### Alltäglich
 
@@ -55,6 +57,8 @@ und ein paar neue Begriffe.
 * Im 18. Jahrundert verwenden britische Streitkräfte Formen der Krypographie zur Kommunikation zwischen Generälen
 * Im Zweiten Weltkrieg wurden mechanische und elektromechanische Chiffriermaschinen eingesetzt (Enigma-Maschine)
 * Alan Turing hat unter anderem Techniken entwickelt um deutsche Chiffren zu brechen
+
+🧠 Nice to know: [GNU/Linux.ch - Was ist eine Turing Maschine?](https://gnulinux.ch/was-ist-eine-turing-maschine)
 
 ---
 ### Krypto-Begriffe

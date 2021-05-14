@@ -1,5 +1,12 @@
 ## GnuPG
 
+ist ein Werkzeug zum sicheren Nachrichten austausch.
+
+🎯 Sie verstehen was GnuPG ist und können es anwenden.
+
+---
+### E-Mail ist unsicher
+
 ---
 ### Schlüsselverwaltung
 

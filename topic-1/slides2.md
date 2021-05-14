@@ -2,6 +2,8 @@
 
 und wie man sie anwendet.
 
+🎯 Sie verstehen weitere Elemente der Kryptografie und wissen was die asymmetrische Verschlüsselung ist.
+
 ---
 ### Ausweg: Asymmetrische Verschlüsselung
 

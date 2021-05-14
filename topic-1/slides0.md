@@ -2,6 +2,8 @@
 
 und wie man sie behebt.
 
+🎯 Sie verstehen die Sicherheitsziele des Nachrichtenaustausches.
+
 ---
 ### Nachrichtenaustausch
 
@@ -38,7 +40,6 @@ Daraus leiten sich diese Ziele ab:
 * **Integrität** 💎: Die Nachricht, die man erhält, ist von keiner dritten Person manipuliert worden.
 * **Authentizität** 🙋‍: Die Nachricht, die man erhält, stammt wirklich von der Person, die als Absender angegeben ist.
 * **Verbindlichkeit** 📝: Der Urheber kann nachträglich nicht bestreiten, die Nachricht verfasst zu haben.
-
 
 ---
 ### Massnahmen im Alltag
