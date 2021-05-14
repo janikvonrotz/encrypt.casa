@@ -6,7 +6,7 @@ Umfang ⏱️: 4 Lektionen
 
 ## Slides
 
-Überschter der Slides:
+Übersicht der Slides:
 
 * [slides1](slides1.md)
 

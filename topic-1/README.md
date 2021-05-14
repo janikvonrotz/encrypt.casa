@@ -6,7 +6,7 @@ Umfang ⏱️: 4 Lektionen
 
 ## Slides
 
-Überschter der Slides:
+Übersicht der Slides:
 
 * [Sicherheitsziele](slides0.md)
 * [Geschichte der Kryptographie](slides1.md)
