@@ -3,6 +3,8 @@
 
 Kryptographie und Verschlüsselung
 
+Unterrichtsmaterial erstellt von [Janik von Rotz](https://janikvonrotz.ch/).
+
 [Über diesen Kurs](%C3%BCber.md)
 
 ## Lektionen
