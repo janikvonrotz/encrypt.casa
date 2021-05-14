@@ -1,6 +1,6 @@
 module.exports = {
     title: 'encrypt.casa',
-    description: 'Kryptografie und Verschlüsselung',
+    description: 'Kryptographie und Verschlüsselung',
     themeConfig: {
         sidebar: 'auto',
         repo: 'janikvonrotz/encrypt.casa',
@@ -12,7 +12,7 @@ module.exports = {
                 text: 'Lektionen',
                 ariaLabel: 'Auswahl Lektionen',
                 items: [
-                    { text: 'Thema 1 - Einführung in die Krypografie', link: '/topic-1/' },
+                    { text: 'Thema 1 - Einführung in die Krypographie', link: '/topic-1/' },
                 ]
             }
         ]

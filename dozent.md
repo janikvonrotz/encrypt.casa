@@ -12,6 +12,10 @@ Unterrichtsmaterial und Artikel.
 
 [Einführung in die Kryptographie](https://www.marchfelderbank.at/m040/internet/downloads/internet_banking/introtocrypto.pdf)
 
+[Kryptologie - Unterrichtsmaterial](https://bildungsserver.berlin-brandenburg.de/kryptologie)
+
+[Inf-Schule - Kryptologie](https://www.inf-schule.de/kommunikation/kryptologie)
+
 ## Lernprozess
 
 [Methodenwürfel RITA](https://www.methodenwuerfel.ch/lernprozessmodell/)

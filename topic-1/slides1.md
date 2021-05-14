@@ -59,7 +59,7 @@ und ein paar neue Begriffe.
 ---
 ### Krypto-Begriffe
 
-Hat nichts mit Bitcoint zu tun.
+Hat nichts mit Bitcoin zu tun.
 
 **Kryptographie**: Wissenschaft der Datensicherung
 
@@ -98,7 +98,7 @@ der symmetrischen Verschlüsselung:
 ➕ Ver- und Entschlüssel ist sehr schnell
 ➖ Nicht geeignet für Daten, die übertragen werden
 
-* Der Sender und Empfänger müssen den Schlüssel kennen -> Austausch über separaten Kanal -> Gefahr vor Mitleser
+* Der Sender und Empfänger müssen den Schlüssel kennen -> Austausch über separaten Kanal -> Gefahr von Mitlesern
 * Geeignet für Verschlüsselung von lokaler Datenbank, Festplatte oder Daten auf Smartphone
 
 ---
@@ -108,9 +108,35 @@ Die Cäsar-Verschlüsselung kann relativ einfach geknackt werden:
 
 <iframe src="https://trinket.io/embed/python3/2805b9db5b" width="100%" height="356" frameborder="0" marginwidth="0" marginheight="0" allowfullscreen></iframe>
 
-ℹ️ Bei Brute-Force Attacke werden Schlüssel generiert und ausprobiert.
+ℹ️ Bei Brute-Force Attacke werden zufällige Schlüssel generiert und ausprobiert.
 
 ---
-### Als nächstes
+### Sicherheit
+
+Verschlüsselungsverfahren geheim gehalten oder veröffentlichen?
+
+ℹ️ "security by obscurity" hat sich als untauglich erwiesen
+
+Die Lösung ...
+
+---
+### Das von Prinzip von Kerckhoffs
+
+* Prinzip zur Entwicklung von Chiffrierverfahren
+* Entwickelt vom niederländischen Kryptologen Kerckhooffs
+
+> Die Sicherheit eines Chiffriersystems darf nicht davon abhängen, ob das benutzte Verfahren zum Ver- und Entschlüsseln bekannt ist. Die Sicherheit soll nur auf der Geheimhaltung von Schlüsseln beruhen.
+
+---
+### Gute kryptografische Verfahren
+
+erfüllen heute in der Regel diese Kriterien:
+
+-   Sie beruhen auf dem Kerckhoffs-Prinzip
+-   Sie werden von Kryptologen (bzw. -analytikern) weltweit untersucht
+-   Sie durchlaufen erfolgreich alle möglichen Angriffszenarien.
+
+---
+### Als Nächstes
 
 Weiter geht es mit [Bausteine der Kryptographie](slides2.md).

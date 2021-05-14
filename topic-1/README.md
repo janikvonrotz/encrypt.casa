@@ -6,11 +6,13 @@ Umfang ⏱️: 4 Lektionen
 
 ## Slides
 
+Überschter der Slides:
+
+* [Sicherheitsziele](slides0.md)
 * [Geschichte der Kryptographie](slides1.md)
 * [Bausteine der Krypographie](slides2.md)
-* [Hash-Verfahren](slides3.md)
+* [GnuPG](slides3.md)
 
 ## Übungen
 
-* #FIXME
-
+Für diesen Unterrichts gibt es [Übungen](übungen.md).
