@@ -79,22 +79,50 @@ DH-Algorithmus is komplex, dafür gibt es eine schöne Analogie mit Farben.
 * Der Key wird asymmetrisch verschlüsselt und mitgesendet
 
 ---
-### Hash-Verfahren
+### Fingerabdruck beim Menschen
+
+ Fingerabdrücke werden benutzt, um Personen mit wenigen Eigenschaften zu identifizieren.
+ 
+ ![](../fingerabdruck.png)
+
+Gleicher Fingerabdruck heisst gleiche Person -> Wie erstellt man einen digitalen Fingerabdruck?
 
 ---
 ### Hash-Funktionen
+
+> Ordnet eine Zeichenketter einer neuen Zeichenketten mit einer festen und vorgegebenen Länge zu.
+
+```mermaid
+graph LR;
+    A[Hallo Bob, was hast du ... Alice]-->|Hash-Funktion|B[15255ed434];
+```
+
+---
+### Arten von Hashes
 
 
 ---
 ### SHA265 mit Python
 
+<iframe src="https://trinket.io/embed/python3/2b43c7b642" width="100%" height="356" frameborder="0" marginwidth="0" marginheight="0" allowfullscreen></iframe>
+
 ---
 ### Einwegfunktion
+
+> Bei einer Einwegfunktion ist es praktisch unmöglich, aus einem möglichen Zielwert einen Ausgangswert so zu bestimmen.
 
 ![](../einbahnstrasse.png)
 
 ---
+### Quersumme
+
+
+
+
+---
 ### Kollisionsresistenz
+
+
 
 ---
 ### Angriffszenarien
