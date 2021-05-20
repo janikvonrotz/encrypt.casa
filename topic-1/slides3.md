@@ -7,7 +7,7 @@ ist ein Werkzeug zum sicheren Nachrichten austausch.
 ---
 ### Pretty Good Privacy
 
-* GnuPG ist eine Implmentation von OpenPGP aka PGP
+* GnuPG ist eine Implementation von OpenPGP aka PGP
 * PGP ist eine Sammlung von Geheimschlüsselalgorithmen zur Verschlüsselung einer Nachricht
 * PGP setzt auf eine hybride Verschlüsselung
 
@@ -35,16 +35,33 @@ Der Situngsschlüssel wird mit dem privaten Schlüssel entschlüsselt.
 E-Mails werden heute in den meisten Fällen sicher übertragen. Alle anderen [Sicherheitsziele](slides0.md#Sicherheitsziele) werden aber verletzt.
 
 ---
+### E-Mail ist fast unsicher
+
+![](../sicher-mailen.png)
+
+Wie gelangt Alice an den öffentlichen Schlüssel von Bob?
+
+---
 ### Direktes Vertrauen
 
 Damit sicher kommuniziert werden kann, braucht es ein direktes Vertrauen.
 
 ![](../direktes-vertrauen.png)
 
+Öffentlicher Schlüssel kopieren von
+* Website
+* Key Exchange Server
+* Mail
+
 ---
-### Vertrauensstufen
+### Schlüsselbund
 
+GnuPG ist metaphorisch ein Schlüsselbund. Damit verwalten wir:
 
+* Eigenen privaten und öffentlichen Schlüssel
+* Öffentliche Schlüssel von anderen
+* Verschlüsseln und signieren von Nachrichten
+* Entschlüsseln und verifizieren von Nachrichten
 
 ---
 ### Übungen
