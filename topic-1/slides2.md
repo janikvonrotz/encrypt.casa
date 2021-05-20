@@ -70,15 +70,6 @@ DH-Algorithmus is komplex, dafür gibt es eine schöne Analogie mit Farben.
 🎬 Lösen sie die [Übung](übungen.md) 1.
 
 ---
-### Hybride Verschlüsselung
-
-![](../hybride-Verschluesselung.png)
-
-* Public/Private Key Krypto ist 1.000 mal langsamer als symmetrische Verschl.
-* Daten werden mit einem zufällig generierten Key symmetrisch verschlüsselt
-* Der Key wird asymmetrisch verschlüsselt und mitgesendet
-
----
 ### Fingerabdruck beim Menschen
 
  Fingerabdrücke werden benutzt, um Personen mit wenigen Eigenschaften zu identifizieren.
@@ -100,6 +91,15 @@ graph LR;
 ---
 ### Arten von Hashes
 
+Welche *Secure Hash Algorithms* (SHA) gibt es?
+
+**SHA-1**: Korrigierte Version von SHA-0. Inzwischen unsicher.
+
+**SHA-2**: Beinhaltet SHA-224, SHA-256, SHA-384 und SHA-512. Die Nummer ist die jeweilige Schlüssellänge.
+
+**SHA-3**: Neuster und sicherer Hash-Algorithmus.
+
+**MD5**: Verbreitet und sehr unsicher.
 
 ---
 ### SHA265 mit Python
@@ -114,19 +114,34 @@ graph LR;
 ![](../einbahnstrasse.png)
 
 ---
-### Quersumme
+### Quersumme als Hash-Funktion
 
+Wir möchten die Zahlen 79847 und 67967 mitteilen und mit Prüfsumme sichern.
 
+```js
+7+8+9+4+7
+// 35
+6+7+9+6+7
+// 35
+```
 
+Dann haben wir ein Problem.
 
 ---
 ### Kollisionsresistenz
 
+Die Quersumme hat eine **schwache Kollisionsresistenz**.
 
+SHA-256 hat eine **starke Kollisionsresistenz**
+
+Mit Zweiteren ist es fast unmöglich zweimal der Gleiche Ausgangswert zu finden.
 
 ---
 ### Angriffszenarien
 
+**Kollisionsangriff**: Der Angreifer versucht verschiedene Dokumente mit denselben Hashwerten zu erzeugen. 
+
+🧠 Nice to know: [Shattered](https://shattered.io/)
 
 ---
 ### Als Nächstes
