@@ -1,6 +1,6 @@
 ## GnuPG
 
-ist ein Werkzeug zum sicheren Nachrichten austausch.
+ist ein Werkzeug zum sicheren Austausch von Nachrichten.
 
 🎯 Sie verstehen was GnuPG ist und können es anwenden.
 
@@ -16,6 +16,8 @@ ist ein Werkzeug zum sicheren Nachrichten austausch.
 
 ![](../hybride-Verschluesselung.png)
 
+---
+
 * Public/Private Key Krypto ist 1.000 mal langsamer als symmetrische Verschl.
 * Daten werden mit einem zufällig generierten Key symmetrisch verschlüsselt
 * Der Key wird asymmetrisch verschlüsselt und mitgesendet
@@ -25,7 +27,7 @@ ist ein Werkzeug zum sicheren Nachrichten austausch.
 
 ![](../pgp-entschluesselung.png)
 
-Der Situngsschlüssel wird mit dem privaten Schlüssel entschlüsselt.
+Der Sitzungsschlüssel wird mit dem privaten Schlüssel entschlüsselt.
 
 ---
 ### E-Mail ist unsicher
@@ -37,7 +39,7 @@ E-Mails werden heute in den meisten Fällen sicher übertragen. Alle anderen [Si
 ---
 ### E-Mail ist fast unsicher
 
-![](../sicher-mailen.png)
+[![](../sicher-mailen.png)](https://raw.githubusercontent.com/janikvonrotz/encrypt.casa/main/sicher-mailen.png)
 
 Wie gelangt Alice an den öffentlichen Schlüssel von Bob?
 
@@ -47,6 +49,8 @@ Wie gelangt Alice an den öffentlichen Schlüssel von Bob?
 Damit sicher kommuniziert werden kann, braucht es ein direktes Vertrauen.
 
 ![](../direktes-vertrauen.png)
+
+---
 
 Öffentlicher Schlüssel kopieren von
 * Website

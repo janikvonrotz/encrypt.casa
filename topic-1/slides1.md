@@ -1,8 +1,8 @@
-## Geschichte der Kryptografie
+## Geschichte der Kryptographie
 
 und ein paar neue Begriffe.
 
-🎯 Sie verstehen was Kryptografie und die symmetrische Verschlüsselung ist.
+🎯 Sie verstehen was Kryptographie und die symmetrische Verschlüsselung ist.
 
 ---
 ### Alltäglich
@@ -21,15 +21,19 @@ und ein paar neue Begriffe.
 * Patientendaten im Spital 🏥
 * Login-Informationen im Browser 🔓
 * Zugang zu Geräten 💻
+---
+### Herkunft
+
+> Kryptographie ist eine Entdeckung der Mathematik und ist heute allgegenwärtig.
 
 ---
 ### Viele Fragen
 
-* Wie funktioniert Kryptografie?
-* Warum ist Kryptografie wichtig?
-* Welche Arten von Kryptografie werden heute verwendet?
-* Wie wird Kryptografie in der Sicherheit eingesetzt?
-* Wie kann Kryptografie von durchschnittlichen Benutzern verwendet werden?
+* Wie funktioniert Kryptographie?
+* Warum ist Kryptographie wichtig?
+* Welche Arten von Kryptographie werden heute verwendet?
+* Wie wird Kryptographie in der Sicherheit eingesetzt?
+* Wie kann Kryptographie von durchschnittlichen Benutzern verwendet werden?
 
 ---
 ### Funktionsweise
@@ -39,11 +43,11 @@ und ein paar neue Begriffe.
 ---
 ### Begriffe
 
-**Verschlüsselung** 🔒: Herstellung von Klartext (lesbare) Nachricht in eine Geheimtext (nicht lesbare) Nachricht
+**Verschlüsselung** 🔒: Herstellung von Klartext-Nachricht in eine Geheimtext-Nachricht (nicht lesbare).
 
-**Entschlüsselung** 🔓: Verwendung eines geheimen Schlüssels zur Entschlüsselung eines Geheimtext
+**Entschlüsselung** 🔓: Verwendung eines geheimen Schlüssels zur Entschlüsselung eines Geheimtext.
 
-**Chiffre** 🛡️: Verwendeter Algorithmus zur Verschlüsselung und Entschlüsselung einer Nachricht
+**Chiffre** 🛡️: Verwendeter Algorithmus zur Verschlüsselung und Entschlüsselung einer Nachricht.
 
 ---
 ### Vor dem Computer
@@ -65,25 +69,29 @@ und ein paar neue Begriffe.
 
 Hat nichts mit Bitcoin zu tun.
 
-**Kryptographie**: Wissenschaft der Datensicherung
+* **Kryptographie**: Wissenschaft der Datensicherung
 
-**Kryptoanalyse**: Wissenschaft der Analyse und Entschlüsselung von verschlüsselter Daten
-
-**Kryptologie**: Umfasst Krtypographie und Kryptoanalyse
+* **Kryptoanalyse**: Wissenschaft der Analyse und Entschlüsselung von verschlüsselter Daten
+* **Kryptologie**: Umfasst Kryptographie und Kryptoanalyse
 
 ---
-### Wie funktioniert Krypographie?
-
-Die symmetrische Verschlüsselung:
+### Wo ist der Schlüssel?
 
 ![symmentrische-verschluesselung](../symmentrische-verschluesselung.png)
 
-ℹ️  Der gleiche Schlüssel wird für Ver- und Entschlüsselung verwendet
+ℹ️  Der gleiche Schlüssel wird für Ver- und Entschlüsselung verwendet.
+
+---
+### Symmetrische Verschlüsselung
+
+Es handelt sich hierbei um die symmetrische Verschlüsselung.
+
+![](../symmetric-vs-asymmetric.png)
 
 ---
 ### Ein Beispiel mit Cäsar
 
-Einfaches Beisiel einer Ersetzungsschiffre.
+Beispiel anhand einer Ersetzungsschiffre.
 
 ![](../caesar.png)
 
@@ -102,7 +110,9 @@ der symmetrischen Verschlüsselung:
 ➕ Ver- und Entschlüssel ist sehr schnell
 ➖ Nicht geeignet für Daten, die übertragen werden
 
-* Der Sender und Empfänger müssen den Schlüssel kennen -> Austausch über separaten Kanal -> Gefahr von Mitlesern
+---
+
+* Der Sender und Empfänger müssen den Schlüssel kennen -> Austausch über separaten Kanal -> Gefahr von Zugriff durch Unbefugte
 * Geeignet für Verschlüsselung von lokaler Datenbank, Festplatte oder Daten auf Smartphone
 
 ---
@@ -139,6 +149,12 @@ erfüllen heute in der Regel diese Kriterien:
 -   Sie beruhen auf dem Kerckhoffs-Prinzip
 -   Sie werden von Kryptologen (bzw. -analytikern) weltweit untersucht
 -   Sie durchlaufen erfolgreich alle möglichen Angriffszenarien.
+
+---
+### Wer untersucht die Verfahren?
+
+ * National Institute of Standards and Technology (NIST)
+ * ISO, RFC, IEEE
 
 ---
 ### Als Nächstes

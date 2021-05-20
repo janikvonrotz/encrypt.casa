@@ -2,19 +2,24 @@
 
 und wie man sie anwendet.
 
-🎯 Sie verstehen weitere Elemente der Kryptografie und wissen was die asymmetrische Verschlüsselung ist.
+🎯 Sie verstehen weitere Elemente der Kryptographie und wissen was die asymmetrische Verschlüsselung ist.
 
 ---
 ### Ausweg: Asymmetrische Verschlüsselung
 
 > Es ist schwierig den gemeinsamen Schlüssel sicher auszutauschen.
 
-Die Probleme der symmetrischen Krypographie können mit der asymmetrischen gelöst werden.
-
-![](../asymmetrische-verschluesselung.png)
+Die Probleme der symmetrischen Krypographie können mit der asymmetrischen gelöst werden...
 
 ---
 ### Asymmetrische Verschlüsselung
+
+![](../asymmetrische-verschluesselung.png)
+
+Am besten gar keinen Schlüssel tauschen.
+
+---
+### Public und Private Key
 
 Man unterscheidet zwischen Public und Private Key
 
@@ -62,7 +67,7 @@ DH-Algorithmus is komplex, dafür gibt es eine schöne Analogie mit Farben.
 ---
 ### Veranschaulichung DH
 
-![](../diffie-hellmann-farbe.png)
+[![](../diffie-hellmann-farbe.png)](https://raw.githubusercontent.com/janikvonrotz/encrypt.casa/main/diffie-hellmann-farbe.png)
 
 ---
 ### Übungen

@@ -84,10 +84,6 @@ Wir möchten den folgenden Ablauf ausführen.
 
 Wir haben zwei Teilnehmer `alice@example.com` und `bob@example.com`.
 
-https://www.inf-schule.de/kommunikation/kryptologie/sichereremailaustausch/exkurs_vorbereitung
-
-https://www.inf-schule.de/kommunikation/kryptologie/sichereremailaustausch/exkurs_emailsignierenundverschluesseln
-
 ```mermaid
 graph LR;
     A[Alice]-->|Hier ist mein öffentlicher Schlüssel|B[bob-at-example.com];
@@ -107,3 +103,23 @@ Alice entschlüsselt den öffentlichen Schlüssel von Bob und nimmt diesen in de
 ℹ️ Der öffentliche Schlüssel kann au unverschlüssel übertragen werden.
 
 Nun kann Alice irgendeine Nachricht mit dem öffentlichen Schlüssel von Bob verschlüsseln und schicken. Ausschliesslich Bob kann die Nachricht entschlüsseln und lesen.
+
+🎬 Führen sie Ablauf  nun selber durch. Falls sie niemanden zum anschreiben haben, versuchen sie es mit <adele@gnupp.de>. Das ist ein Bot und sollte den geschilderten Ablauf unterstützen.
+
+### Aufgabe 3 - Sniffing mit Wireshark
+
+Für diese Aufgabe brauchen wir [Wireshark](https://www.wireshark.org/download.html).
+
+Mit Wireshark kann man im verbunden Netzwerk die übertragenenen Pakete mitlesen. Natürlich nur so fern die unverschlüsselt sind.
+
+Installieren sie das Programm und starten sie einen *Capture.*
+
+Der Dozent wird auf seinem Linux-Gerät einen UDP-Server starten
+
+`nc -luk 12101`
+
+Anschliessend wird die Dozentin eine UDP-Nachricht verschicken.
+
+`echo -n "some dark secret" | nc -u -b 255.255.255.255 12101`
+
+Können sie die Nachricht mitlesen? Um die Nachricht besser zu filtern kann ihnen die IP-Adresse des Senders mitgeteilt werden.

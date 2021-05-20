@@ -1,6 +1,6 @@
 # Über diesen Kurs
 
-Informationen zum Kurs "Kryptografie und Verschlüsselung".
+Informationen zum Kurs "Kryptographie und Verschlüsselung".
 
 ## Aufbau
 

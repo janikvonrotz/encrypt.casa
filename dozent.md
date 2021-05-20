@@ -19,3 +19,4 @@ Unterrichtsmaterial und Artikel.
 ## Lernprozess
 
 [Methodenwürfel RITA](https://www.methodenwuerfel.ch/lernprozessmodell/)
+

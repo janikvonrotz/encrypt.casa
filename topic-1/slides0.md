@@ -21,23 +21,26 @@ graph LR;
     A[Alice]-->|Hi Bob|E[Eve]-->|Pls give money|B[Bob];
 ```
 
+🧠 Nice to know: Der Name Eve kommt von [Eavesdropping](https://en.wikipedia.org/wiki/Eavesdropping).
+
 ---
 ### Sicherheitsprobleme beim Austausch
 
-Es gibt folgende Probleme bei diesem Austausch:
-
-* Eve sollte die Nachricht nicht mitlesen können (Vertaulichkeit)
-* Eve sollte die Nachricht nicht verändern können (Integriät)
-* Bob sollte sicher sein, dass Nachricht von Alice stimmt (Authentizität)
-* Alice sollte nicht abstreiten könne, dass Nachricht von ihr ist (Verbindlichkeit)
+* **Eve** sollte die Nachricht nicht mitlesen können (Vertraulichkeit)
+* **Eve** sollte die Nachricht nicht verändern können (Integriät)
+* **Bob** sollte sicher sein, dass Nachricht von **Alice** stimmt (Authentizität)
+* **Alice** sollte nicht abstreiten könne, dass die Nachricht von ihr ist (Verbindlichkeit)
 
 ---
 ### Sicherheitsziele
 
 Daraus leiten sich diese Ziele ab:
 
-* **Vertraulichkeit** 😈: Die Nachricht, die man erhält, ist nicht von dritten Personen gelesen worden.
-* **Integrität** 💎: Die Nachricht, die man erhält, ist von keiner dritten Person manipuliert worden.
+* **Vertraulichkeit** 😈: Die Nachricht, die man erhält, ist nicht von Unbefugten gelesen worden.
+* **Integrität** 💎: Die Nachricht, die man erhält, ist nicht manipuliert worden.
+
+---
+
 * **Authentizität** 🙋‍: Die Nachricht, die man erhält, stammt wirklich von der Person, die als Absender angegeben ist.
 * **Verbindlichkeit** 📝: Der Urheber kann nachträglich nicht bestreiten, die Nachricht verfasst zu haben.
 
@@ -46,9 +49,9 @@ Daraus leiten sich diese Ziele ab:
 
 Im Alltag wenden wir das bereits an.
 
-* Nachricht End-to-End-verschlüsseln (Vertraulichkeit)
+* Nachricht mit Signal ist End-2-End-verschlüsselt (Vertraulichkeit)
 * Nachricht in Umschlag stecken (Integrität)
-* Unterschrift machen (Authentizität, Verbindlichkeit)
+* Unterschrift auf Dokument (Authentizität, Verbindlichkeit)
 
 ---
 ### Massnahmen im Rechenzetrum
@@ -61,4 +64,4 @@ Dieselben Sicherheitsziele lassen sich für Rechnernetze realisieren.
 ---
 ### Nächstes Kapitel
 
-Weiter geht es mit [Geschichte der Kryptografie](slides1.md)
+Weiter geht es mit [Geschichte der Kryptographie](slides1.md)
