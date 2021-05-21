@@ -45,7 +45,7 @@ Es gibt noch:
 ---
 ### Problem der Asymmetrischen Verschlüsselung
 
-➖ Algorithmen zur asymmetrischen Verschlüssselung sind zeitaufwendig
+➖ Algorithmen zur asymmetrischen Verschlüssselung sind zeitaufwendig  
 ➕ Kein sicherer Schlüsselaustausch nötig
 
 ---
@@ -147,6 +147,12 @@ Mit Zweiteren ist es fast unmöglich zweimal der Gleiche Ausgangswert zu finden.
 **Kollisionsangriff**: Der Angreifer versucht verschiedene Dokumente mit denselben Hashwerten zu erzeugen. 
 
 🧠 Nice to know: [Shattered](https://shattered.io/)
+
+### Anwendung
+
+von Hashes:
+* Passwörter werden als Hash gespeichert
+* Dokumente, Dateien verifizieren (Integrität 💎)
 
 ---
 ### Als Nächstes

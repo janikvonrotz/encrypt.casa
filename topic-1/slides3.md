@@ -1,4 +1,4 @@
-## GnuPG
+	## GnuPG
 
 ist ein Werkzeug zum sicheren Austausch von Nachrichten.
 
@@ -18,7 +18,7 @@ ist ein Werkzeug zum sicheren Austausch von Nachrichten.
 
 ---
 
-* Public/Private Key Krypto ist 1.000 mal langsamer als symmetrische Verschl.
+* Public/Private Key Krypto ist 1.000 mal langsamer als symmetrische Verschlüsselung
 * Daten werden mit einem zufällig generierten Key symmetrisch verschlüsselt
 * Der Key wird asymmetrisch verschlüsselt und mitgesendet
 
@@ -66,6 +66,17 @@ GnuPG ist metaphorisch ein Schlüsselbund. Damit verwalten wir:
 * Öffentliche Schlüssel von anderen
 * Verschlüsseln und signieren von Nachrichten
 * Entschlüsseln und verifizieren von Nachrichten
+
+---
+### Signieren vs. Verschlüsseln
+
+**Signieren**
+
+Beim Signieren wird dem **privaten** Schlüssel eine Signatur erstellt. Die Signatur wird an dich Nachricht angehängt.
+
+**Verschlüsseln**
+
+Beim Verschlüssel wird mit **öffentlichen** Schlüssel des Empfängers die Nachricht verschlüsselt.
 
 ---
 ### Übungen

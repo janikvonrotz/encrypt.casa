@@ -12,6 +12,7 @@ und ein paar neue Begriffe.
 * Zahlung Kreditkarte 💳
 * Verluste beim Bitcoin-Traden 📉
 * Mit Wifi verbinden 📶
+* Aufruf einer Website 🖥️
 
 ---
 ### Bei der Arbeit umso wichtiger
@@ -107,7 +108,7 @@ Die Position der Buchstaben wird verschoben.
 
 der symmetrischen Verschlüsselung:
 
-➕ Ver- und Entschlüssel ist sehr schnell
+➕ Ver- und Entschlüssel ist sehr schnell  
 ➖ Nicht geeignet für Daten, die übertragen werden
 
 ---
@@ -129,7 +130,9 @@ Die Cäsar-Verschlüsselung kann relativ einfach geknackt werden:
 
 Verschlüsselungsverfahren geheim gehalten oder veröffentlichen?
 
-ℹ️ "security by obscurity" hat sich als untauglich erwiesen
+> Verschleierung ist keine Sicherheit
+
+ℹ️ "security by obscurity" hat sich als untauglich erwiesen.
 
 Die Lösung ...
 

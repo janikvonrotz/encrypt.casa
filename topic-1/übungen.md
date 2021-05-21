@@ -91,7 +91,7 @@ graph LR;
 
 Bob vertraut dem Absender und nimmt den öffentlichen Schlüssel von Alice in seinen Schlüsselbund auf.
 
-Bob verschlüsselt seinen öffentlichen Schlüssel mit dem öffentlichen Schlüssel von Alice und sendet diesen an Alice
+Bob verschlüsselt seinen öffentlichen Schlüssel mit dem öffentlichen Schlüssel von Alice und sendet diesen an Alice.
 
 ```mermaid
 graph LR;
@@ -100,11 +100,13 @@ graph LR;
 
 Alice entschlüsselt den öffentlichen Schlüssel von Bob und nimmt diesen in den Schlüsselbund auf.
 
-ℹ️ Der öffentliche Schlüssel kann au unverschlüssel übertragen werden.
+ℹ️ Der öffentliche Schlüssel kann auch unverschlüssel übertragen werden.
 
 Nun kann Alice irgendeine Nachricht mit dem öffentlichen Schlüssel von Bob verschlüsseln und schicken. Ausschliesslich Bob kann die Nachricht entschlüsseln und lesen.
 
 🎬 Führen sie Ablauf  nun selber durch. Falls sie niemanden zum anschreiben haben, versuchen sie es mit <adele@gnupp.de>. Das ist ein Bot und sollte den geschilderten Ablauf unterstützen.
+
+🎬 Führen sie Ablauf nochmals durch, jedoch signieren sie die Nachricht, statt sie zu verschlüsseln.
 
 ### Aufgabe 3 - Sniffing mit Wireshark
 
