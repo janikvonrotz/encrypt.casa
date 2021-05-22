@@ -20,3 +20,8 @@ Unterrichtsmaterial und Artikel.
 
 [Methodenwürfel RITA](https://www.methodenwuerfel.ch/lernprozessmodell/)
 
+
+## Leitfaden
+
+* Immer zuerst die Anwendung zeigen. Warum brauche Ich das, warum ist das relevant?
+* Anschliessend die Funktionsweise aufzeigen. Wie funktioniert das?

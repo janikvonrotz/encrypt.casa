@@ -5,11 +5,48 @@ und wie man sie anwendet.
 🎯 Sie verstehen weitere Elemente der Kryptographie und wissen was die asymmetrische Verschlüsselung ist.
 
 ---
-### Ausweg: Asymmetrische Verschlüsselung
+### Krypto Primitive
 
-> Es ist schwierig den gemeinsamen Schlüssel sicher auszutauschen.
+Krypto Primitive sind die Grundbausteine. Wir kennen:
 
-Die Probleme der symmetrischen Krypographie können mit der asymmetrischen gelöst werden...
+* Symmetrische Verschlüsselung
+* Asymmetrische Verschlüsselung
+
+Es gibt noch:
+
+* Diffie Hellmann-Schlüsseltausch
+* Hash-Verfahren
+* uvw.
+
+---
+### Diffie Hellmann Schlüsselaustausch
+
+> Kann man einen Schlüssel über ein unsicheres Medium austauschen?  
+
+Die Wissenschaflter Whitfield Diffie und Martin Hellman haben 1976 festgestellt: **Ja, man kann.**
+
+---
+### Der DH-Algorithmus
+
+DH-Algorithmus is komplex, dafür gibt es eine schöne Analogie mit Farben.
+
+1.  Alice und Bob einigen sich auf eine gemeinsame (öffentliche) Farbe
+2.  Jeder wählt sich zudem eine geheime weitere Farbe
+3.  Alice und Bob mischen sich aus ihrer geheimen und der öffentlichen Farbe eine weitere Farbe
+
+---
+
+Ziel ist es, dass Alice und Bob einen **gemeinsamen** Geheimschlüssel haben.
+
+---
+### Veranschaulichung DH
+
+[![](../diffie-hellmann-farbe.png)](https://raw.githubusercontent.com/janikvonrotz/encrypt.casa/main/diffie-hellmann-farbe.png)
+
+---
+### Funktionsweise DH
+
+Verschlüsselungart für den DH-Schlüsseltausch ist die asymmetrische Verschlüsselung.
 
 ---
 ### Asymmetrische Verschlüsselung
@@ -29,45 +66,11 @@ Man unterscheidet zwischen Public und Private Key
 ℹ️  Die Verschlüsselung muss mathematisch schwer umkehrbar sein!
 
 ---
-### Krypto Primitive
 
-Krypto Primitive sind die Grundbausteine. Wir kennen:
-
-* Symmetrische Verschlüsselung
-* Asymmetrische Verschlüsselung
-
-Es gibt noch:
-
-* Diffie Hellmann-Schlüsseltausch
-* Hash-Verfahren
-* uvw.
-
----
 ### Problem der Asymmetrischen Verschlüsselung
 
 ➖ Algorithmen zur asymmetrischen Verschlüssselung sind zeitaufwendig  
 ➕ Kein sicherer Schlüsselaustausch nötig
-
----
-### Diffie Hellmann Schlüsselaustausch
-
-> Kann man einen Schlüssel über ein unsicheres Medium austauschen?  
-
-Die Wissenschaflter Whitfield Diffie und Martin Hellman haben 1976 festgestellt: **Ja, man kann.**
-
----
-### Der DH-Algorithmus
-
-DH-Algorithmus is komplex, dafür gibt es eine schöne Analogie mit Farben.
-
-1.  Alice und Bob einigen sich auf eine gemeinsame (öffentliche) Farbe
-2.  Jeder wählt sich zudem eine geheime weitere Farbe
-3.  Alice und Bob mischen sich aus ihrer geheimen und der öffentlichen Farbe eine weitere Farbe
-
----
-### Veranschaulichung DH
-
-[![](../diffie-hellmann-farbe.png)](https://raw.githubusercontent.com/janikvonrotz/encrypt.casa/main/diffie-hellmann-farbe.png)
 
 ---
 ### Übungen
