@@ -21,8 +21,26 @@ X.509
 Siehe Buch.
 
 ---
+### Web of Trust
+
+---
+### CA-Authority
+
+---
 ### RSA
 
 SSH-Keygen
+
+---
+### TLS
+
+---
+### HTTPS
+
+---
+### Downgrade
+
+---
+### SSL-Check
 
 ---
