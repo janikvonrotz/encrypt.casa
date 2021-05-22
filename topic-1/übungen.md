@@ -15,7 +15,7 @@ In dieser Übung möchten wir mit GnuPG verschlüsselte und signierte E-Mails au
 Installieren sie als erstes eine GnuPG-Schlüsselverwaltungssoftware:
 
 Windows: [Gpg4win](https://www.gpg4win.org/)\
-Linux: [KGpg](https://utils.kde.org/projects/kgpg/)
+Linux: [Kleopatra](https://www.openpgp.org/software/kleopatra/)
 
 Und bereiten sie die Software vor.
 

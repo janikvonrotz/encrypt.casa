@@ -1,4 +1,4 @@
-	## GnuPG
+## GnuPG
 
 ist ein Werkzeug zum sicheren Austausch von Nachrichten.
 
