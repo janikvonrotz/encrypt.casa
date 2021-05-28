@@ -8,8 +8,10 @@ Umfang ⏱️: 4 Lektionen
 
 Übersicht der Slides:
 
-* [slides1](slides1.md)
+* [Repetition und Digitalzertifikate](slides0.md)
+* [Vertrauen](slides1.md)
+* [Sichere Webprotokolle](slides2.md)
 
 ## Übungen
 
-Für diesen Unterrichts gibt es [Übungen](übungen.md).
+Für diesen Unterricht gibt es [Übungen](übungen.md).

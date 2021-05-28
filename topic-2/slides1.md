@@ -1,10 +1,19 @@
-## Titel
-
-Untertitel
-
-🎯 Sie verstehen ...
+## Vertrauen
 
 ---
+### Vertrauensmodelle
+
+---
+### Certificate Authority
+
+---
+### Vertrauenshierarchie
+
+---
+### Web of Trust
+
+---
+
 ### Signatur
 
 ---
@@ -27,6 +36,9 @@ Siehe Buch.
 ### CA-Authority
 
 ---
+### Letsencrypt
+
+---
 ### RSA
 
 SSH-Keygen
@@ -44,3 +56,4 @@ SSH-Keygen
 ### SSL-Check
 
 ---
+### Angriffsverfahren
