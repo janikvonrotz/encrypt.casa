@@ -16,7 +16,7 @@ Besucht man <https://example.com> und klickt auf das Schloss, sieht man folgende
 
 Die Adresse `www.example.com` ist verifizert von `DigiCert Inc`.
 
-❓Wer ist `DigiCert Inc` und warum vertraue ich ihnen?
+🤔 Wer ist `DigiCert Inc` und warum vertraue ich ihnen?
 
 ---
 ### Vertrauensmodelle
@@ -87,9 +87,9 @@ Dazu die Hierarchie:
 ---
 ### Zertifikat verifzieren
 
-❓Wie wird das Zertifikat von  `DigiCert Inc` verifiziert?
+🤔 Wie wird das Zertifikat von  `DigiCert Inc` verifiziert?
 
-❗Es wird die hierarchische Zertifikatskette überprüft. Wenn wir der Root-CA vertrauen, vertrauen wir `DigiCert Inc`.
+🙋 Es wird die hierarchische Zertifikatskette überprüft. Wenn wir der Root-CA vertrauen, vertrauen wir `DigiCert Inc`.
 
 ---
 
@@ -114,6 +114,7 @@ Auf Windows werden Zertifikate zentral im *Certificate Manager* verwaltet.
 
 🎬 Lösen sie die [Übung](übungen.md) 2.
 
+---
 ### Zusammenfassung
 
 Der Zugriff auf eine Webseite sicher:
@@ -126,9 +127,9 @@ Wenn `https://` verwendet wird.
 ---
 ### Probleme CA
 
-❓Kann man den CAs wirklich vertrauen?
+🤔 Kann man den CAs wirklich vertrauen?
 
-❗Nicht vollständig:
+🙋 Nicht vollständig:
 
 * [Beware of Applications Misusing Root Stores ](https://blog.mozilla.org/security/2021/05/10/beware-of-applications-misusing-root-stores/)
 * [Timeline of Certificate Authority Failures](https://sslmate.com/certspotter/failures)

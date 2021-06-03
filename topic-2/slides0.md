@@ -11,9 +11,9 @@ Wir erinnern uns:
 
 **Symmetrische Verschlüsselung 🔑🔑**
 
-Gleicher Schlüssel, ungeeignet für lokale Daten.
+Gleicher Schlüssel, geeignet für lokale Daten.
 
-**Symmetrische Verschlüsselung 🔑🗝️**
+**Asymmetrische Verschlüsselung 🔑🗝️**
 
 Öffentlicher und privater Schlüssel, geeignet für übertragene Nachrichten.
 
@@ -33,30 +33,32 @@ Fingerabdruck von Daten erstellen und verifizieren.
 
 Der Sender muss dem Empfänger vertrauen und umgkehert.
 
-**Signieren 📝**
+**Unterschreiben/Signieren 📝**
 
 Nachricht mit privatem Schlüssel verschlüsseln.
 
 ---
 ### Verschlüsselung im Web
 
-❓Wie weiss ich, dass meine Web-Verbindung verschlüsselt ist?
+🤔 Wie weiss ich, dass meine Web-Verbindung verschlüsselt ist?
 
-![](../https.png)
+🙋 ![](../https.png)
 
-❓Wie weiss ich, dass ich auf der richtigen Seite bin?
+🤔 Wie weiss ich, dass ich auf der richtigen Seite bin?
 
 ---
 ### Umgebungen mit öffentlichen Schlüsseln
 
 > Das Web wie auch der verschlüsselte Mail-Verkehr sind Umgebungen mit öffentlichen Schlüsseln.
 
+---
+
 Wenn wir jemanden vertrauen, vertrauen wir dem öffentlichen Schlüssel.
 
-❓Wie kann ich Daten mit einer Person austauschen, der ich noch nie begegnet bin?
+🤔 Wie kann ich Daten mit einer Person austauschen, der ich noch nie begegnet bin?
 
 ---
-### Sicherheitsproblem und Lösung
+### Sicherheitsproblem mit öffentlichen Schlüsseln
 
 Ein einfacher Abfangriff:
 
@@ -65,7 +67,7 @@ graph LR;
     A[Alice]-->|Hier mein Schlüssel|E[Eve]-->|Hier mein Schlüssel|B[Bob];
 ```
 
-❓Wie kann Bob den empfangen Schlüssel verifizieren?
+🤔 Wie kann Bob den empfangen Schlüssel verifizieren?
 
 ---
 ### Digitalzertifikate
@@ -78,16 +80,23 @@ Beispiel: Ihr Ausweis enthält Informationen, die ihre Identität nachweist.
 ### Elemente eines Digitalzertifikats
 
 Ein Digitalzertifikat besteht aus folgenden Elementen:
-* Einem öffentlichen Schlüssel.
-* Zertifikatsdaten (Beispielsweise der Name, die Benutzer-ID etc.).
-* Einer oder mehreren digitalen Unterschriften.
+* Einem öffentlichen Schlüssel
+* Zertifikatsdaten (Beispielsweise der Name, die Benutzer-ID etc.)
+* Einer oder mehreren digitalen Unterschriften
 
 ---
 
 ![](../bestandteile-pgp-zertifikat.png)
 
 ---
+### Digitale Unterschrift
+
+![](../digitale-unterschrift.png)
+
+---
 ### Lebenszyklus eines Digitalzertifikats
+
+Zertifiakte werden ausgestellt, erneuert, unterschrieben, zurückgenommen, validiert, ...
 
 ![](../certificate-life-cycle.png)
 
@@ -122,6 +131,9 @@ Ist das bekannteste Format mit folgenden Daten:
 * Öffentlicher Schlüssel des Zertifikatinhabers
 * Seriennummer des Zertifikats
 * Eindeutige Kennung des Zertifikatsinhabers
+
+---
+
 * Gültigkeitsdauer des Zertifikats
 * Eindeutiger Names des Zertifikatsausstellers
 * Digitiale Unterschrift des Ausstellers
@@ -148,6 +160,6 @@ Es bestehen viele Unterschiede hier die wichtigsten:
 ---
 ### Gültigkeit und Vertrauen
 
-❓Wie kann man nun die Gültigkeit eines Zertifikats verfizieren?
+🤔 Wie kann man nun die Gültigkeit eines Zertifikats verfizieren?
 
 Nächstes Kapitel: [Vertrauen](slides1.md)

@@ -123,7 +123,7 @@ Der HTTP-Austausch wird hierbei mit einem Verschlüsselungsprotokoll geschützt:
 ### TLS
 
 * Verschlüsselungsprotokoll zur sicheren Datenübertragung im Internet
-* Beim TLS Handshake findet ein sicherer Schlüsseltausch und Authentizierung statt
+* Beim TLS Handshake findet ein sicherer Schlüsseltausch und Authentisierung statt
 * Die Datenübertragung erfolgt mit symmetrischen Schlüssel
 
 🧠 Good-to-know: Ab Version 1.3 findet Schlüsseltausch nur noch mit Diffie-Hellmann statt
@@ -260,7 +260,7 @@ Beim Aufruf einer Webseite passiert also folgendes:
 ---
 ### Zertifikatsverwaltung
 
-❓Es gibt inzwischen Millionen von Webseiten. Wie werden all diese Zertfikate verwaltet?
+🤔 Es gibt inzwischen Millionen von Webseiten. Wie werden all diese Zertfikate verwaltet?
 
 Schauen wir uns dazu eine Statistik an: <https://trends.builtwith.com/ssl>.
 

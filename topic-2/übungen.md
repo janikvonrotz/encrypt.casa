@@ -28,5 +28,8 @@ Vergleichen sie den Browser-Fingerabdruck mit dem Fingerabdruck in Kleopatra. St
 
 ### Aufgabe 3 - SSL Check
 
-Öffnen sie die Webseite <https://www.ssllabs.com> und geben sie die Adresse `digitec.ch` ein und starten sie den Scan-Vorgang. Wenn sie das Resultat erhalten, beanworten sie die folgenden Fragen:
+Öffnen sie die Webseite <https://www.ssllabs.com> und geben sie die Adresse `remote.clean-serviceag.ch` ein und starten sie den Scan-Vorgang. Wenn sie das Resultat erhalten, beanworten sie die folgenden Fragen:
+
+* Was würden sie dem Betreiber der Webseite mitteilen?
+* Warum ist diese Bewertung ein Sicherheitsproblem?
 
