@@ -2,77 +2,77 @@
 
 Was wir wissen sollten und neu dazu kommt.
 
-🎯 Sie verstehen Zertifikate im Kontext der Verschlüsselung
+🎯 Sie verstehen Digitalzertifikate im Kontext der Verschlüsselung.
 
 ---
 ### Repetition 
 
-Wir erinnern:
+Wir erinnern uns:
 
-**Symmetrische Verschlüsselung **
+**Symmetrische Verschlüsselung 🔑🔑**
 
 Gleicher Schlüssel, ungeeignet für lokale Daten.
 
-**Symmetrische Verschlüsselung**
+**Symmetrische Verschlüsselung 🔑🗝️**
 
 Öffentlicher und privater Schlüssel, geeignet für übertragene Nachrichten.
 
 ---
 
-**Diffie-Helmann Schlüsseltausch**
+**Diffie-Helmann Schlüsseltausch 🔀**
 
 Ein gemeinsamer geheimer Schlüssel über ein unsicheres Medium austauschen.
 
-**Hash-Funktion**
+**Hash-Funktion 🐾**
 
 Fingerabdruck von Daten erstellen und verifizieren.
 
 ---
 
-**Direktes Vertrauen**
+**Direktes Vertrauen 🧍🧍**
 
 Der Sender muss dem Empfänger vertrauen und umgkehert.
 
-**Signieren**
+**Signieren 📝**
 
-#FIXME
+Nachricht mit privatem Schlüssel verschlüsseln.
 
 ---
 ### Verschlüsselung im Web
 
-Q: Wie weiss ich, dass meine Web-Verbindung verschlüsselt ist?
+❓Wie weiss ich, dass meine Web-Verbindung verschlüsselt ist?
 
-A: BILD_HTTPS
+![](../https.png)
 
-Q: Wie weiss ich, dass ich auf der richtigen Seite bin?
+❓Wie weiss ich, dass ich auf der richtigen Seite bin?
 
 ---
 ### Umgebungen mit öffentlichen Schlüsseln
 
-Das Web wie auch der verschlüsselte Mail-Verkehr sind Umgebungen mit öffentlichen Schlüsseln.
+> Das Web wie auch der verschlüsselte Mail-Verkehr sind Umgebungen mit öffentlichen Schlüsseln.
 
 Wenn wir jemanden vertrauen, vertrauen wir dem öffentlichen Schlüssel.
 
-Q: Wie kann ich Daten mit einer Person austauschen, der ich noch nie begegnet bin?
+❓Wie kann ich Daten mit einer Person austauschen, der ich noch nie begegnet bin?
 
 ---
-### Sicherheitsproblem und Lösung.
+### Sicherheitsproblem und Lösung
 
-Ein einfacher Abfangriff?
+Ein einfacher Abfangriff:
 
 ```mermaid
 graph LR;
     A[Alice]-->|Hier mein Schlüssel|E[Eve]-->|Hier mein Schlüssel|B[Bob];
 ```
 
-Q: Wie kann Bob den empfangen Schlüssel verifizieren?
+❓Wie kann Bob den empfangen Schlüssel verifizieren?
 
 ---
 ### Digitalzertifikate
 
-Mit Digitalzertifikaten wird der Eigentümer eines Schlüssels überprüfbar.
+> Mit Digitalzertifikaten wird der Eigentümer eines Schlüssels überprüfbar.
 
-Ihr Ausweis enthält Informationen, die ihre Identität nachweist.
+Beispiel: Ihr Ausweis enthält Informationen, die ihre Identität nachweist.
 
 ---
 ### Elemente eines Digitalzertifikats
@@ -80,7 +80,7 @@ Ihr Ausweis enthält Informationen, die ihre Identität nachweist.
 Ein Digitalzertifikat besteht aus folgenden Elementen:
 * Einem öffentlichen Schlüssel.
 * Zertifikatsdaten (Beispielsweise der Name, die Benutzer-ID etc.).
-** Einer oder mehreren digitalen Unterschriften.
+* Einer oder mehreren digitalen Unterschriften.
 
 ---
 
@@ -89,10 +89,65 @@ Ein Digitalzertifikat besteht aus folgenden Elementen:
 ---
 ### Lebenszyklus eines Digitalzertifikats
 
+![](../certificate-life-cycle.png)
+
 ---
 ### Zertifikatsformate
 
----
-### X.509
+Wir betrachten zwei Zertifikatsformate:
+* PGP-Zertifikate
+* X.509-Zertifikate
 
 ---
+### PGP-Zertifikate
+
+Enthält diese Informationen:
+* PGP-Versionsnummer
+* Öffentlicher Schlüssel des Zertifikatinhabers
+* Daten des Zertifikatinhabers
+* Gültigkeitsdauer des Zertifikats
+* Bevorzugter symmetrischer Verschlüsselungsalgorithmus für die Schlüssel
+
+---
+
+![](../pgp-zertifikat.png)
+
+---
+
+### X.509
+
+Ist das bekannteste Format mit folgenden Daten:
+
+* X.509-Versionsnummer
+* Öffentlicher Schlüssel des Zertifikatinhabers
+* Seriennummer des Zertifikats
+* Eindeutige Kennung des Zertifikatsinhabers
+* Gültigkeitsdauer des Zertifikats
+* Eindeutiger Names des Zertifikatsausstellers
+* Digitiale Unterschrift des Ausstellers
+* Kennung für Unterschriftenalgorithmus
+
+---
+
+![](../x.509-zertifikat.png)
+
+---
+### Unterschiede PGP und X.509
+
+Es bestehen viele Unterschiede hier die wichtigsten:
+
+* **PGP-Zertifikat kann selber erstellt werden, X.509 nur duch Zertifizierungsinstanz**
+* X.509 unterstützen einen Namen für Schlüsseleigentümer
+* X.509 unterstützt eine Unterschrift zur Bestätigung der Gültigkeit
+
+---
+### Übungen
+
+🎬 Lösen sie die [Übung](übungen.md) 1.
+
+---
+### Gültigkeit und Vertrauen
+
+❓Wie kann man nun die Gültigkeit eines Zertifikats verfizieren?
+
+Nächstes Kapitel: [Vertrauen](slides1.md)
