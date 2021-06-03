@@ -13,6 +13,7 @@ module.exports = {
                 ariaLabel: 'Auswahl Lektionen',
                 items: [
                     { text: 'Thema 1 - Einführung in die Krypographie', link: '/topic-1/' },
+                    { text: 'Thema 2 - Zertifikate und Protokolle', link: '/topic-2/' }
                 ]
             }
         ]

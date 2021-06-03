@@ -1,4 +1,4 @@
-# Lektion 2 - Zertifikate, Signaturen und Protokolle
+# Lektion 2 - Zertifikate und Protokolle
 
 Umfang ⏱️: 4 Lektionen
 

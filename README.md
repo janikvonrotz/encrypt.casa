@@ -12,7 +12,7 @@ Unterrichtsmaterial erstellt von [Janik von Rotz](https://janikvonrotz.ch/).
 ## Lektionen
 
 * [Thema 1 - Einführung in die Kryptographie](topic-1/README.md)
-* [Thema 2 - Zertifikate, Signaturen und Protokolle](topic-2/README.md)
+* [Thema 2 - Zertifikate und Protokolle](topic-2/README.md)
 
 ## Anderes
 
