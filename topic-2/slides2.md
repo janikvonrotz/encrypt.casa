@@ -90,7 +90,7 @@ Der Browser kommuniziert mit  dem HyperText Transfer Protocol (HTTP). Das Protok
 ---
 ### HTTP Response
 
-![](../Pasted%20image%2020210603153142.png)
+![](../http-response.png)
 
 ---
 ### HTTPS

@@ -2,3 +2,4 @@
 default.vim
 node_modules
 .vuepress/dist
+.vercel
