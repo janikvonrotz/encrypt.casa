@@ -1,6 +1,6 @@
 ## Übungen
 
-zu [README](README.md)].
+zu [Thema 2 - Zertifikate und Protokolle](README.md).
 
 ### Aufgabe 1 - Zertifikat betrachten
 
