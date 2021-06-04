@@ -119,6 +119,8 @@ Der HTTP-Austausch wird hierbei mit einem Verschlüsselungsprotokoll geschützt:
 -   TLS 1.2: Veröffentlicht 2008.
 -   TLS 1.3: Veröffentlicht 2018.
 
+Neue Angriffe -> Neue Sicherheitsprobleme -> Neue Algorithmen -> Neue Version
+
 ---
 ### TLS
 

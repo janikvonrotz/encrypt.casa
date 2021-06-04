@@ -32,8 +32,8 @@ Und definieren was Gültigkeit ✅ ist.
 ---
 ### Gültigkeit
 
-> Gültigkeit bedeutet Vertrauen dahingehend, daß ein öffentliches Schlüsselzer-
-tifikat dem angegebenen Eigentümer gehört.
+"Gültigkeit bedeutet Vertrauen dahingehend, daß ein öffentliches Schlüsselzer-
+tifikat dem angegebenen Eigentümer gehört."
 
 ---
 ### Direktes vertrauen
@@ -76,7 +76,7 @@ Eine weitere Möglichkeit ist die Prüfung durch Dritte -> Zertifizierungsinstan
 ---
 ### Zertifizierungsinstanz (CA)
 
-> Der Hauptzweck einer CA ist grundsätzlich, einen **öffentlichen Schlüssel** mit im Zertifikat enthaltenen **Identifikationsinformationen** zu **verbinden** und somit Dritten zu versichern, daß eine gewisse **Sorgfalt bei der Verbindung** der Identifikationsinformationen verwendet wurde und der Schlüssel gültig ist.
+"Der Hauptzweck einer CA ist grundsätzlich, einen **öffentlichen Schlüssel** mit im Zertifikat enthaltenen **Identifikationsinformationen** zu **verbinden** und somit Dritten zu versichern, daß eine gewisse **Sorgfalt bei der Verbindung** der Identifikationsinformationen verwendet wurde und der Schlüssel gültig ist."
 
 ---
 
