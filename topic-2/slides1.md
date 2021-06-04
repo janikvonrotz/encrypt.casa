@@ -117,12 +117,13 @@ Auf Windows werden Zertifikate zentral im *Certificate Manager* verwaltet.
 ---
 ### Zusammenfassung
 
-Der Zugriff auf eine Webseite sicher:
+Der Zugriff auf eine Webseite ist sicher:
 
 Wenn `https://` verwendet wird.  
 ↪️Die Adresse mit einem Zertifikat verknüpft ist.  
 ↪️Dem Herausgeber des Zertifikats vertraut wird.  
 ↪️Dem Browser vertraut wird.
+↪️Der Browser der Root-CA vertraut.
 
 ---
 ### Probleme CA
