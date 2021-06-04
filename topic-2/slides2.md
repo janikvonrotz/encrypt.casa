@@ -421,7 +421,7 @@ Schauen wir uns dazu eine Statistik an: <https://trends.builtwith.com/ssl>.
 ---
 ### LetsEncrypt
 
-Let’s Encrypt ist eine Zertifizierungsstelle, die Ende 2015 in Betrieb gegangen ist und **kostenlose X.509-Zertifikate** für **Transport Layer Security** anbietet. Die Zertifikate haben eine **Gültigkeit** von jeweils 90 Tagen und können manuell oder automatisch erneuert werden.
+Let’s Encrypt ist eine **Zertifizierungsstelle**, die Ende 2015 in Betrieb gegangen ist und **kostenlose X.509-Zertifikate** für **Transport Layer Security** anbietet. Die Zertifikate haben eine **Gültigkeit** von jeweils 90 Tagen und können manuell oder automatisch erneuert werden.
 
 ---
 ### LetsEncrypt Hierarchy

@@ -79,6 +79,11 @@ Beim Signieren wird dem **privaten** Schlüssel eine Signatur erstellt. Die Sign
 Beim Verschlüssel wird mit **öffentlichen** Schlüssel des Empfängers die Nachricht verschlüsselt.
 
 ---
+### Digitale Signatur
+
+![](../digitale-signatur.png)
+
+---
 ### Übungen
 
 🎬 Lösen sie die [Übung](übungen.md) 2.

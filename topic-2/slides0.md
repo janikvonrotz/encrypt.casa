@@ -38,11 +38,6 @@ Der Sender muss dem Empfänger vertrauen und umgkehert.
 Nachricht mit privatem Schlüssel verschlüsseln.
 
 ---
-### Elektroniscche Signatur
-
-![](../verbindlichkeit.png)
-
----
 ### Verschlüsselung im Web
 
 🤔 Wie weiss ich, dass meine Web-Verbindung verschlüsselt ist?
