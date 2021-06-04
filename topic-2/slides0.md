@@ -160,7 +160,7 @@ Es bestehen viele Unterschiede hier die wichtigsten:
 ---
 ### Übungen
 
-🎬 Lösen sie die [Übung](übungen.md) 1.
+🎬 Lösen sie die [Übung](übungen.md) 1 in Breakout-Rooms.
 
 ---
 ### Gültigkeit und Vertrauen
