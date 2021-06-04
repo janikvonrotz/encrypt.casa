@@ -26,6 +26,16 @@ Suchen sie das Root-Zertifikat in den Einstellungen des Browsers. Bei Firefox na
 
 Vergleichen sie den Browser-Fingerabdruck mit dem Fingerabdruck in Kleopatra. Stimmer dieser überein?
 
+Hinweis: In Windows kann das Root-Zertifikat wie folgt angezeigt werden.
+
+![](../ansicht-edge.png)
+
+Das Zertifikat ist auch im Zertifikats-Manager verfügbar.
+
+![](../ansicht-zertifikate.png)
+
+Aktuell ist unklar wie man Zertifikat exportieren und mit Kleopatra importieren kann.
+
 ### Aufgabe 3 - SSL Check
 
 Öffnen sie die Webseite <https://www.ssllabs.com> und geben sie die Adresse `remote.clean-serviceag.ch` ein und starten sie den Scan-Vorgang. Wenn sie das Resultat erhalten, beanworten sie die folgenden Fragen:
