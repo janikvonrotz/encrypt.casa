@@ -1,6 +1,6 @@
 ## Übungen
 
-zu [Einführung in die Kryptographie](README.md).
+zu [Thema 1 - Einführung in die Kryptographie](README.md).
 
 ### Aufgabe 1 - Der Algorithmus in Farbe
 
@@ -46,7 +46,7 @@ Anschliessend unterschreiben Sie den Vertrag mit ihrem eigenen Schlüssel.
 
 ### Durchführung
 
-* Laden Sie die PDF-Datei herunter: [Acme-NDA](../Acme-NDA.pdf)]
+* Laden Sie die PDF-Datei herunter: [Acme-NDA](../Acme-NDA.pdf)
 * Und die Unterschrift-Datei: [Acme-NDA.pdf](../Acme-NDA.pdf.sig)
 
 ![](../acme-pdf-sig.png)
