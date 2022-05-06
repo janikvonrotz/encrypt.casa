@@ -4,9 +4,9 @@ zu [Einführung in die Kryptographie](README.md).
 
 ### Aufgabe 1 - Der Algorithmus in Farbe
 
-Schauen sie sich den [Diffie-Hellman-Schlüsselaustausch mit Farben an](https://www.inf-schule.de/kommunikation/kryptologie/modernechiffriersysteme/exkurs_diffie). Verändern sie die Inputs und versuchen sie den Vorgang zu verstehen.
+Schauen Sie sich den [Diffie-Hellman-Schlüsselaustausch mit Farben an](https://www.inf-schule.de/kommunikation/kryptologie/modernechiffriersysteme/exkurs_diffie). Verändern Sie die Inputs und versuchen Sie den Vorgang zu verstehen.
 
-War das zu einfach, versuchen sie den Algorithmus in Zahlen selber nachzurechnen.
+War das zu einfach, versuchen Sie den Algorithmus in Zahlen selber nachzurechnen.
 
 ### Aufgabe 
 
@@ -14,29 +14,29 @@ War das zu einfach, versuchen sie den Algorithmus in Zahlen selber nachzurechnen
 
 In dieser Übung möchten wir mit GnuPG verschlüsselte und signierte E-Mails austauschen.
 
-Installieren sie als erstes eine GnuPG-Schlüsselverwaltungssoftware:
+Installieren Sie als erstes eine GnuPG-Schlüsselverwaltungssoftware:
 
 Windows: [Gpg4win](https://www.gpg4win.org/)\
 Linux: [Kleopatra](https://www.openpgp.org/software/kleopatra/)
 
-Und bereiten sie die Software vor.
+Und bereiten Sie die Software vor.
 
 #### Vorbereitung
 
 Bevor wir unsere Schlüssel austauschen können, müssen wir welche haben.
 
-* Erstellen sie ein Schlüsselpaar (dazu ein Beispiel)
+* Erstellen Sie ein Schlüsselpaar (dazu ein Beispiel)
 
 Name: `Alice Example`\
 Mail: `alice@example.com`\
 Key size: `2048`\
 Algorithm: `RSA & RSA`
 
-* Setzen sie ein Passwort für den privaten Schlüssel
+* Setzen Sie ein Passwort für den privaten Schlüssel
 
 ![](../new-key.png)
 
-* Exportieren sie den öffentlichen Schlüssel in ein Notepad
+* Exportieren Sie den öffentlichen Schlüssel in ein Notepad
 
 ```
 -----BEGIN PGP PUBLIC KEY BLOCK-----
@@ -78,7 +78,7 @@ J6d0
 -----END PGP PUBLIC KEY BLOCK-----
 ```
 
-Öffnen sie ihr E-Mail-Programm und teilen Sie ihre E-Mail-Adressen dem Nachbarn mit.
+Öffnen Sie ihr E-Mail-Programm und teilen Sie ihre E-Mail-Adressen dem Nachbarn mit.
 
 #### Ablauf
 
@@ -106,9 +106,9 @@ Alice entschlüsselt den öffentlichen Schlüssel von Bob und nimmt diesen in de
 
 Nun kann Alice irgendeine Nachricht mit dem öffentlichen Schlüssel von Bob verschlüsseln und schicken. Ausschliesslich Bob kann die Nachricht entschlüsseln und lesen.
 
-🎬 Führen sie Ablauf  nun selber durch. Falls sie niemanden zum anschreiben haben, versuchen sie es mit <adele@gnupp.de>. Das ist ein Bot und sollte den geschilderten Ablauf unterstützen.
+🎬 Führen Sie Ablauf  nun selber durch. Falls Sie niemanden zum anschreiben haben, versuchen Sie es mit <adele@gnupp.de>. Das ist ein Bot und sollte den geschilderten Ablauf unterstützen.
 
-🎬 Führen sie Ablauf nochmals durch, jedoch signieren sie die Nachricht, statt sie zu verschlüsseln.
+🎬 Führen Sie Ablauf nochmals durch, jedoch signieren Sie die Nachricht, statt Sie zu verschlüsseln.
 
 ### Aufgabe 3 - Sniffing mit Wireshark
 
@@ -116,7 +116,7 @@ Für diese Aufgabe brauchen wir [Wireshark](https://www.wireshark.org/download.h
 
 Mit Wireshark kann man im verbunden Netzwerk die übertragenenen Pakete mitlesen. Natürlich nur so fern die unverschlüsselt sind.
 
-Installieren sie das Programm und starten sie einen *Capture.*
+Installieren Sie das Programm und starten Sie einen *Capture.*
 
 Der Dozent wird auf seinem Linux-Gerät einen UDP-Server starten
 
@@ -126,4 +126,4 @@ Anschliessend wird die Dozentin eine UDP-Nachricht verschicken.
 
 `echo -n "some dark secret" | nc -u -b 255.255.255.255 12101`
 
-Können sie die Nachricht mitlesen? Um die Nachricht besser zu filtern kann ihnen die IP-Adresse des Senders mitgeteilt werden.
+Können Sie die Nachricht mitlesen? Um die Nachricht besser zu filtern kann ihnen die IP-Adresse des Senders mitgeteilt werden.

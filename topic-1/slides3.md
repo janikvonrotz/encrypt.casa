@@ -86,7 +86,7 @@ Beim Verschlüssel wird mit **öffentlichen** Schlüssel des Empfängers die Nac
 ---
 ### Übungen
 
-🎬 Lösen sie die [Übung](übungen.md) 2.
+🎬 Lösen Sie die [Übung](übungen.md) 2.
 
 ---
 ### Als Nächstes

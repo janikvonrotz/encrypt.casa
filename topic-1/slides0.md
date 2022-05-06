@@ -1,6 +1,6 @@
 ## Sicherheitsprobleme
 
-und wie man sie behebt.
+und wie man diese behebt.
 
 🎯 Sie verstehen die Sicherheitsziele des Nachrichtenaustausches.
 

@@ -1,6 +1,6 @@
 ## Bausteine der Kryptographie
 
-und wie man sie anwendet.
+und wie man Sie anwendet.
 
 🎯 Sie verstehen weitere Elemente der Kryptographie und wissen was die asymmetrische Verschlüsselung ist.
 
@@ -75,7 +75,7 @@ Man unterscheidet zwischen Public und Private Key
 ---
 ### Übungen
 
-🎬 Lösen sie die [Übung](übungen.md) 1.
+🎬 Lösen Sie die [Übung](übungen.md) 1.
 
 ---
 ### Fingerabdruck beim Menschen

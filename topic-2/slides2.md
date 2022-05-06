@@ -458,6 +458,6 @@ Ist die Verhandlung abgeschlossen, können Zertifikate von LetsEncrypt für die 
 ---
 ### Übungen
 
-🎬 Lösen sie die [Übung](übungen.md) 3.
+🎬 Lösen Sie die [Übung](übungen.md) 3.
 
 ---

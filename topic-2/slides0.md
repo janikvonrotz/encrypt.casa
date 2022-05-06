@@ -155,7 +155,7 @@ Es bestehen viele Unterschiede hier die wichtigsten:
 ---
 ### Übungen
 
-🎬 Lösen sie die [Übung](übungen.md) 1 in Breakout-Rooms.
+🎬 Lösen Sie die [Übung](übungen.md) 1 in Breakout-Rooms.
 
 ---
 ### Gültigkeit und Vertrauen

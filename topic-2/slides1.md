@@ -112,7 +112,7 @@ Auf Windows werden Zertifikate zentral im *Certificate Manager* verwaltet.
 ---
 ### Übungen
 
-🎬 Lösen sie die [Übung](übungen.md) 2.
+🎬 Lösen Sie die [Übung](übungen.md) 2.
 
 ---
 ### Zusammenfassung
