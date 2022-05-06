@@ -2,7 +2,7 @@ module.exports = {
     title: 'encrypt.casa',
     description: 'Kryptographie und Verschlüsselung',
     themeConfig: {
-        logo: 'logo.png',
+        logo: '/logo.png',
         sidebar: 'auto',
         repo: 'janikvonrotz/encrypt.casa',
         docsBranch: 'main',
