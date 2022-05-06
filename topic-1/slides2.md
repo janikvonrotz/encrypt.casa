@@ -105,7 +105,7 @@ Welche *Secure Hash Algorithms* (SHA) gibt es?
 
 **SHA-2**: Beinhaltet SHA-224, SHA-256, SHA-384 und SHA-512. Die Nummer ist die jeweilige Schlüssellänge.
 
-**SHA-3**: Neuster und sicherer Hash-Algorithmus.
+**SHA-3**: Neuster und sicherster Hash-Algorithmus.
 
 **MD5**: Verbreitet und sehr unsicher.
 
