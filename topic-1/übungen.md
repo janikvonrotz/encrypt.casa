@@ -12,7 +12,7 @@ War das zu einfach, versuchen Sie den Algorithmus selber nachzurechnen.
 
 In dieser Aufgabe möchten wir eine PDF-Datei elektronisch signieren und die Unterschrift von ein anderen Person verifizieren.
 
-### Vorbereitung
+#### Vorbereitung
 
 Installieren Sie als erstes eine GnuPG-Schlüsselverwaltungssoftware:
 
@@ -34,17 +34,17 @@ Algorithm: `RSA & RSA`
 
 ![](../new-key.png)
 
-### Ablauf
+#### Ablauf
 
-Sie erhalten einen Vertrag als PDF-Datei, eine Unterschrift-Datei und einen dazugehörgien Public Key von [Adobe](https://www.adobe.com/).
+Sie erhalten einen Vertrag als PDF-Datei, eine Unterschrift-Datei sowie einen dazugehörgien Public Key von [Adobe](https://www.adobe.com/).
 
-Das Sie dem Absender vertrauen importieren Sie den Public Key in ihren Schlüsselbund.
+Das Sie dem Absender vertrauen nehmen Sie den Public Key in ihren Schlüsselbund auf.
 
 Der Vertrag wurde von Adobe unterschrieben. Sie verfizieren die Unterschrift und stellen sicher, dass der Vertrag nicht verändert wurde.
 
 Anschliessend unterschreiben Sie den Vertrag mit ihrem eigenen Schlüssel.
 
-### Durchführung
+#### Durchführung
 
 * Laden Sie die PDF-Datei herunter: [Acme-NDA.pdf](https://github.com/janikvonrotz/encrypt.casa/raw/main/Acme-NDA.pdf)
 * Und die Unterschrift-Datei: [Acme-NDA.pdf.sig](https://github.com/janikvonrotz/encrypt.casa/raw/main/Acme-NDA.pdf.sig)
@@ -67,15 +67,17 @@ Anschliessend unterschreiben Sie den Vertrag mit ihrem eigenen Schlüssel.
 
 ![](../cleopatra-signed.png)
 
+* Signieren Sie die PDF-Datei mit ihrem eigenen Schlüssel.
+
 ### Aufgabe 2 - Verschlüsselte E-Mails
 
 In dieser Übung möchten wir mit GnuPG verschlüsselte und signierte E-Mails austauschen.
 
-### Vorbereitung
+#### Vorbereitung
 
 * Öffnen Sie Software für die Schlüsselverwaltung.
 
-* Exportieren Sie den öffentlichen Schlüssel in ein Notepad
+* Exportieren Sie den öffentlichen Schlüssel in ein Notepad. Hier ein Beispiel:
 
 ```
 -----BEGIN PGP PUBLIC KEY BLOCK-----
@@ -117,7 +119,7 @@ J6d0
 -----END PGP PUBLIC KEY BLOCK-----
 ```
 
-Öffnen Sie ihr E-Mail-Programm und teilen Sie ihre E-Mail-Adressen dem Nachbarn mit.
+* Öffnen Sie ihr E-Mail-Programm und teilen Sie ihre E-Mail-Adressen dem Nachbarn mit.
 
 #### Ablauf
 
@@ -145,7 +147,7 @@ Alice entschlüsselt den öffentlichen Schlüssel von Bob und nimmt diesen in de
 
 Nun kann Alice irgendeine Nachricht mit dem öffentlichen Schlüssel von Bob verschlüsseln und schicken. Ausschliesslich Bob kann die Nachricht entschlüsseln und lesen.
 
-### Durchführung
+#### Durchführung
 
 🎬 Führen Sie Ablauf  nun selber durch. Falls Sie niemanden zum anschreiben haben, versuchen Sie es mit <adele@gnupp.de>. Das ist ein Bot und sollte den geschilderten Ablauf unterstützen.
 
