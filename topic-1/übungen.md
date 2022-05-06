@@ -6,22 +6,20 @@ zu [Einführung in die Kryptographie](README.md).
 
 Schauen Sie sich den [Diffie-Hellman-Schlüsselaustausch mit Farben an](https://www.inf-schule.de/kommunikation/kryptologie/modernechiffriersysteme/exkurs_diffie). Verändern Sie die Inputs und versuchen Sie den Vorgang zu verstehen.
 
-War das zu einfach, versuchen Sie den Algorithmus in Zahlen selber nachzurechnen.
+War das zu einfach, versuchen Sie den Algorithmus selber nachzurechnen.
 
-### Aufgabe 
+### Aufgabe 2 - Elektronische Unterschrift
 
-### Aufgabe 2 - Verschlüsselte E-Mails
+In dieser Aufgabe möchten wir eine PDF-Datei elektronisch signieren und die Unterschrift von ein anderen Person verifizieren.
 
-In dieser Übung möchten wir mit GnuPG verschlüsselte und signierte E-Mails austauschen.
+### Vorbereitung
 
 Installieren Sie als erstes eine GnuPG-Schlüsselverwaltungssoftware:
 
 Windows: [Gpg4win](https://www.gpg4win.org/)\
 Linux: [Kleopatra](https://www.openpgp.org/software/kleopatra/)
 
-Und bereiten Sie die Software vor.
-
-#### Vorbereitung
+Und bereiten Sie die Software wie folgt vor.
 
 Bevor wir unsere Schlüssel austauschen können, müssen wir welche haben.
 
@@ -35,6 +33,47 @@ Algorithm: `RSA & RSA`
 * Setzen Sie ein Passwort für den privaten Schlüssel
 
 ![](../new-key.png)
+
+### Ablauf
+
+Sie erhalten einen Vertrag als PDF-Datei, eine Unterschrift-Datei und einen dazugehörgien Public Key von [Adobe](https://www.adobe.com/).
+
+Das Sie dem Absender vertrauen importieren Sie den Public Key in ihren Schlüsselbund.
+
+Der Vertrag wurde von Adobe unterschrieben. Sie verfizieren die Unterschrift und stellen sicher, dass der Vertrag nicht verändert wurde.
+
+Anschliessend unterschreiben Sie den Vertrag mit ihrem eigenen Schlüssel.
+
+### Durchführung
+
+* Laden Sie die PDF-Datei herunter:
+* Und die Unterschrift-Datei: 
+
+![](../acme-pdf-sig.png)
+
+* Versuchen Sie die PDF-Datei zu verfizieren. Es sollte ohne Public Key nicht möglich sein.
+
+![](../cleopatra-verification-failed.png)
+
+* Laden Sie den Public Key herunter: 
+
+![](../adobe-public-key.png)
+
+* Importieren Sie den Public Key in ihren Schlüsselbund
+* Verifizieren Sie die PDF-Datei erneut.
+
+![](../cleopatra-not-trusted.png)
+* Signieren Sie den importierten Schlüssels und verifizieren Sie die PDF-Datei erneut.
+
+![](../cleopatra-signed.png)
+
+### Aufgabe 2 - Verschlüsselte E-Mails
+
+In dieser Übung möchten wir mit GnuPG verschlüsselte und signierte E-Mails austauschen.
+
+### Vorbereitung
+
+* Öffnen Sie Software für die Schlüsselverwaltung.
 
 * Exportieren Sie den öffentlichen Schlüssel in ein Notepad
 
@@ -82,7 +121,7 @@ J6d0
 
 #### Ablauf
 
-Wir möchten den folgenden Ablauf ausführen.
+Hier folgt nun ein Ablauf, den wir anschliessend mit dem E-Mail-Programm und Schlüsselverwaltung durchführen möchten.
 
 Wir haben zwei Teilnehmer `alice@example.com` und `bob@example.com`.
 
@@ -105,6 +144,8 @@ Alice entschlüsselt den öffentlichen Schlüssel von Bob und nimmt diesen in de
 ℹ️ Der öffentliche Schlüssel kann auch unverschlüssel übertragen werden.
 
 Nun kann Alice irgendeine Nachricht mit dem öffentlichen Schlüssel von Bob verschlüsseln und schicken. Ausschliesslich Bob kann die Nachricht entschlüsseln und lesen.
+
+### Durchführung
 
 🎬 Führen Sie Ablauf  nun selber durch. Falls Sie niemanden zum anschreiben haben, versuchen Sie es mit <adele@gnupp.de>. Das ist ein Bot und sollte den geschilderten Ablauf unterstützen.
 
