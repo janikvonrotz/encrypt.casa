@@ -46,8 +46,8 @@ Anschliessend unterschreiben Sie den Vertrag mit ihrem eigenen Schlüssel.
 
 ### Durchführung
 
-* Laden Sie die PDF-Datei herunter:
-* Und die Unterschrift-Datei: 
+* Laden Sie die PDF-Datei herunter: [Acme-NDA](../Acme-NDA.pdf)]
+* Und die Unterschrift-Datei: [Acme-NDA.pdf](../Acme-NDA.pdf.sig)
 
 ![](../acme-pdf-sig.png)
 
@@ -55,7 +55,7 @@ Anschliessend unterschreiben Sie den Vertrag mit ihrem eigenen Schlüssel.
 
 ![](../cleopatra-verification-failed.png)
 
-* Laden Sie den Public Key herunter: 
+* Laden Sie den Public Key herunter: [Adobe-Public-Key](../Adobe-Public-Key.asc)
 
 ![](../adobe-public-key.png)
 
