@@ -10,7 +10,7 @@ Umfang ⏱️: 4 Lektionen
 
 * [Sicherheitsziele](slides0.md)
 * [Geschichte der Kryptographie](slides1.md)
-* [Bausteine der Krypographie](slides2.md)
+* [Bausteine der Kryptographie](slides2.md)
 * [GnuPG](slides3.md)
 
 ## Übungen

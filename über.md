@@ -8,7 +8,7 @@ Dieser Kurs ist ein Mix aus theoretischen Inputs, Live-Demos und Übungen. Die S
 
 ## Ziele
 
-Ziel ist es, dass die Studierenden Begriffe run um Kryptographie verstehen, deren Aspekte einordnen können und im besten Fall ein Interesse and der Krypographie entwickeln.
+Ziel ist es, dass die Studierenden Begriffe run um Kryptographie verstehen, deren Aspekte einordnen können und im besten Fall ein Interesse and der Kryptographie entwickeln.
 
 ## Meta
 
@@ -23,7 +23,7 @@ Inhalte:
 * Hashcode und Zufallszahlen
 
 Kompetenzen: Die Studierenden ...
-* verstehen gängige Begriffe der Krypografie
+* verstehen gängige Begriffe der Kryptografie
 * können Aspekte der IT-Sicherheit einordnen
 * verstehen die asymmetrische und symmetrische Verschlüsselung
 * verstehen wie die Authentizität mit einem Zertifikat sichergestellt wird
