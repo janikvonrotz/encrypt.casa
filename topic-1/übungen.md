@@ -46,8 +46,8 @@ Anschliessend unterschreiben Sie den Vertrag mit ihrem eigenen Schlüssel.
 
 ### Durchführung
 
-* Laden Sie die PDF-Datei herunter: [Acme-NDA](../Acme-NDA.pdf)
-* Und die Unterschrift-Datei: [Acme-NDA.pdf](../Acme-NDA.pdf.sig)
+* Laden Sie die PDF-Datei herunter: [Acme-NDA](https://github.com/janikvonrotz/encrypt.casa/raw/main/Acme-NDA.pdf)
+* Und die Unterschrift-Datei: [Acme-NDA.pdf](https://github.com/janikvonrotz/encrypt.casa/raw/main/Acme-NDA.pdf.sig)
 
 ![](../acme-pdf-sig.png)
 
@@ -55,7 +55,7 @@ Anschliessend unterschreiben Sie den Vertrag mit ihrem eigenen Schlüssel.
 
 ![](../cleopatra-verification-failed.png)
 
-* Laden Sie den Public Key herunter: [Adobe-Public-Key](../Adobe-Public-Key.asc)
+* Laden Sie den Public Key herunter: [Adobe-Public-Key](https://github.com/janikvonrotz/encrypt.casa/raw/main/Adobe-Public-Key.asc)
 
 ![](../adobe-public-key.png)
 

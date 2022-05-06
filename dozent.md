@@ -24,4 +24,4 @@ Unterrichtsmaterial und Artikel.
 
 ## Dokumente
 
-Der privat Schlüssel zu [Übung](topic-1/übungen.md) 2: [Adobe-Private-Key](Adobe-Private-Key.asc)
+Der privat Schlüssel zu [Übung](topic-1/übungen.md) 2: [Adobe-Private-Key](https://github.com/janikvonrotz/encrypt.casa/raw/main/Adobe-Private-Key.asc)
