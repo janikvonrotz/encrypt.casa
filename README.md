@@ -16,7 +16,6 @@ Unterrichtsmaterial erstellt von [Janik von Rotz](https://janikvonrotz.ch/).
 
 ## Anderes
 
-[Dozent](dozent.md)  
 [Mitarbeit](mitarbeit.md)  
+[Dozent](dozent.md)  
 [python.casa](https://python.casa)  
-[😉](😉.md)

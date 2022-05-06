@@ -4,7 +4,7 @@ Informationen zum Kurs "Kryptographie und Verschlüsselung".
 
 ## Aufbau
 
-Der Kurs ist ein Mix aus theoretischen Inputs, Live-Demos und Übungen. Die Studierenden sollen die trockene Thematik mit praktischen Beispielen erleben können.
+Dieser Kurs ist ein Mix aus theoretischen Inputs, Live-Demos und Übungen. Die Studierenden sollen die theoretische Thematik mit praktischen Beispielen erleben können.
 
 ## Ziele
 

@@ -8,6 +8,8 @@ Schauen sie sich den [Diffie-Hellman-Schlüsselaustausch mit Farben an](https://
 
 War das zu einfach, versuchen sie den Algorithmus in Zahlen selber nachzurechnen.
 
+### Aufgabe 
+
 ### Aufgabe 2 - Verschlüsselte E-Mails
 
 In dieser Übung möchten wir mit GnuPG verschlüsselte und signierte E-Mails austauschen.
@@ -76,7 +78,7 @@ J6d0
 -----END PGP PUBLIC KEY BLOCK-----
 ```
 
-Öffnen sie ihr E-Mail-Programm und teilen sie ihre E-Mail-Adressen dem Nachbarn mit.
+Öffnen sie ihr E-Mail-Programm und teilen Sie ihre E-Mail-Adressen dem Nachbarn mit.
 
 #### Ablauf
 

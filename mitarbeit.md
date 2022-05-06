@@ -50,3 +50,7 @@ Ziele werden mit 🎯 markiert.
 **Hausaufgaben**
 
 Hausaufgaben werden mit 📝 markiert.
+
+## Emojies
+
+Eine Übersicht zu den Emojies gibt es hier [😉](😉%20Emojis.md).
