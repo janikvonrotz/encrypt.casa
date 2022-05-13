@@ -28,7 +28,7 @@ Im Netzwerk des Unternehmens sind oftmals unsichere Protkolle im Einsatz:
 * **SNMP**: Verwaltung von Netzwerkgeräten
 * **HTTP**: Websites ohne Zertitifikate
 
-🤔 Könnt ihr das bestätigen?
+🤔 Könnt Ihr das bestätigen?
 
 ---
 
