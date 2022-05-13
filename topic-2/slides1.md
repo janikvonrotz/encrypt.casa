@@ -118,10 +118,10 @@ Auf Windows werden Zertifikate zentral im *Certificate Manager* verwaltet.
 
 Der Zugriff auf eine Webseite ist sicher:
 
-Wenn `https://` verwendet wird.  
-↪️Die Adresse mit einem Zertifikat verknüpft ist.  
-↪️Dem Herausgeber des Zertifikats vertraut wird.  
-↪️Dem Browser vertraut wird.
+Wenn `https://` verwendet wird.\
+↪️Die Adresse mit einem Zertifikat verknüpft ist.\
+↪️Dem Herausgeber des Zertifikats vertraut wird.\
+↪️Dem Browser vertraut wird.\
 ↪️Der Browser der Root-CA vertraut.
 
 ---
@@ -133,6 +133,7 @@ Wenn `https://` verwendet wird.
 
 * [Beware of Applications Misusing Root Stores ](https://blog.mozilla.org/security/2021/05/10/beware-of-applications-misusing-root-stores/)
 * [Timeline of Certificate Authority Failures](https://sslmate.com/certspotter/failures)
+* [Stuxnet](https://de.wikipedia.org/wiki/Stuxnet)
 
 Es werden immer wieder unauthorisierte Zertifikate erstellt.
 
