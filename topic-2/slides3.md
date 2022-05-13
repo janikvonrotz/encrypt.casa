@@ -58,13 +58,11 @@ Sicherheit ist optional.
 
 ---
 
-**Kommunikationssicherheit**: Jegliche Kommunikation **soll** durch Transport Layer Secu-
-rity (TLS) beziehungsweise Secure Sockets Layer (SSL) verschlüsselt erfolgen.
+**Kommunikationssicherheit**: Jegliche Kommunikation **soll** durch Transport Layer Security (TLS) beziehungsweise Secure Sockets Layer (SSL) verschlüsselt erfolgen.
 
-**Authentifizierung**: BenutzerInnen **sollten** sich authentifizieren. **OAuth** ist hier empfohlen.
+**Authentifizierung**: BenutzerInnen **sollten** sich authentifizieren. OAuth ist hier empfohlen.
 
-**Zugriffskontrolle**: FHIR hat eine auf Sicherheitsmarkierungen basierte Infrastruktur (Se-
-curity Label) definiert, um Zugriffskontrolle **prinzipiell** zu ermöglichen. 
+**Zugriffskontrolle**: FHIR hat eine auf Sicherheitsmarkierungen basierte Infrastruktur (Security Label) definiert, um Zugriffskontrolle **prinzipiell** zu ermöglichen. 
 
 **Digitale Signaturen**: FHIR unterstützt Signaturen.
 
