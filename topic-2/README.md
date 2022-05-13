@@ -11,7 +11,7 @@ Umfang ⏱️: 4 Lektionen
 * [Repetition und Digitalzertifikate](slides0.md)
 * [Vertrauen](slides1.md)
 * [Sichere Webprotokolle](slides2.md)
-* [Unsichere Webprotokolle](../topic-1/slides3.md)
+* [Unsichere Webprotokolle](slides3.md)
 
 ## Übungen
 
