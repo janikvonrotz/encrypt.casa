@@ -461,3 +461,9 @@ Ist die Verhandlung abgeschlossen, können Zertifikate von LetsEncrypt für die 
 🎬 Lösen Sie die [Übung](übungen.md) 3.
 
 ---
+
+### Unsicherheit im Unternehmensnetzwerk
+
+Der unsicherste Ort zur Übertragung von Nachrichten ist oftmals das eigene Netzwerk.
+
+Mehr dazu in [Unsichere Webprotokolle](slides3.md).

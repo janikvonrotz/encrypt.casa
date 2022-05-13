@@ -22,6 +22,7 @@ und ein paar neue Begriffe.
 * Patientendaten im Spital 🏥
 * Login-Informationen im Browser 🔓
 * Zugang zu Geräten 💻
+
 ---
 ### Herkunft
 
@@ -71,7 +72,6 @@ und ein paar neue Begriffe.
 Hat nichts mit Bitcoin zu tun.
 
 * **Kryptographie**: Wissenschaft der Datensicherung
-
 * **Kryptoanalyse**: Wissenschaft der Analyse und Entschlüsselung von verschlüsselter Daten
 * **Kryptologie**: Umfasst Kryptographie und Kryptoanalyse
 
@@ -149,9 +149,9 @@ Die Lösung ...
 
 erfüllen heute in der Regel diese Kriterien:
 
--   Sie beruhen auf dem Kerckhoffs-Prinzip
--   Sie werden von Kryptologen (bzw. -analytikern) weltweit untersucht
--   Sie durchlaufen erfolgreich alle möglichen Angriffszenarien.
+- Sie beruhen auf dem Kerckhoffs-Prinzip
+- Sie werden von Kryptologen (bzw. -analytikern) weltweit untersucht
+- Sie durchlaufen erfolgreich alle möglichen Angriffszenarien.
 
 ---
 ### Wer untersucht die Verfahren?

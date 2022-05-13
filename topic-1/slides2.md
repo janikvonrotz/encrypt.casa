@@ -31,8 +31,10 @@ Die Wissenschaflter Whitfield Diffie und Martin Hellman haben 1976 festgestellt:
 DH-Algorithmus is komplex, dafür gibt es eine schöne Analogie mit Farben.
 
 1.  Alice und Bob einigen sich auf eine gemeinsame (öffentliche) Farbe
-2.  Jeder wählt sich zudem eine geheime weitere Farbe
+2.  Jeder wählt sich zudem eine geheime Farbe
 3.  Alice und Bob mischen sich aus ihrer geheimen und der öffentlichen Farbe eine weitere Farbe
+4. Die gemischte Farbe tauschen sie aus und mischen diese mit ihrer Geheimfarbe.
+5. Das letzte Gemisch kennen nur Alice und Bob und sonst niemand.
 
 ---
 
@@ -53,7 +55,7 @@ Verschlüsselungart für den DH-Schlüsseltausch ist die asymmetrische Verschlü
 
 ![](../asymmetrische-verschluesselung.png)
 
-Am besten gar keinen Schlüssel tauschen.
+🤔  Kann man auch mit dem privaten Schlüssel eine Nachricht verschlüsseln?
 
 ---
 ### Public und Private Key
@@ -84,7 +86,7 @@ Man unterscheidet zwischen Public und Private Key
  
  ![](../fingerabdruck.png)
 
-Gleicher Fingerabdruck heisst gleiche Person -> Wie erstellt man einen digitalen Fingerabdruck?
+🤔 Gleicher Fingerabdruck heisst gleiche Person -> Wie erstellt man einen digitalen Fingerabdruck?
 
 ---
 ### Hash-Funktionen
@@ -133,7 +135,7 @@ Wir möchten die Zahlen 79847 und 67967 mitteilen und mit Prüfsumme sichern.
 // 35
 ```
 
-Dann haben wir ein Problem.
+🤔  Was ist hier das Problem?
 
 ---
 ### Kollisionsresistenz

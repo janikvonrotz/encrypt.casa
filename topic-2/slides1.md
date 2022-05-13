@@ -32,8 +32,7 @@ Und definieren was Gültigkeit ✅ ist.
 ---
 ### Gültigkeit
 
-"Gültigkeit bedeutet Vertrauen dahingehend, daß ein öffentliches Schlüsselzer-
-tifikat dem angegebenen Eigentümer gehört."
+> Gültigkeit bedeutet Vertrauen dahingehend, daß ein öffentliches Schlüsselzertifikat dem angegebenen Eigentümer gehört.
 
 ---
 ### Direktes vertrauen

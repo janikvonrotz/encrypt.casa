@@ -60,7 +60,7 @@ Wenn wir jemanden vertrauen, vertrauen wir dem öffentlichen Schlüssel.
 ---
 ### Sicherheitsproblem mit öffentlichen Schlüsseln
 
-Ein einfacher Abfangriff:
+Ein einfacher Abfang-Angriff:
 
 ```mermaid
 graph LR;
@@ -148,14 +148,14 @@ Ist das bekannteste Format mit folgenden Daten:
 
 Es bestehen viele Unterschiede hier die wichtigsten:
 
-* **PGP-Zertifikat kann selber erstellt werden, X.509 nur duch Zertifizierungsinstanz**
+* **PGP-Zertifikat kann selber erstellt werden, X.509 nur durch Zertifizierungsinstanz**
 * X.509 unterstützen einen Namen für Schlüsseleigentümer
 * X.509 unterstützt eine Unterschrift zur Bestätigung der Gültigkeit
 
 ---
 ### Übungen
 
-🎬 Lösen Sie die [Übung](übungen.md) 1 in Breakout-Rooms.
+🎬 Lösen Sie die [Übung](übungen.md) 1 in Gruppen oder Breakout-Rooms.
 
 ---
 ### Gültigkeit und Vertrauen

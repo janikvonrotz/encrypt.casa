@@ -53,6 +53,8 @@ Im Alltag wenden wir das bereits an.
 * Nachricht in Umschlag stecken (Integrität)
 * Unterschrift auf Dokument (Authentizität, Verbindlichkeit)
 
+🤔 Kennt ihr noch weitere Beispiele für die Sicherheitsziele?
+
 ---
 ### Massnahmen im Rechenzetrum
 

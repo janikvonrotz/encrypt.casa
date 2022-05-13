@@ -41,7 +41,7 @@ E-Mails werden heute in den meisten Fällen sicher übertragen. Alle anderen [Si
 
 [![](../sicher-mailen.png)](https://raw.githubusercontent.com/janikvonrotz/encrypt.casa/main/sicher-mailen.png)
 
-Wie gelangt Alice an den öffentlichen Schlüssel von Bob?
+🤔 Wie gelangt Alice an den öffentlichen Schlüssel von Bob?
 
 ---
 ### Direktes Vertrauen
