@@ -76,12 +76,12 @@ curity Label) definiert, um Zugriffskontrolle **prinzipiell** zu ermöglichen.
 
 Kurze Analyse der Schutzziele bezl. FHIR:
 
-| Schutzziel         | Status                                         |
-| ------------------ | ---------------------------------------------- |
-| Vertraulichkeit 😈 | Client ist deklariert, aber nicht kontrolliert |
-| Integrität 💎      | Nachrichten werden signiert                    |
-| Authentitzität 🙋‍ | Authentisierung mit OAuth                      |
-| Verbindlichkeit 📝 | Gelöst mit Protokollierung                     |
+| Schutzziel         | Status                               |
+| ------------------ | ------------------------------------ |
+| Vertraulichkeit 😈 | Nachrichten können mitgelesen werden |
+| Integrität 💎      | Nachrichten werden signiert          |
+| Authentitzität 🙋‍ | Authentisierung mit OAuth            |
+| Verbindlichkeit 📝 | Gelöst mit Protokollierung           |
 
 ---
 
