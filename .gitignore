@@ -3,3 +3,6 @@ default.vim
 node_modules
 .vuepress/dist
 .vercel
+.temp
+.cache
+sitemap.txt
