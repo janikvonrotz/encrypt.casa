@@ -10,7 +10,7 @@ module.exports = {
         ['link', { rel: 'icon', href: '/icon.png' }]
     ],
     theme: defaultTheme({
-        logo: 'logo.png',
+        logo: 'icon.png',
         repo: 'janikvonrotz/encrypt.casa',
         docsBranch: 'main',
         editLink: true,
