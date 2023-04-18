@@ -6,6 +6,9 @@ module.exports = {
     lang: 'de-CH',
     title: 'encrypt.casa',
     description: 'Kryptographie und Verschlüsselung',
+    head: [
+        ['link', { rel: 'icon', href: '/icon.png' }]
+    ],
     theme: defaultTheme({
         logo: 'logo.png',
         repo: 'janikvonrotz/encrypt.casa',
