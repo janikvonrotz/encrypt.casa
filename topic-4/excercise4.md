@@ -39,7 +39,7 @@ Anschliessend unterschreiben Sie den Vertrag mit ihrem eigenen Schlüssel.
 * Laden Sie die PDF-Datei herunter: [Acme-NDA.pdf](https://github.com/janikvonrotz/encrypt.casa/raw/main/Acme-NDA.pdf)
 * Und die Unterschrift-Datei: [Acme-NDA.pdf.sig](https://github.com/janikvonrotz/encrypt.casa/raw/main/Acme-NDA.pdf.sig)
 
-![](../acme-pdf-sig.png)
+![](./acme-pdf-sig.png)
 
 * Versuchen Sie die PDF-Datei zu verfizieren. Es sollte ohne Public Key nicht möglich sein.
 
@@ -47,7 +47,7 @@ Anschliessend unterschreiben Sie den Vertrag mit ihrem eigenen Schlüssel.
 
 * Laden Sie den Public Key herunter: [Adobe-Public-Key.asc](https://github.com/janikvonrotz/encrypt.casa/raw/main/Adobe-Public-Key.asc)
 
-![](../adobe-public-key.png)
+![](./adobe-public-key.png)
 
 * Importieren Sie den Public Key in ihren Schlüsselbund
 * Verifizieren Sie die PDF-Datei erneut.
