@@ -11,7 +11,7 @@ im Netzwerk des Unternehmens.
 
 Bei der Arbeit bewegt man sich meistens im Local Area Network (LAN) des Unternehmens.
 
-![](../wan-business-lan.png)
+![](./wan-business-lan.png)
 
 
 🤔 Welcher Datenaustausch ist bei eurem Unternehmen sicherer?

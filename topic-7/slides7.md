@@ -10,7 +10,7 @@ und wie diese funktionieren.
 
 Wenn wir eine Webseite aufrufen, dauert es weniger als eine Sekunde.
 
-![](../example-com-firefox.png)
+![](./example-com-firefox.png)
 
 In dieser Sekunde passiert jedoch sehr viel.
 
@@ -36,7 +36,7 @@ graph LR;
 
 Eine Unified Resource Locater (URL) wird in der Adressleiste des Browsers eingegeben.
 
-![](../url.png)
+![](./url.png)
 
 ---
 ### IP-Adresse
@@ -44,7 +44,7 @@ Eine Unified Resource Locater (URL) wird in der Adressleiste des Browsers eingeg
 Im Internet sind Geräte anhand der IP-Adresse erreichbar.  
 ↪️ Für eine Verbindungsaufnahme braucht es die IP-Adresse des Servers.
 
-![](../client-server-kommunikation.png)
+![](./client-server-kommunikation.png)
 
 ---
 ### Eigene IP-Adresse mit Python
@@ -68,7 +68,7 @@ Damit man sich nicht IP-Adressen merken muss, kann einer IP-Adresse ein sprechen
 
 Der Domain-Name-System (DNS) Server verwaltet die Zuordnung Hostname und IP-Adresse.
 
-![](../dns-lookup.png)
+![](./dns-lookup.png)
 
 ---
 ### DNS mit Python
@@ -86,12 +86,12 @@ Der Browser kommuniziert mit  dem HyperText Transfer Protocol (HTTP). Das Protok
 ---
 ### HTTP Request
 
-![](../http-request.png)
+![](./http-request.png)
 
 ---
 ### HTTP Response
 
-![](../http-response.png)
+![](./http-response.png)
 
 ---
 ### HTTPS
@@ -104,7 +104,7 @@ Der HTTP-Austausch wird hierbei mit einem Verschlüsselungsprotokoll geschützt:
 
 ---
 
-![](../tls-ssl.png)
+![](./tls-ssl.png)
 
 ---
 ### SSL/TLS
@@ -134,7 +134,7 @@ Neue Angriffe -> Neue Sicherheitsprobleme -> Neue Algorithmen -> Neue Version
 ---
 ### TLS-Handshake
 
-![](../tls-handshake.png)
+![](./tls-handshake.png)
 
 ---
 ### TLS-Handshake mit Curl
@@ -427,7 +427,7 @@ Let’s Encrypt ist eine **Zertifizierungsstelle**, die Ende 2015 in Betrieb geg
 ---
 ### LetsEncrypt Hierarchy
 
-![](../letsencrypt-ca.png)
+![](./letsencrypt-ca.png)
 
 ---
 ### LetsEncrypt Challenge
@@ -439,22 +439,22 @@ Ist die Verhandlung abgeschlossen, können Zertifikate von LetsEncrypt für die 
 ---
 ### HTTP Challenge
 
-![](../letsencrypt3.png)
+![](./letsencrypt3.png)
 
 ---
 ### DNS Challenge
 
-![](../letsencrypt4.png)
+![](./letsencrypt4.png)
 
 ---
 ### Challenge ausführen
 
-![](../letsencrypt1.png)
+![](./letsencrypt1.png)
 
 ---
 ### Zertifikat abholen
 
-![](../letsencrypt2.png)
+![](./letsencrypt2.png)
 
 ---
 ### Aufgaben

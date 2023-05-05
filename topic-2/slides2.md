@@ -41,7 +41,7 @@ und ein paar neue Begriffe.
 ---
 ### Funktionsweise
 
-![](../verschluesselung-und-entschluesselung.png)
+![](./verschluesselung-und-entschluesselung.png)
 
 ---
 ### Begriffe
@@ -79,7 +79,7 @@ Hat nichts mit Bitcoin zu tun.
 ---
 ### Wo ist der Schlüssel?
 
-![symmentrische-verschluesselung](../symmentrische-verschluesselung.png)
+![symmentrische-verschluesselung](symmentrische-verschluesselung.png)
 
 ℹ️  Der gleiche Schlüssel wird für Ver- und Entschlüsselung verwendet.
 
@@ -88,14 +88,14 @@ Hat nichts mit Bitcoin zu tun.
 
 Es handelt sich hierbei um die symmetrische Verschlüsselung.
 
-![](../symmetric-vs-asymmetric.png)
+![](./symmetric-vs-asymmetric.png)
 
 ---
 ### Ein Beispiel mit Cäsar
 
 Beispiel anhand einer Ersetzungsschiffre.
 
-![](../caesar.png)
+![](./caesar.png)
 
 Die Position der Buchstaben wird verschoben.
 

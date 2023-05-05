@@ -44,7 +44,7 @@ Ziel ist es, dass Alice und Bob einen **gemeinsamen** Geheimschlüssel haben.
 ---
 ### Veranschaulichung DH
 
-[![](../diffie-hellmann-farbe.png)](https://raw.githubusercontent.com/janikvonrotz/encrypt.casa/main/diffie-hellmann-farbe.png)
+[![](./diffie-hellmann-farbe.png)](https://raw.githubusercontent.com/janikvonrotz/encrypt.casa/main/diffie-hellmann-farbe.png)
 
 ---
 ### Funktionsweise DH
@@ -54,7 +54,7 @@ Verschlüsselungart für den DH-Schlüsseltausch ist die asymmetrische Verschlü
 ---
 ### Asymmetrische Verschlüsselung
 
-![](../asymmetrische-verschluesselung.png)
+![](./asymmetrische-verschluesselung.png)
 
 🤔  Kann man auch mit dem privaten Schlüssel eine Nachricht verschlüsseln?
 
@@ -85,7 +85,7 @@ Man unterscheidet zwischen Public und Private Key
 
  Fingerabdrücke werden benutzt, um Personen mit wenigen Eigenschaften zu identifizieren.
  
- ![](../fingerabdruck.png)
+![](./fingerabdruck.png)
 
 🤔 Gleicher Fingerabdruck heisst gleiche Person -> Wie erstellt man einen digitalen Fingerabdruck?
 
@@ -122,7 +122,7 @@ Welche *Secure Hash Algorithms* (SHA) gibt es?
 
 > Bei einer Einwegfunktion ist es praktisch unmöglich, aus einem möglichen Zielwert einen Ausgangswert so zu bestimmen.
 
-![](../einbahnstrasse.png)
+![](./einbahnstrasse.png)
 
 ---
 ### Quersumme als Hash-Funktion

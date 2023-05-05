@@ -14,10 +14,10 @@ Vergleichen Sie den Browser-Fingerabdruck mit dem Fingerabdruck in Kleopatra. St
 
 Hinweis: In Windows kann das Root-Zertifikat wie folgt angezeigt werden.
 
-![](../ansicht-edge.png)
+![](./ansicht-edge.png)
 
 Das Zertifikat ist auch im Zertifikats-Manager verfügbar.
 
-![](../ansicht-zertifikate.png)
+![](./ansicht-zertifikate.png)
 
 Aktuell ist unklar wie man Zertifikat exportieren und mit Kleopatra importieren kann.

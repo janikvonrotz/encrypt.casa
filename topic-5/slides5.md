@@ -43,7 +43,7 @@ Nachricht mit privatem Schlüssel verschlüsseln.
 
 🤔 Wie weiss ich, dass meine Web-Verbindung verschlüsselt ist?
 
-🙋 ![](../https.png)
+🙋 ![](./https.png)
 
 🤔 Wie weiss ich, dass ich auf der richtigen Seite bin?
 
@@ -87,19 +87,19 @@ Ein Digitalzertifikat besteht aus folgenden Elementen:
 
 ---
 
-![](../bestandteile-pgp-zertifikat.png)
+![](./bestandteile-pgp-zertifikat.png)
 
 ---
 ### Digitale Unterschrift
 
-![](../digitale-unterschrift.png)
+![](./digitale-unterschrift.png)
 
 ---
 ### Lebenszyklus eines Digitalzertifikats
 
 Zertifiakte werden ausgestellt, erneuert, unterschrieben, zurückgenommen, validiert, ...
 
-![](../certificate-life-cycle.png)
+![](./certificate-life-cycle.png)
 
 ---
 ### Zertifikatsformate
@@ -120,7 +120,7 @@ Enthält diese Informationen:
 
 ---
 
-![](../pgp-zertifikat.png)
+![](./pgp-zertifikat.png)
 
 ---
 
@@ -142,7 +142,7 @@ Ist das bekannteste Format mit folgenden Daten:
 
 ---
 
-![](../x.509-zertifikat.png)
+![](./x.509-zertifikat.png)
 
 ---
 ### Unterschiede PGP und X.509

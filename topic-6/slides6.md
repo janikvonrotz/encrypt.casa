@@ -11,7 +11,7 @@ und Gültigkeit.
 
 Besucht man <https://example.com> und klickt auf das Schloss, sieht man folgendes:
 
-![](../verified-by-digicert.png)
+![](./verified-by-digicert.png)
 
 ---
 
@@ -40,7 +40,7 @@ Und definieren was Gültigkeit ✅ ist.
 
 Benutzer vertraut auf die Gültigkeit des Schlüssels, da dessen Herkunft bekannt ist.
 
-![direktes-vertrauen](../direktes-vertrauen.png)
+![direktes-vertrauen](../topic-4/direktes-vertrauen.png)
 
 ---
 ### Vertrauenshierarchie
@@ -49,7 +49,7 @@ Im hierarchischen Modell gibt es eine Anzahl Root-Zertifikate (Stamm 🌳). Davo
 
 ---
 
-![](../vertrauenshierarchie.png)
+![](./vertrauenshierarchie.png)
 
 ---
 ### Web of Trust
@@ -60,7 +60,7 @@ Händeschütteln -> Schlüssel austauschen -> Es entsteht ein Netz aus Vertrauen
 
 ---
 
-![](../web-of-trust.png)
+![](./web-of-trust.png)
 
 ---
 ### Gültigkeit überprüfen
@@ -82,7 +82,7 @@ Eine weitere Möglichkeit ist die Prüfung durch Dritte -> Zertifizierungsinstan
 
 Dazu die Hierarchie:
 
-![root-ca-hierarchy](../root-ca-hierarchy.png)
+![root-ca-hierarchy](root-ca-hierarchy.png)
 
 ---
 ### Zertifikat verifzieren
@@ -93,7 +93,7 @@ Dazu die Hierarchie:
 
 ---
 
-![](../zertifikat-verifizierung.png)
+![](./zertifikat-verifizierung.png)
 
 ---
 
@@ -107,7 +107,7 @@ Wenn man eine Browser auf dem Computer installiert oder aktualisiert, wird immer
 
 Auf Windows werden Zertifikate zentral im *Certificate Manager* verwaltet.
 
-![](../certificate-manager.png)
+![](./certificate-manager.png)
 
 ---
 ### Aufgaben

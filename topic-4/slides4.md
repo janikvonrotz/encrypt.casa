@@ -15,7 +15,7 @@ ist ein Werkzeug zum sicheren Austausch von Nachrichten.
 ---
 ### Hybride Verschlüsselung
 
-![](../hybride-Verschluesselung.png)
+![](./hybride-Verschluesselung.png)
 
 ---
 
@@ -26,7 +26,7 @@ ist ein Werkzeug zum sicheren Austausch von Nachrichten.
 ---
 ### PGP-Entschlüsselung
 
-![](../pgp-entschluesselung.png)
+![](./pgp-entschluesselung.png)
 
 Der Sitzungsschlüssel wird mit dem privaten Schlüssel entschlüsselt.
 
@@ -40,7 +40,7 @@ E-Mails werden heute in den meisten Fällen sicher übertragen. Alle anderen [Si
 ---
 ### E-Mail ist fast unsicher
 
-[![](../sicher-mailen.png)](https://raw.githubusercontent.com/janikvonrotz/encrypt.casa/main/sicher-mailen.png)
+[![](./sicher-mailen.png)](https://raw.githubusercontent.com/janikvonrotz/encrypt.casa/main/sicher-mailen.png)
 
 🤔 Wie gelangt Alice an den öffentlichen Schlüssel von Bob?
 
@@ -49,7 +49,7 @@ E-Mails werden heute in den meisten Fällen sicher übertragen. Alle anderen [Si
 
 Damit sicher kommuniziert werden kann, braucht es ein direktes Vertrauen.
 
-![](../direktes-vertrauen.png)
+![](./direktes-vertrauen.png)
 
 ---
 
@@ -82,7 +82,7 @@ Beim Verschlüssel wird mit **öffentlichen** Schlüssel des Empfängers die Nac
 ---
 ### Digitale Signatur
 
-![](../digitale-signatur.png)
+![](./digitale-signatur.png)
 
 ---
 ### Aufgaben

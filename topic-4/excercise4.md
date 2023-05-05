@@ -22,7 +22,7 @@ Algorithm: `RSA & RSA`
 
 * Setzen Sie ein Passwort für den privaten Schlüssel
 
-![](../new-key.png)
+![](./new-key.png)
 
 #### Ablauf
 
@@ -43,7 +43,7 @@ Anschliessend unterschreiben Sie den Vertrag mit ihrem eigenen Schlüssel.
 
 * Versuchen Sie die PDF-Datei zu verfizieren. Es sollte ohne Public Key nicht möglich sein.
 
-![](../cleopatra-verification-failed.png)
+![](./cleopatra-verification-failed.png)
 
 * Laden Sie den Public Key herunter: [Adobe-Public-Key.asc](https://github.com/janikvonrotz/encrypt.casa/raw/main/Adobe-Public-Key.asc)
 
@@ -52,10 +52,10 @@ Anschliessend unterschreiben Sie den Vertrag mit ihrem eigenen Schlüssel.
 * Importieren Sie den Public Key in ihren Schlüsselbund
 * Verifizieren Sie die PDF-Datei erneut.
 
-![](../cleopatra-not-trusted.png)
+![](./cleopatra-not-trusted.png)
 * Signieren Sie den importierten Schlüssels und verifizieren Sie die PDF-Datei erneut.
 
-![](../cleopatra-signed.png)
+![](./cleopatra-signed.png)
 
 * Signieren Sie die PDF-Datei mit ihrem eigenen Schlüssel.
 

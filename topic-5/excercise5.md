@@ -6,7 +6,7 @@
 
 Wir schauen uns ein Zertifkat an. Öffnen Sie die Adresse <https://example.com> in ihrem Browser und schauen Sie sich das Zertifikat an. Hier das Vorgehen im Firefox:
 
-![firefox-zertifikat-anzeigen](../firefox-zertifikat-anzeigen.gif)
+![firefox-zertifikat-anzeigen](firefox-zertifikat-anzeigen.gif)
 
 Beantworten Sie die folgenden Fragen:
 
