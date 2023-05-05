@@ -24,4 +24,4 @@ Unterrichtsmaterial und Artikel.
 
 ## Dokumente
 
-Der privat Schlüssel zu [Übung](topic-1/übungen.md) 2: [Adobe-Private-Key.asc](https://github.com/janikvonrotz/encrypt.casa/raw/main/Adobe-Private-Key.asc)
+Der privat Schlüssel zu [Aufgabe 1 - Elektronische Unterschrift](topic-4/excercise4.md#Aufgabe%201%20-%20Elektronische%20Unterschrift): [Adobe-Private-Key.asc](https://github.com/janikvonrotz/encrypt.casa/raw/main/Adobe-Private-Key.asc)
