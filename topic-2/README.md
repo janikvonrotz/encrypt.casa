@@ -1,18 +1,13 @@
-# Lektion 2 - Zertifikate und Protokolle
+# Thema 2 - Geschichte der Kryptographie
 
-Umfang ⏱️: 4 Lektionen
+Umfang ⏱️: 1 Lektion
 
-[Alle Unterlagen anzeigen](https://github.com/janikvonrotz/encrypt.casa/tree/main/topic-1)
+[Alle Unterlagen anzeigen](https://github.com/janikvonrotz/encrypt.casa/tree/main/topic-2)
 
-## Slides
+## [Slides](slides2.md)
 
-Übersicht der Slides:
+[Hier](slides2.md) geht es zu den Slides.
 
-* [Repetition und Digitalzertifikate](slides0.md)
-* [Vertrauen](slides1.md)
-* [Sichere Webprotokolle](slides2.md)
-* [Unsichere Webprotokolle](slides3.md)
+## [Übungen](excercise2.md)
 
-## Übungen
-
-Für diesen Unterricht gibt es [Übungen](übungen.md).
+[Hier](excercise2.md) geht es zu den Übungen.

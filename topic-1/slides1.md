@@ -1,165 +1,65 @@
-## Geschichte der Kryptographie
+# Slides Thema 1
+## Sicherheitsprobleme
 
-und ein paar neue Begriffe.
+und wie man diese behebt.
 
-🎯 Sie verstehen was Kryptographie und die symmetrische Verschlüsselung ist.
-
----
-### Alltäglich
-
-> Wir begenen Kryptographie jeden Tag.
-
-* Zahlung Kreditkarte 💳
-* Verluste beim Bitcoin-Traden 📉
-* Mit Wifi verbinden 📶
-* Aufruf einer Website 🖥️
+🎯 Sie verstehen die Sicherheitsziele des Nachrichtenaustausches.
 
 ---
-### Bei der Arbeit umso wichtiger
+### Nachrichtenaustausch
 
-> Digitale Informationen müssen geschützt werden.
+(A)lice schickt eine Nachricht an (B)ob.
 
-* Patientendaten im Spital 🏥
-* Login-Informationen im Browser 🔓
-* Zugang zu Geräten 💻
+```mermaid
+graph LR;
+    A[Alice]-->|Hi Bob|B[Bob];
+```
 
----
-### Herkunft
+(E)ve versucht die Nachricht abzuhören und zu verändern.
 
-> Kryptographie ist eine Entdeckung der Mathematik und ist heute allgegenwärtig.
+```mermaid
+graph LR;
+    A[Alice]-->|Hi Bob|E[Eve]-->|Pls give money|B[Bob];
+```
 
----
-### Viele Fragen
-
-* Wie funktioniert Kryptographie?
-* Warum ist Kryptographie wichtig?
-* Welche Arten von Kryptographie werden heute verwendet?
-* Wie wird Kryptographie in der Sicherheit eingesetzt?
-* Wie kann Kryptographie von durchschnittlichen Benutzern verwendet werden?
+🧠 Nice to know: Der Name Eve kommt von [Eavesdropping](https://en.wikipedia.org/wiki/Eavesdropping).
 
 ---
-### Funktionsweise
+### Sicherheitsprobleme beim Austausch
 
-![](../verschluesselung-und-entschluesselung.png)
-
----
-### Begriffe
-
-**Verschlüsselung** 🔒: Herstellung von Klartext-Nachricht in eine Geheimtext-Nachricht (nicht lesbare).
-
-**Entschlüsselung** 🔓: Verwendung eines geheimen Schlüssels zur Entschlüsselung eines Geheimtext.
-
-**Chiffre** 🛡️: Verwendeter Algorithmus zur Verschlüsselung und Entschlüsselung einer Nachricht.
+* **Eve** sollte die Nachricht nicht mitlesen können (Vertraulichkeit)
+* **Eve** sollte die Nachricht nicht verändern können (Integriät)
+* **Bob** sollte sicher sein, dass Nachricht von **Alice** stimmt (Authentizität)
+* **Alice** sollte nicht abstreiten könne, dass die Nachricht von ihr ist (Verbindlichkeit)
 
 ---
-### Vor dem Computer
+### Sicherheitsziele
 
-* 1500 v. Chr. Tontafeln aus Mesopotamien weisen Anzeichen von Verschlüsselung auf
-* 500 bis 600 v. Chr. verwenden hebräeische Gelehrte eine alphabetische Substitutionschiffre (A = Y, B = W, C = G usw.)
+Daraus leiten sich diese Ziele ab:
 
----
-### In Kriegszeiten besonders gefragt
-
-* Im 18. Jahrundert verwenden britische Streitkräfte Formen der Kryptographie zur Kommunikation zwischen Generälen
-* Im Zweiten Weltkrieg wurden mechanische und elektromechanische Chiffriermaschinen eingesetzt (Enigma-Maschine)
-* Alan Turing hat unter anderem Techniken entwickelt um deutsche Chiffren zu brechen
-
-🧠 Nice to know: [GNU/Linux.ch - Was ist eine Turing Maschine?](https://gnulinux.ch/was-ist-eine-turing-maschine)
-
----
-### Krypto-Begriffe
-
-Hat nichts mit Bitcoin zu tun.
-
-* **Kryptographie**: Wissenschaft der Datensicherung
-* **Kryptoanalyse**: Wissenschaft der Analyse und Entschlüsselung von verschlüsselter Daten
-* **Kryptologie**: Umfasst Kryptographie und Kryptoanalyse
-
----
-### Wo ist der Schlüssel?
-
-![symmentrische-verschluesselung](../symmentrische-verschluesselung.png)
-
-ℹ️  Der gleiche Schlüssel wird für Ver- und Entschlüsselung verwendet.
-
----
-### Symmetrische Verschlüsselung
-
-Es handelt sich hierbei um die symmetrische Verschlüsselung.
-
-![](../symmetric-vs-asymmetric.png)
-
----
-### Ein Beispiel mit Cäsar
-
-Beispiel anhand einer Ersetzungsschiffre.
-
-![](../caesar.png)
-
-Die Position der Buchstaben wird verschoben.
-
----
-### Cäsar mit Python
-
-<iframe src="https://trinket.io/embed/python3/50ceaaf323" width="100%" height="356" frameborder="0" marginwidth="0" marginheight="0" allowfullscreen></iframe>
-
----
-### Stärken und Schwächen
-
-der symmetrischen Verschlüsselung:
-
-➕ Ver- und Entschlüssel ist sehr schnell  
-➖ Nicht geeignet für Daten, die übertragen werden
+* **Vertraulichkeit** 😈: Die Nachricht, die man erhält, ist nicht von Unbefugten gelesen worden.
+* **Integrität** 💎: Die Nachricht, die man erhält, ist nicht manipuliert worden.
 
 ---
 
-* Der Sender und Empfänger müssen den Schlüssel kennen -> Austausch über separaten Kanal -> Gefahr von Zugriff durch Unbefugte
-* Geeignet für Verschlüsselung von lokaler Datenbank, Festplatte oder Daten auf Smartphone
+* **Authentizität** 🙋‍: Die Nachricht, die man erhält, stammt wirklich von der Person, die als Absender angegeben ist.
+* **Verbindlichkeit** 📝: Der Urheber kann nachträglich nicht bestreiten, die Nachricht verfasst zu haben.
 
 ---
-### Brute-Force Attacke
+### Massnahmen im Alltag
 
-Die Cäsar-Verschlüsselung kann relativ einfach geknackt werden:
+Im Alltag wenden wir das bereits an.
 
-<iframe src="https://trinket.io/embed/python3/2805b9db5b" width="100%" height="356" frameborder="0" marginwidth="0" marginheight="0" allowfullscreen></iframe>
+* Nachricht mit Signal ist End-2-End-verschlüsselt (Vertraulichkeit)
+* Nachricht in Umschlag stecken (Integrität)
+* Unterschrift auf Dokument (Authentizität, Verbindlichkeit)
 
-ℹ️ Bei Brute-Force Attacke werden zufällige Schlüssel generiert und ausprobiert.
-
----
-### Sicherheit
-
-Verschlüsselungsverfahren geheim gehalten oder veröffentlichen?
-
-> Verschleierung ist keine Sicherheit
-
-ℹ️ "security by obscurity" hat sich als untauglich erwiesen.
-
-Die Lösung ...
+🤔 Kennt ihr noch weitere Beispiele für die Sicherheitsziele?
 
 ---
-### Das von Prinzip von Kerckhoffs
+### Massnahmen im Rechenzetrum
 
-* Prinzip zur Entwicklung von Chiffrierverfahren
-* Entwickelt vom niederländischen Kryptologen Kerckhooffs
+Dieselben Sicherheitsziele lassen sich für Rechnernetze realisieren.
 
-> Die Sicherheit eines Chiffriersystems darf nicht davon abhängen, ob das benutzte Verfahren zum Ver- und Entschlüsseln bekannt ist. Die Sicherheit soll nur auf der Geheimhaltung von Schlüsseln beruhen.
-
----
-### Gute kryptografische Verfahren
-
-erfüllen heute in der Regel diese Kriterien:
-
-- Sie beruhen auf dem Kerckhoffs-Prinzip
-- Sie werden von Kryptologen (bzw. -analytikern) weltweit untersucht
-- Sie durchlaufen erfolgreich alle möglichen Angriffszenarien.
-
----
-### Wer untersucht die Verfahren?
-
- * National Institute of Standards and Technology (NIST)
- * ISO, RFC, IEEE
-
----
-### Als Nächstes
-
-Weiter geht es mit [Bausteine der Kryptographie](slides2.md).
+* Moderne Verschlüsselung (Vertraulichkeit)
+* Digitale Signatur (Integrität, Authentitzität, Verbindlichkeit)

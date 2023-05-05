@@ -1,14 +1,8 @@
-## Übungen
+# Übungen Thema 4
 
-zu [Thema 1 - Einführung in die Kryptographie](README.md).
+## Aufgaben
 
-### Aufgabe 1 - Der Algorithmus in Farbe
-
-Schauen Sie sich den [Diffie-Hellman-Schlüsselaustausch mit Farben an](https://www.inf-schule.de/kryptologie/modernechiffriersysteme/exkurs_diffie). Verändern Sie die Inputs und versuchen Sie den Vorgang zu verstehen.
-
-War das zu einfach, versuchen Sie den Algorithmus selber nachzurechnen.
-
-### Aufgabe 2 - Elektronische Unterschrift
+### Aufgabe 1 - Elektronische Unterschrift
 
 In dieser Aufgabe möchten wir eine PDF-Datei elektronisch signieren und die Unterschrift von ein anderen Person verifizieren.
 
@@ -65,7 +59,7 @@ Anschliessend unterschreiben Sie den Vertrag mit ihrem eigenen Schlüssel.
 
 * Signieren Sie die PDF-Datei mit ihrem eigenen Schlüssel.
 
-### Aufgabe 3 - Verschlüsselte E-Mails
+### Aufgabe 2 - Verschlüsselte E-Mails
 
 In dieser Übung möchten wir mit GnuPG verschlüsselte und signierte E-Mails austauschen.
 
@@ -127,23 +121,3 @@ Nun kann Alice irgendeine Nachricht mit dem öffentlichen Schlüssel von Bob ver
 🎬 Führen Sie Ablauf  nun selber durch. Falls Sie niemanden zum anschreiben haben, versuchen Sie es mit <adele@gnupp.de>. Das ist ein Bot und sollte den geschilderten Ablauf unterstützen.
 
 🎬 Führen Sie Ablauf nochmals durch, jedoch signieren Sie die Nachricht, statt Sie zu verschlüsseln.
-
-### Aufgabe 4 - Sniffing mit Wireshark
-
-Für diese Aufgabe brauchen wir [Wireshark](https://www.wireshark.org/download.html).
-
-Mit Wireshark kann man im verbunden Netzwerk die übertragenenen Pakete mitlesen. Natürlich nur so fern die unverschlüsselt sind.
-
-Installieren Sie das Programm und starten Sie einen *Capture.*
-
-Der Dozent wird auf seinem Linux-Gerät einen UDP-Server starten
-
-`nc -luk 12101`
-
-Anschliessend wird die Dozentin eine UDP-Nachricht verschicken.
-
-`echo -n "some dark secret" | nc -u -b 255.255.255.255 12101`
-
-Können Sie die Nachricht mitlesen? Um die Nachricht besser zu filtern können Sie diesen Filter verwenden:
-
-`udp.port == 12101`

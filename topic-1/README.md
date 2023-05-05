@@ -1,18 +1,13 @@
-# Thema 1 - Einführung in die Kryptographie
+# Thema 1 - Sicherheitsziele
 
-Umfang ⏱️: 4 Lektionen
+Umfang ⏱️: 1 Lektion
 
 [Alle Unterlagen anzeigen](https://github.com/janikvonrotz/encrypt.casa/tree/main/topic-1)
 
-## Slides
+## [Slides](slides1.md)
 
-Übersicht der Slides:
+[Hier](slides1.md) geht es zu den Slides.
 
-* [Sicherheitsziele](slides0.md)
-* [Geschichte der Kryptographie](slides1.md)
-* [Bausteine der Kryptographie](slides2.md)
-* [GnuPG](slides3.md)
+## [Übungen](excercise1.md)
 
-## Übungen
-
-Für diesen Unterrichts gibt es [Übungen](übungen.md).
+[Hier](excercise1.md) geht es zu den Übungen.

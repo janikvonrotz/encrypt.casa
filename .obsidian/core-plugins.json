@@ -4,10 +4,13 @@
   "switcher",
   "graph",
   "backlink",
+  "canvas",
   "page-preview",
   "note-composer",
   "command-palette",
+  "bookmarks",
   "markdown-importer",
+  "outline",
   "word-count",
   "slides",
   "file-recovery"

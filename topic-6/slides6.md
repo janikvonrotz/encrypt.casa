@@ -1,3 +1,4 @@
+# Slides Thema 6
 ## Vertrauen
 
 und Gültigkeit.
@@ -109,9 +110,9 @@ Auf Windows werden Zertifikate zentral im *Certificate Manager* verwaltet.
 ![](../certificate-manager.png)
 
 ---
-### Übungen
+### Aufgaben
 
-🎬 Lösen Sie die [Übung](übungen.md) 2.
+🎬 Lösen Sie die [Aufgaben](excercise6.md#Aufgaben) 1 in Gruppen oder Breakout-Rooms.
 
 ---
 ### Zusammenfassung
@@ -142,4 +143,4 @@ Es werden immer wieder unauthorisierte Zertifikate erstellt.
 
 Unabhängig davon ist aber die Verbindung mit einer Webseite ziemlich sicher.
 
-Mehr dazu in [Sichere Webprotokolle](slides2.md).
+Mehr dazu in [Sichere Webprotokolle](../topic-7/slides7.md).

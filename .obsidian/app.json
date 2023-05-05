@@ -4,5 +4,7 @@
   "showUnsupportedFiles": true,
   "newLinkFormat": "relative",
   "legacyEditor": false,
-  "livePreview": true
+  "livePreview": true,
+  "showFrontmatter": true,
+  "showInlineTitle": false
 }

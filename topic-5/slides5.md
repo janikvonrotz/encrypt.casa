@@ -1,3 +1,4 @@
+# Slides Thema 5
 ## Repetition und Digitalzertifikate
 
 Was wir wissen sollten und neu dazu kommt.
@@ -153,13 +154,11 @@ Es bestehen viele Unterschiede hier die wichtigsten:
 * X.509 unterstützt eine Unterschrift zur Bestätigung der Gültigkeit
 
 ---
-### Übungen
+### Aufgaben
 
-🎬 Lösen Sie die [Übung](übungen.md) 1 in Gruppen oder Breakout-Rooms.
+🎬 Lösen Sie die [Aufgaben](excercise5.md#Aufgaben) 1 in Gruppen oder Breakout-Rooms.
 
 ---
 ### Gültigkeit und Vertrauen
 
 🤔 Wie kann man nun die Gültigkeit eines Zertifikats verfizieren?
-
-Nächstes Kapitel: [Vertrauen](slides1.md)

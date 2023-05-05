@@ -1,3 +1,4 @@
+# Slides Thema 3
 ## Bausteine der Kryptographie
 
 und wie man Sie anwendet.
@@ -75,9 +76,9 @@ Man unterscheidet zwischen Public und Private Key
 ➕ Kein sicherer Schlüsselaustausch nötig
 
 ---
-### Übungen
+### Aufgaben
 
-🎬 Lösen Sie die [Übung](übungen.md) 1.
+🎬 Lösen Sie die [Aufgaben](excercise3.md#Aufgaben) 1 in Gruppen oder Breakout-Rooms.
 
 ---
 ### Fingerabdruck beim Menschen
@@ -158,8 +159,3 @@ Mit Zweiteren ist es fast unmöglich zweimal der Gleiche Ausgangswert zu finden.
 von Hashes:
 * Passwörter werden als Hash gespeichert
 * Dokumente, Dateien verifizieren (Integrität 💎)
-
----
-### Als Nächstes
-
-Weiter geht es mit [GnuPG](slides3.md).
