@@ -40,7 +40,7 @@ Und definieren was Gültigkeit ✅ ist.
 
 Benutzer vertraut auf die Gültigkeit des Schlüssels, da dessen Herkunft bekannt ist.
 
-![direktes-vertrauen](../topic-4/direktes-vertrauen.png)
+![](./direktes-vertrauen.png)
 
 ---
 ### Vertrauenshierarchie
@@ -82,7 +82,7 @@ Eine weitere Möglichkeit ist die Prüfung durch Dritte -> Zertifizierungsinstan
 
 Dazu die Hierarchie:
 
-![root-ca-hierarchy](root-ca-hierarchy.png)
+![](./root-ca-hierarchy.png)
 
 ---
 ### Zertifikat verifzieren
