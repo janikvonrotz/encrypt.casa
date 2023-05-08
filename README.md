@@ -11,14 +11,14 @@ Unterrichtsmaterial erstellt von [Janik von Rotz](https://janikvonrotz.ch/).
 
 ## Lektionen
 
-**Einführung in die Kryptographie**
+### Einführung in die Kryptographie
 
 1. [Sicherheitsziele](topic-1/README.md)
 2. [Geschichte der Kryptographie](topic-2/README.md)
 3. [Bausteine der Kryptographie](topic-3/README.md)
 4. [GnuPG](topic-4/README.md)
 
-**Zertifikate und Protokolle**
+### Zertifikate und Protokolle
 
 5. [Repetition und Digitalzertifikate](topic-5/README.md)
 6. [Vertrauen](topic-6/README.md)
