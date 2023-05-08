@@ -79,7 +79,7 @@ Hat nichts mit Bitcoin zu tun.
 ---
 ### Wo ist der Schlüssel?
 
-![symmentrische-verschluesselung](symmentrische-verschluesselung.png)
+![](./symmentrische-verschluesselung.png)
 
 ℹ️  Der gleiche Schlüssel wird für Ver- und Entschlüsselung verwendet.
 
