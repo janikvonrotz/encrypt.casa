@@ -8,7 +8,7 @@ und ein paar neue Begriffe.
 ---
 ### Alltäglich
 
-> Wir begenen Kryptographie jeden Tag.
+> Wir begegnen Kryptographie jeden Tag.
 
 * Zahlung Kreditkarte 💳
 * Verluste beim Bitcoin-Traden 📉
