@@ -1,7 +1,7 @@
 # Slides Thema 6
 ## Vertrauen
 
-und Gültigkeit.
+... und Gültigkeit.
 
 🎯  Wir verstehen wie das Vertrauen zu Digitialzertifikaten hergestellt wird.
 

@@ -1,0 +1,333 @@
+<!DOCTYPE HTML PUBLIC "-//W3C//DTD HTML 4.01 Transitional//EN"><html> <head>  <meta content="text/html;charset=ISO-8859-1" http-equiv="Content-Type">  <title>Integrit&auml;t einer Nachricht und Authentizit&auml;t ihres Absenders mit einer digitaler Unterschrift sicherstellen</title>  <meta name="keywords" content="rsa, kryptographie, asymmetrische kryptographie, digitale unterschrift, digitale signatur">  <meta content="Andreas Gramm" name="author"> </head> <script language="Javascript">// <!--var mode = "bob";var zahlwerteBob = new Array();var zahlwerteAlice = new Array();function modpow(x, e, n) { var result = 1; while (e > 0) {  if ((e%2) == 1) {   result = (result * x) % n;   e = e - 1;  }  e = e / 2;  x = (x * x) % n; } return result;}function codeAlice() { if ((document.forms["rsa"].key_Alice.value == "") || (document.forms["rsa"].mod_Alice.value == "")) {  alert("Bitte wähle zunächst einen Schlüssel aus, mit dem Du die Nachricht verschlüsseln möchtest!\nKlicke dazu auf das Symbol UM das Eingabebeld des jeweiligen Schlüssel!");  return; } var e = document.forms["rsa"].key_Alice.value; var n = document.forms["rsa"].mod_Alice.value; for (var i=0; i<zahlwerteAlice.length; i++) {  zahlwerteAlice[i] = modpow(zahlwerteAlice[i],e,n); } document.forms["rsa"].Nachricht_Text_Alice.value = zahlen2Text(zahlwerteAlice); Text2NumbersAlice(true);}
+function codeHashAlice() { if ((document.forms["rsa"].key_Alice.value == "") || (document.forms["rsa"].mod_Alice.value == "")) {  alert("Bitte wähle zunächst einen Schlüssel aus, mit dem Du den Hashwert der Nachricht verschlüsseln möchtest!\nKlicke dazu auf das Symbol UM das Eingabebeld des jeweiligen Schlüssel!");  return; } var e = document.forms["rsa"].key_Alice.value; var n = document.forms["rsa"].mod_Alice.value; var h = document.forms["rsa"].Signatur_Alice.value; document.forms["rsa"].Signatur_Alice.value = modpow(h,e,n);}
+function codeBob() { if ((document.forms["rsa"].key_Bob.value == "") || (document.forms["rsa"].mod_Bob.value == "")) {  alert("Bitte wähle zunächst einen Schlüssel aus, mit dem Du die Nachricht verschlüsseln möchtest!\nKlicke dazu auf das Symbol UM das Eingabebeld des jeweiligen Schlüssel!");  return; } var e = document.forms["rsa"].key_Bob.value; var n = document.forms["rsa"].mod_Bob.value; for (var i=0; i<zahlwerteBob.length; i++) {  zahlwerteBob[i] = modpow(zahlwerteBob[i],e,n); } document.forms["rsa"].Nachricht_Text_Bob.value = zahlen2Text(zahlwerteBob); Text2NumbersBob(true);}
+function codeHashBob() { if ((document.forms["rsa"].key_Bob.value == "") || (document.forms["rsa"].mod_Bob.value == "")) {  alert("Bitte wähle zunächst einen Schlüssel aus, mit dem Du den Hashwert der Nachricht verschlüsseln möchtest!\nKlicke dazu auf das Symbol UM das Eingabebeld des jeweiligen Schlüssel!");  return; } var e = document.forms["rsa"].key_Bob.value; var n = document.forms["rsa"].mod_Bob.value; var h = document.forms["rsa"].Signatur_Bob.value; document.forms["rsa"].Signatur_Bob.value = modpow(h,e,n);}
+function zahlen2Text(zahlwerte) { var text = ""; for (var i=0; i<zahlwerte.length; i++) {  var zahlwert = zahlwerte[i];  if (zahlwert > 26) zahlwert = zahlwert - 96;  zahlwert = zahlwert + 96;  text = text + String.fromCharCode(zahlwert); } return text; }
+function copyAlicePublicKey() { if (mode == "alice") {  document.forms["rsa"].key_Alice.value = document.forms["rsa"].publicKey_Alice.value;  document.forms["rsa"].mod_Alice.value = document.forms["rsa"].modul_Alice.value; } else if (mode == "bob") {  document.forms["rsa"].key_Bob.value = document.forms["rsa"].publicKey_Alice.value;  document.forms["rsa"].mod_Bob.value = document.forms["rsa"].modul_Alice.value; }}
+function copyAlicePrivateKey() { if (mode == "alice") {  document.forms["rsa"].key_Alice.value = document.forms["rsa"].privateKey_Alice.value;  document.forms["rsa"].mod_Alice.value = document.forms["rsa"].modul_Alice.value; } else alert("Auf einen privaten Schlüssel kann nur sein Besitzer zugreifen!\nNutze den Knopf 'zu Alice' Rolle wechseln' um die Rolle von Alice anzunehmen.");}
+function copyHashAlice() { if (mode == "alice") document.forms["rsa"].Signatur_Alice.value = document.forms["rsa"].Hashwert_Alice.value;}
+function copyBobsPublicKey() { if (mode == "alice") {  document.forms["rsa"].key_Alice.value = document.forms["rsa"].publicKey_Bob.value;  document.forms["rsa"].mod_Alice.value = document.forms["rsa"].modul_Bob.value; } else if (mode == "bob") {  document.forms["rsa"].key_Bob.value = document.forms["rsa"].publicKey_Bob.value;  document.forms["rsa"].mod_Bob.value = document.forms["rsa"].modul_Bob.value; }}
+function copyBobsPrivateKey() { if (mode == "bob") {  document.forms["rsa"].key_Bob.value = document.forms["rsa"].privateKey_Bob.value;  document.forms["rsa"].mod_Bob.value = document.forms["rsa"].modul_Bob.value; } else alert("Auf einen privaten Schlüssel kann nur sein Besitzer zugreifen!\nNutze den Knopf 'zu Bobs Rolle wechseln' um die Rolle von Bob anzunehmen.");}
+function copyHashBob() { if (mode == "bob") document.forms["rsa"].Signatur_Bob.value = document.forms["rsa"].Hashwert_Bob.value;}
+function sendToAlice() { document.forms["rsa"].Nachricht_Internet.value = document.forms["rsa"].Nachricht_Text_Bob.value; document.forms["rsa"].Nachricht_Text_Alice.value = document.forms["rsa"].Nachricht_Text_Bob.value; document.forms["rsa"].Signatur_Internet.value = document.forms["rsa"].Signatur_Bob.value; document.forms["rsa"].Signatur_Alice.value = document.forms["rsa"].Signatur_Bob.value; Text2NumbersAlice(true);}
+function sendToBob() { document.forms["rsa"].Nachricht_Internet.value = document.forms["rsa"].Nachricht_Text_Alice.value; document.forms["rsa"].Nachricht_Text_Bob.value = document.forms["rsa"].Nachricht_Text_Alice.value; document.forms["rsa"].Signatur_Internet.value = document.forms["rsa"].Signatur_Alice.value; document.forms["rsa"].Signatur_Bob.value = document.forms["rsa"].Signatur_Alice.value; Text2NumbersBob(true);}
+function copyToBob(msg) { document.forms["rsa"].message_Bob.value = msg;}
+function switchMode(actor) { mode = actor; if (mode == "bob") {  document.forms["rsa"].privateKey_Bob.style.color = "#000000";  document.forms["rsa"].privateKey_Bob.disabled = false;  document.forms["rsa"].privateKey_Alice.style.color = "#FFF8BC";  document.forms["rsa"].privateKey_Alice.disabled = true;  document.forms["rsa"].CodeBob.disabled = false;  document.forms["rsa"].CodeAlice.disabled = true;  document.forms["rsa"].ToBob.disabled = true;  document.forms["rsa"].ToAlice.disabled = false;  document.forms["rsa"].codeHashAliceButton.disabled = true;  document.forms["rsa"].copyHashAliceButton.disabled = true;  document.forms["rsa"].codeHashBobButton.disabled = false;  document.forms["rsa"].copyHashBobButton.disabled = false;  document.forms["rsa"].SwitchBob.disabled = true;  document.forms["rsa"].SwitchAlice.disabled = false;  document.all.rolle.innerHTML = "aktuell ausgew&auml;hlte Rolle: <b>Bob</b>"; } else if (mode == "alice") {  document.forms["rsa"].privateKey_Alice.style.color = "#000000";  document.forms["rsa"].privateKey_Alice.disabled = false;  document.forms["rsa"].privateKey_Bob.style.color = "#FFF8BC";  document.forms["rsa"].privateKey_Bob.disabled = true;  document.forms["rsa"].CodeAlice.disabled = false;  document.forms["rsa"].CodeBob.disabled = true;  document.forms["rsa"].ToAlice.disabled = true;  document.forms["rsa"].ToBob.disabled = false;  document.forms["rsa"].codeHashAliceButton.disabled = false;  document.forms["rsa"].copyHashAliceButton.disabled = false;  document.forms["rsa"].codeHashBobButton.disabled = true;  document.forms["rsa"].copyHashBobButton.disabled = true;  document.forms["rsa"].SwitchBob.disabled = false;  document.forms["rsa"].SwitchAlice.disabled = true;  document.all.rolle.innerHTML = "aktuell ausgew&auml;hlte Rolle: <b>Alice</b>"; }}
+function Text2NumbersBob(istCode) { if (!istCode) document.forms["rsa"].Nachricht_Text_Bob.value = document.forms["rsa"].Nachricht_Text_Bob.value.toLowerCase(); var text = document.forms["rsa"].Nachricht_Text_Bob.value; var textlaenge = text.length; var hash = 15; zahlwerteBob = new Array(textlaenge); for (var i=0; i<textlaenge; i++) {  var zahlwert = text.charCodeAt(i)-96;  if (zahlwert < 0) zahlwert = zahlwert + 96;  zahlwerteBob[i] = zahlwert;  hash = (hash * zahlwert)%26 + 2; } document.forms["rsa"].Nachricht_Text_Bob.value = text; document.forms["rsa"].Nachricht_Zahlen_Bob.value = zahlwerteBob; document.forms["rsa"].Hashwert_Bob.value = hash;}
+function Text2NumbersAlice(istCode) { if (!istCode) document.forms["rsa"].Nachricht_Text_Alice.value = document.forms["rsa"].Nachricht_Text_Alice.value.toLowerCase(); var text = document.forms["rsa"].Nachricht_Text_Alice.value; var textlaenge = text.length; var hash = 15; zahlwerteAlice = new Array(textlaenge); for (var i=0; i<textlaenge; i++) {  var zahlwert = text.charCodeAt(i)-96;  if (zahlwert < 0) zahlwert = zahlwert + 96;  zahlwerteAlice[i] = zahlwert;  hash = (hash * zahlwert)%26 + 2; } document.forms["rsa"].Nachricht_Text_Alice.value = text; document.forms["rsa"].Nachricht_Zahlen_Alice.value = zahlwerteAlice; document.forms["rsa"].Hashwert_Alice.value = hash;}
+  // --></script>
+
+
+ <body onload="javascript:switchMode('bob'); Text2NumbersBob(false);" style="font-family: arial">
+  
+  <div align="center"> <table width="733px"> <tr> <td>
+
+
+  <h2 style="text-align: center; margin-top: 20px">
+   Integrit&auml;t einer Nachricht und Authentizit&auml;t ihres Absenders<br>
+   mit einer digitaler Unterschrift sicherstellen
+  </h2>
+
+  <br>
+
+  <form name="rsa">
+  
+  <table style="text-align: left;" border="0" cellpadding="0" cellspacing="0">
+
+
+    <tbody>
+
+
+      <tr height="50px">
+
+        <td align="center" valign="top" width="250" colspan="2">
+         <input type="button" name="SwitchAlice" onclick="javascript:switchMode('alice')" value="zu Alice' Rolle wechseln" style="font-style: italic">
+	  </td>
+
+        <td align="center" valign="top" width="250">
+	   <div id="rolle" align="center" style="font-style: italic">aktuell ausgew&auml;hlte Rolle: <b>nicht ausgew&auml;hlt</b></div>
+        </td>
+
+        <td align="center" valign="top" width="250" colspan="2">
+         <input type="button" name="SwitchBob" onclick="javascript:switchMode('bob')" value="zu Bobs Rolle wechseln" style="font-style: italic">
+	  </td>
+
+      </tr>
+
+      <tr>
+
+        <td style="text-align: center;" width="230" colspan="2" height="49px" colspan="2">
+         <h4><i>Alice' Computer:</i></h4>
+	  </td>
+
+        <td align="center" valign="top" width="250">
+         <h4><i>Internet:</i></h4>
+        </td>
+
+        <td style="text-align: center;" width="270" colspan="2" colspan="2">
+         <h4><i>Bobs Computer:</i></h4>
+	  </td>
+
+      </tr>
+
+      <tr>
+
+       <td style="width: 95px;" align="center" valign="top">
+	  privater Schl&uuml;ssel<a href="#keys" style="color: #000000; text-decoration: none">*</a>:<br>
+	  <a href="javascript:copyAlicePrivateKey()"><img src="safe.png" border="0" width="80"></a><br>
+        <input style="position: relative; top: -40px; left: 5px; background-color: rgb(255, 248, 188); color: rgb(200, 200, 200);" name="privateKey_Alice" id="privateKey_A" value="27" size="1">
+	 </td>
+
+       <td style="width: 165px;" align="center" valign="top">
+	  &ouml;ffentlicher Schl&uuml;ssel<a href="#keys" style="color: #000000; text-decoration: none">*</a>:<br><br>
+        <a href="javascript:copyAlicePublicKey()"><img src="alicespage.png" heigt="50" border="0" width="120"></a> 
+	  <input name="publicKey_Alice" value="3" size="1" style="position: relative; top: -30px; left: 3px" type="text">
+	  &nbsp; &nbsp; 
+        <input name="modul_Alice" value="55" size="1" style="position: relative; top: -30px; background-color: rgb(204, 255, 204);">
+       </td>
+
+       <td style="width: 250px;" cellpadding="0" cellspacing="0" align="center" valign="bottom">
+        <img style="width: 63px; height: 63px;" alt="" src="globe.png">
+	 </td>
+
+       <td style="width: 165px;" align="center" valign="top">
+	  &ouml;ffentlicher Schl&uuml;ssel<a href="#keys" style="color: #000000; text-decoration: none">*</a>:<br><br>
+        <a href="javascript:copyBobsPublicKey()"><img src="bobspage.png" heigt="50" border="0" width="120"></a> 
+	  <input name="publicKey_Bob" value="7" size="1" style="position: relative; top: -30px;; left: 3px" type="text">
+	  &nbsp; &nbsp; 
+        <input name="modul_Bob" value="77" size="1" style="position: relative; top: -30px; background-color: rgb(204, 255, 204);">
+	 </td>
+
+       <td style="width: 95px;" align="center" valign="top">
+	   privater Schl&uuml;ssel<a href="#keys" style="color: #000000; text-decoration: none">*</a>:<br>
+         <a href="javascript:copyBobsPrivateKey()"><img src="safe.png" border="0" width="80"></a><br>
+         <input name="privateKey_Bob" id="privateKey_B" value="43" size="1" style="position: relative; top: -40px; left: 2px; background-color: rgb(255, 248, 188); color: rgb(200, 200, 200);" type="text">
+	 </td>
+
+      </tr>
+    
+
+      <tr>
+
+       <td align="center" valign="top" width="250" colspan="2">
+	  anzuwendender Schl&uuml;ssel:<br>
+        <input name="key_Alice" size="1" value="" type="text">
+	  <input name="mod_Alice" size="1" value="" style="background-color: rgb(204, 255, 204);" type="text">
+	  <br><br>
+        <textarea cols="25" rows="4" name="Nachricht_Text_Alice" onkeyup="javascript:Text2NumbersAlice(false)" onchange="javascript:Text2NumbersAlice(false)"></textarea> <br>
+        <input onclick="javascript:codeAlice()" name="CodeAlice" value="Schl&uuml;ssel auf Nachricht anwenden" type="button"> <br>
+        <textarea cols="25" rows="4" name="Nachricht_Zahlen_Alice" style="color: rgb(170, 170, 170); background-color: rgb(238, 238, 238);"></textarea>        <br>
+        <p style="margin-right: 12px;" align="right">
+	   Hashwert
+         <input size="1" name="Hashwert_Alice" style="color: rgb(170, 170, 170); background-color: rgb(238, 238, 238);">
+	   <br>
+         <input name="copyHashAliceButton" value=" V " onclick="javascript:copyHashAlice()" type="button"><br>
+	   Signatur &nbsp; <input size="1" name="Signatur_Alice">        <br>
+         <input name="codeHashAliceButton" value="Schl&uuml;ssel auf Signatur anwenden" onclick="javascript:codeHashAlice()" type="button"> <br>        <br>
+        </p>
+       </td>
+
+
+       <td align="center" valign="top" width="288">
+        <h1> &nbsp; </h1>
+        <textarea cols="25" rows="4" name="Nachricht_Internet"></textarea> <br>        <br>        <br>
+        <p align="center"> <input onclick="javascript:sendToBob()" value="&gt;&gt;" name="ToBob" type="button">
+	  &nbsp; &nbsp; &nbsp;&nbsp; &nbsp; &nbsp; &nbsp; &nbsp; &nbsp; &nbsp; 
+	  &nbsp;&nbsp; &nbsp; &nbsp; &nbsp;&nbsp; &nbsp; &nbsp; &nbsp;
+	  <input onclick="javascript:sendToAlice()" value="&lt;&lt;" name="ToAlice" type="button"> </p>
+        <br>       <br>        <br>        <br>
+        <input size="1" name="Signatur_Internet"><br>
+       </td>
+
+
+       <td align="center" valign="top" width="250" colspan="2">
+	  anzuwendender Schl&uuml;ssel:<br>
+        <input name="key_Bob" size="1" value="" type="text"> 
+	  <input name="mod_Bob" size="1" value="" style="background-color: rgb(204, 255, 204);" type="text"> <br>  <br>
+        <textarea cols="25" rows="4" name="Nachricht_Text_Bob" onkeyup="javascript:Text2NumbersBob(false)" onchange="javascript:Text2NumbersBob(false)">ab acht treffen an der uhr</textarea> <br>
+        <input onclick="javascript:codeBob()" name="CodeBob" value="Schl&uuml;ssel auf Nachricht anwenden" type="button">
+        <br>
+        <textarea cols="25" rows="4" name="Nachricht_Zahlen_Bob" style="color: rgb(170, 170, 170); background-color: rgb(238, 238, 238);"></textarea>        <br>
+        <p style="margin-left: 12px;" align="left">
+        <input size="1" name="Hashwert_Bob" style="color: rgb(170, 170, 170); background-color: rgb(238, 238, 238);">Hashwert<br>
+        <input name="copyHashBobButton" value=" V " onclick="javascript:copyHashBob()" type="button"> <br>
+        <input size="1" name="Signatur_Bob">&nbsp;
+Signatur <br>
+        <input name="codeHashBobButton" value="Schl&uuml;ssel auf Signatur anwenden" onclick="javascript:codeHashBob()" type="button"></p>
+        </td>
+
+      </tr>
+    
+    </tbody>
+  
+  </table>
+
+</form>
+
+
+<p><span style="font-weight: bold;"></span></p>
+
+
+<p><span style="font-weight: bold;">Wie kann ich </span><span style="font-weight: bold;">mit einer digitalen Unterschrift </span><span style="font-weight: bold;">die
+Integrit&auml;t der Nachricht und die Authentizit&auml;t des
+Absenders &uuml;berpr&uuml;fen?</span></p>
+
+
+<p>Durch Verschl&uuml;sseln mit Alice' &ouml;ffentlichem
+Schl&uuml;ssel kann Bob Alice Nachrichten senden, die nur Alice
+wieder entschl&uuml;sseln kann. Allerdings kann JEDE(R) eine solche
+Nachricht verfassen - die Integrit&auml;t der Nachricht (Wurde die
+Nachricht im Nachhinein ver&auml;ndert?) und die
+Authentizit&auml;t des Absenders (Stammt die Nachricht wirklich von
+Bob?) bleiben also ungekl&auml;rt. Doch bietet die asymmetrische
+Kryptographie auch f&uuml;r diese Herausforderung eine elegante
+L&ouml;sung:
+Eine so genannte "Hash-Funktion" liefert f&uuml;r eine bestimmte
+Folge von Zeichen immer denselben Wert. Ver&auml;ndert man auch
+nur ein Zeichen der Folge, f&uuml;gt man ein Zeichen hinzu oder
+entfernt man ein Zeichen, so ergibt sich stets ein anderer Hashwert. Du
+kannst die Entwicklung des Hashwerts beim Verfassen einer Nachricht im
+Feld Hashwert verfolgen!<br>
+
+
+<br>
+
+
+Sende ich nun den Hashwert meiner Nachricht zus&auml;tzlich zur
+eigenen Nachricht, so kann der Empf&auml;nger den Hashwert der
+empfangenen Nachricht berechnen und das Ergebnis mit dem der Nachricht
+beigef&uuml;gten urspr&uuml;nglichen Nachricht vergleichen -
+jegliche Ver&auml;nderung l&auml;sst sich so auf einen Blick
+feststellen!
+<br>
+
+
+<br>
+
+
+Doch k&ouml;nnte jemand, der die Nachricht auf dem
+Kommunikationsweg ver&auml;ndert auch den Hashwert
+ver&auml;ndern, so dass der zur ver&auml;nderten Nachricht
+passt - die Ver&auml;nderung bleibt unbemerkt! Auch k&ouml;nnte
+die Nachricht nach wie vor von jemand ganz anderem verfasst worden
+sein, der den passenden Hashwert ermittelt und angeh&auml;ngt hat.
+Um zu
+zeigen, dass Bob und kein anderer als er genau diese Nachricht verfasst
+hat, verschl&uuml;sselt er den Hashwert mit seinem eigenen privaten
+Schl&uuml;ssel. Aus dem Hashwert wird die "digitale Unterschrift" -
+auch "<span style="font-weight: bold;">digitale Signatur</span>" genannt. Nun kann jeder mit Bobs
+&ouml;ffentlichem Schl&uuml;ssel den Hashwert der Nachricht
+wieder entschl&uuml;sseln - es ist aber eindeutig belegt, dass die
+Signatur nur mit Bobs privatem Schl&uuml;ssel erstellt worden sein
+kann.
+<br>
+
+
+<br>
+
+
+Damit das Vertrauen in die digitale Unterschrift bestehen bleibt,
+m&uuml;ssen alle Teilnehmer gut auf ihre privaten
+Schl&uuml;ssel aufpassen. In Programmen, die solche
+Schl&uuml;ssel verwalten, werden die Dateien, in denen ein privater
+Schl&uuml;ssel gespeichert ist, deshalb oft selbst mit einer
+Passworteingabe vor unbefugtem Benutzen des Schl&uuml;ssels
+gesch&uuml;tzt! <br><br>
+
+</p>
+
+
+<p><span style="font-weight: bold;">Aufgabe:</span></p>
+
+<p>Sende in der Rolle von Bob eine Nachricht an Alice, signiere die Nachricht und
+&uuml;berpr&uuml;fe in der Rolle von Alice die
+Authentizit&auml;t des Absenders und die Integrit&auml;t der
+erhaltenen Nachricht:
+</p>
+
+<ol>
+
+  <li>Verschl&uuml;ssle dazu zun&auml;chst die Nachricht mit Alice' &ouml;ffentlichem Schl&uuml;ssel! <br>
+    <small>(Anleitung siehe Animation <a href="Vertraulichkeit-durch-asymmetrische-Kryptographie-herstellen.html" target="_blank">Vertraulichkeit durch asymmetrische Kryptographie herstellen</a>)</small> 
+   </li>
+
+  <li>Kopiere den Hashwert der verschl&uuml;sselten Nachricht
+als
+Signatur, indem Du im Bereich von Bobs Computer auf den Knopf "V"
+klickst.</li>
+
+  <li>Verschl&uuml;ssle nun den Hashwert mit Bobs eigenem
+privaten
+Schl&uuml;ssel: Klicke erst auf das Tresor-Symbol (<a href="javascript:copyAlicePrivateKey()"><img style="width: 17px; height: 13px;" src="safe.png" border="0"></a>) um Bobs privaten
+Schl&uuml;ssel&nbsp;und dann auf den Knopf "Schl&uuml;ssel
+auf Signatur<span style="font-style: italic;"> </span>anwenden"
+unterhalb des Signatur-Eingabefelds! </li>
+
+  <li>Versende die Nachricht an Alice (Knopf "&lt;&lt;")
+und wechsle in die Rolle von Alice! </li>
+
+</ol>
+
+Wechsle nun in die Rolle von Alice indem Du den Knopf "zu Alice' Rolle wechseln" oberhalb von Alice' Computer anklickst.
+
+<ol>
+
+  <li>&Uuml;berpr&uuml;fe in der Rolle von Alice
+zun&auml;chst
+Integrit&auml;t und Authentizit&auml;t der Nachricht, indem Du
+die erhaltene Signatur mit Bobs &ouml;ffentlichem
+Schl&uuml;ssel entschl&uuml;sselst: Klicke erst auf das
+Webseiten-Symbol (<a href="javascript:copyBobsPublicKey()"><img style="width: 29px; height: 13px;" src="bobspage.png" heigt="50" border="0"></a>) um Bobs
+&ouml;ffentlichen
+Schl&uuml;ssel&nbsp;und dann auf den Knopf "Schl&uuml;ssel
+auf Signatur
+anwenden" unterhalb des Signatur-Eingabefelds im Bereich von Alice'
+Computer! Stimmt der Hashwert der
+verschl&uuml;sselten Nachricht mit der entschl&uuml;sselten
+Signatur &uuml;berein? Dann kann die Nachricht in dieser Form nur
+von Bob sein! </li>
+
+  <li>Entschl&uuml;ssle nun die eigentliche Nachricht mit Alice' privatem Schl&uuml;ssel!&nbsp;<br>
+    <small>(Anleitung siehe Animation <a href="Vertraulichkeit-durch-asymmetrische-Kryptographie-herstellen.html" target="_blank">Vertraulichkeit durch asymmetrische Kryptographie herstellen</a>)</small> </li>
+
+</ol>
+
+
+<br>
+
+<p><span style="font-style: italic;">Hinweis: </span>Diese
+Simulation unterst&uuml;tzt nur die Verschl&uuml;sselung von
+Kleinbuchstaben, Punkt und Komma &ndash; Zahlen sollten daher
+ausgeschrieben
+werden!</p>
+
+<br>
+
+<a name="keys" />
+<p>
+<small>
+* Die beim Start der Animation eingetragenen Schlüsselpaare sind nur Vorschläge. Es gibt verschiedene Schlüsselpaare wie z. B. <a href="RSA-Schluessel.pdf" target="_blank">diese</a>. Wenn Du ein anderes Schlüsselpaar verwenden möchtest, ändere einfach die Einträge in den Textfeldern, die von den Symbolen für den öffentlichen und den privaten Schlüssel umgeben sind.
+</small>
+</p>
+
+
+
+<br>
+
+<p align="center"><font size="-1">
+ <i> (c) 2010  <a href="http://andreasgramm.de" target="_blank">Andreas Gramm</a></i></font><br>
+<br>
+
+ <a rel="license" href="http://creativecommons.org/licenses/by-sa/3.0/de/" target="_blank">
+  <img src="http://i.creativecommons.org/l/by-sa/3.0/88x31.png" alt="CC BY-SA 3.0"> </a>
+</p>
+
+
+
+
+</td> </tr> </table> </div>
+
+ </body>
+
+
+</html>

@@ -2,6 +2,7 @@ const { defaultTheme } = require('vuepress')
 const { searchPlugin } = require('@vuepress/plugin-search')
 const { plausiblePlugin } = require('./plausible')
 
+
 module.exports = {
     lang: 'de-CH',
     title: 'encrypt.casa',

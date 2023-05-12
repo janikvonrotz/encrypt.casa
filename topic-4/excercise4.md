@@ -6,24 +6,6 @@
 
 In dieser Aufgabe möchten wir eine PDF-Datei elektronisch signieren und die Unterschrift von ein anderen Person verifizieren.
 
-#### Vorbereitung
-
-Installieren Sie als erstes eine GnuPG-Schlüsselverwaltungssoftware: [Kleopatra](https://www.openpgp.org/software/kleopatra/)\
-Alternativ geht auch: [Gpg4win](https://www.gpg4win.org/)
-
-Bevorn Sie die Software wie folgt vor.
-
-* Erstellen Sie ein Schlüsselpaar (dazu ein Beispiel)
-
-Name: `Alice Example`\
-Mail: `alice@example.com`\
-Key size: `2048`\
-Algorithm: `RSA & RSA`
-
-* Setzen Sie ein Passwort für den privaten Schlüssel
-
-![](./new-key.png)
-
 #### Ablauf
 
 Sie erhalten einen Vertrag als PDF-Datei, eine Unterschrift-Datei sowie einen dazugehörgien Public Key von [Adobe](https://www.adobe.com/).
@@ -33,6 +15,24 @@ Das Sie dem Absender vertrauen nehmen Sie den Public Key in ihren Schlüsselbund
 Der Vertrag wurde von Adobe unterschrieben. Sie verfizieren die Unterschrift und stellen sicher, dass der Vertrag nicht verändert wurde.
 
 Anschliessend unterschreiben Sie den Vertrag mit ihrem eigenen Schlüssel.
+
+#### Vorbereitung
+
+Installieren Sie als erstes eine GnuPG-Schlüsselverwaltungssoftware: [Kleopatra](https://www.openpgp.org/software/kleopatra/)\
+Alternativ geht auch: [Gpg4win](https://www.gpg4win.org/)
+
+Bereiten Sie die Software wie folgt vor.
+
+* Erstellen Sie ein Schlüsselpaar (dazu ein Beispiel)
+
+Name: `Vorname Nachname`\
+Mail: `vorname.nachname@example.com`\
+Key size: `2048`\
+Algorithm: `RSA & RSA`
+
+* Setzen Sie ein Passwort für den privaten Schlüssel
+
+![](./new-key.png)
 
 #### Durchführung
 
@@ -63,10 +63,29 @@ Anschliessend unterschreiben Sie den Vertrag mit ihrem eigenen Schlüssel.
 
 In dieser Übung möchten wir mit GnuPG verschlüsselte und signierte E-Mails austauschen.
 
+#### Ablauf
+
+Hier folgt nun ein Ablauf, den wir anschliessend mit dem E-Mail-Programm und Schlüsselverwaltung durchführen möchten.
+
+Wir haben zwei Teilnehmer `alice@example.com` und `bob@example.com`.
+
+![](./alice-my-public-key.png)
+
+Bob vertraut dem Absender und nimmt den öffentlichen Schlüssel von Alice in seinen Schlüsselbund auf.
+
+Bob verschlüsselt seinen öffentlichen Schlüssel mit dem öffentlichen Schlüssel von Alice und sendet diesen an Alice.
+
+![](./bob-my-public-key.png)
+
+Alice entschlüsselt den öffentlichen Schlüssel von Bob und nimmt diesen in den Schlüsselbund auf.
+
+ℹ️ Der öffentliche Schlüssel kann auch unverschlüssel übertragen werden.
+
+Nun kann Alice irgendeine Nachricht mit dem öffentlichen Schlüssel von Bob verschlüsseln und schicken. Ausschliesslich Bob kann die Nachricht entschlüsseln und lesen.
+
 #### Vorbereitung
 
 * Öffnen Sie Software für die Schlüsselverwaltung.
-
 * Exportieren Sie den öffentlichen Schlüssel in ein Notepad. Hier ein Beispiel:
 
 **example.asc**
@@ -88,36 +107,45 @@ J6d0
 -----END PGP PUBLIC KEY BLOCK-----
 ```
 
-* Öffnen Sie ihr E-Mail-Programm und teilen Sie ihre E-Mail-Adressen dem Nachbarn mit.
-
-#### Ablauf
-
-Hier folgt nun ein Ablauf, den wir anschliessend mit dem E-Mail-Programm und Schlüsselverwaltung durchführen möchten.
-
-Wir haben zwei Teilnehmer `alice@example.com` und `bob@example.com`.
-
-```mermaid
-graph LR;
-    A[Alice]-->|Hier ist mein öffentlicher Schlüssel|B[bob-at-example.com];
-```
-
-Bob vertraut dem Absender und nimmt den öffentlichen Schlüssel von Alice in seinen Schlüsselbund auf.
-
-Bob verschlüsselt seinen öffentlichen Schlüssel mit dem öffentlichen Schlüssel von Alice und sendet diesen an Alice.
-
-```mermaid
-graph LR;
-    A[Bob]-->|Hier ist mein öffentlicher Schlüssel|B[alice-at-example.com];
-```
-
-Alice entschlüsselt den öffentlichen Schlüssel von Bob und nimmt diesen in den Schlüsselbund auf.
-
-ℹ️ Der öffentliche Schlüssel kann auch unverschlüssel übertragen werden.
-
-Nun kann Alice irgendeine Nachricht mit dem öffentlichen Schlüssel von Bob verschlüsseln und schicken. Ausschliesslich Bob kann die Nachricht entschlüsseln und lesen.
+* Öffnen Sie ihr E-Mail-Programm oder Moodle-Chat und teilen Sie ihre E-Mail-Adressen dem Nachbarn mit.
 
 #### Durchführung
 
-🎬 Führen Sie Ablauf  nun selber durch. Falls Sie niemanden zum anschreiben haben, versuchen Sie es mit <adele@gnupp.de>. Das ist ein Bot und sollte den geschilderten Ablauf unterstützen.
+🎬 Führen Sie den Ablauf nun selber durch. Falls Sie niemanden zum anschreiben haben, versuchen Sie es mit <adele@gnupp.de>. Das ist ein Bot und sollte den geschilderten Ablauf unterstützen.
 
 🎬 Führen Sie Ablauf nochmals durch, jedoch signieren Sie die Nachricht, statt Sie zu verschlüsseln.
+
+### Aufgabe 3 - Zertifikat auf Server publizieren
+
+Statt den Schlüsseltausch manuell durchzuführen, wollen wir dazu einen Keyserver verwenden.
+
+#### Ablauf
+
+Sie erstellen ein neues Schlüsselpaar mit einer gültigen E-Mail-Adresse.
+
+Mit Kleopatra veröffentlichen Sie das Zertifikat auf einem Server. Sie erhalten eine E-Mail zur Bestätigung.
+
+Sie tauschen mit ihrem Kontakt eine signtierte Nachricht aus. Der Kontakt kann die Nachricht mit dem veröffentlichten Zertifikat
+
+#### Durchführung
+
+* Veröffentlichen Sie das Zertifikat mit der entsprechenden Funktion in Kleopatra.
+
+![](./kleopatra-publish.png)
+* Bestätigen Sie die E-Mail-Adresse.
+
+![](./kleopatra-confirm.png)
+
+* Öffnen Sie den Link <https://keys.openpgp.org/> im Browser
+* Suchen Sie nach dem hochgeladenen Zertifikat.
+
+![](./kleopatra-found-entry.png)
+
+* Signieren Sie eine Nachricht mit ihrem Schlüssel.
+
+![](./kleopatra-sign.png)
+
+* Versenden Sie die Nachricht an ihren Kontakt via E-Mail oder Moodle-Chat
+* Der Empfänger verifiziert ihre Nachricht. Dazu importiert das Zertifikat vom Server.
+
+![](./kleopatra-lookup.png)

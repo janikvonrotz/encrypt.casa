@@ -1,0 +1,368 @@
+<!DOCTYPE HTML PUBLIC "-//W3C//DTD HTML 4.01 Transitional//EN">
+<html lang="de">
+
+
+<head>
+  <title>Vertraulichkeit durch asymmetrische Kryptographie herstellen - nur Zahlen</title>
+  <meta http-equiv="Content-Type" content="text/html;charset=ISO-8859-1">
+  <meta name="keywords" content="rsa, kryptographie, asymmetrische kryptographie, verschlüsseln, entschlüsseln">
+  <meta name="author" content="Andreas Gramm">
+</head>
+
+
+<script language="Javascript">
+// <!--
+var mode = "bob";
+
+function modpow(x, e, n) {
+ var result = 1;
+ while (e > 0) {
+  if ((e%2) == 1) {
+   result = (result * x) % n;
+   e = e - 1;
+  }
+  e = e / 2;
+  x = (x * x) % n;
+  }
+ return result;
+}
+function codeAlice() {
+ if ((document.forms["rsa"].key_Alice.value == "") || (document.forms["rsa"].mod_Alice.value == "")) {
+  alert("Bitte wähle zunächst einen Schlüssel aus, mit dem Du die Nachricht verschlüsseln möchtest!\nKlicke dazu auf das Symbol UM das Eingabebeld des jeweiligen Schlüssel!");
+  return;
+ }
+ var m = document.forms["rsa"].message_Alice.value;
+ var e = document.forms["rsa"].key_Alice.value;
+ var n = document.forms["rsa"].mod_Alice.value;
+ var c = modpow(m,e,n);
+ document.forms["rsa"].message_Alice.value = c;
+}
+function codeBob() {
+ if ((document.forms["rsa"].key_Bob.value == "") || (document.forms["rsa"].mod_Bob.value == "")) {
+  alert("Bitte wähle zunächst einen Schlüssel aus, mit dem Du die Nachricht verschlüsseln möchtest!\nKlicke dazu auf das Symbol UM das Eingabebeld des jeweiligen Schlüssel!");
+  return;
+ }
+ var m = document.forms["rsa"].message_Bob.value;
+ var e = document.forms["rsa"].key_Bob.value;
+ var n = document.forms["rsa"].mod_Bob.value;
+ var c = modpow(m,e,n);
+ document.forms["rsa"].message_Bob.value = c;
+}
+function copyAlicePublicKey() {
+ if (mode == "alice") {
+  document.forms["rsa"].key_Alice.value = document.forms["rsa"].publicKey_Alice.value;
+  document.forms["rsa"].mod_Alice.value = document.forms["rsa"].modul_Alice.value;
+ }
+ else if (mode == "bob") {
+  document.forms["rsa"].key_Bob.value = document.forms["rsa"].publicKey_Alice.value;
+  document.forms["rsa"].mod_Bob.value = document.forms["rsa"].modul_Alice.value;
+ }
+}
+function copyAlicePrivateKey() {
+ if (mode == "alice") {
+  document.forms["rsa"].key_Alice.value = document.forms["rsa"].privateKey_Alice.value;
+  document.forms["rsa"].mod_Alice.value = document.forms["rsa"].modul_Alice.value;
+ }
+ else alert("Auf einen privaten Schlüssel kann nur sein Besitzer zugreifen!\nNutze den Knopf 'zu Alice' Rolle wechseln' um die Rolle von Alice anzunehmen.");
+}
+function copyBobsPublicKey() {
+ if (mode == "alice") {
+  document.forms["rsa"].key_Alice.value = document.forms["rsa"].publicKey_Bob.value;
+  document.forms["rsa"].mod_Alice.value = document.forms["rsa"].modul_Bob.value;
+ }
+ else if (mode == "bob") {
+  document.forms["rsa"].key_Bob.value = document.forms["rsa"].publicKey_Bob.value;
+  document.forms["rsa"].mod_Bob.value = document.forms["rsa"].modul_Bob.value;
+ }
+}
+function copyBobsPrivateKey() {
+ if (mode == "bob") {
+  document.forms["rsa"].key_Bob.value = document.forms["rsa"].privateKey_Bob.value;
+  document.forms["rsa"].mod_Bob.value = document.forms["rsa"].modul_Bob.value;
+ }
+ else alert("Auf einen privaten Schlüssel kann nur sein Besitzer zugreifen!\nNutze den Knopf 'zu Bobs Rolle wechseln' um die Rolle von Bob anzunehmen.");
+}
+function sendToAlice() {
+ var bobsmessage = document.forms["rsa"].message_Bob.value;
+ document.forms["rsa"].message_Internet.value = bobsmessage; document.forms["rsa"].message_Alice.value = bobsmessage; 
+}
+function sendToBob() {
+ var alicesmessage = document.forms["rsa"].message_Alice.value;
+ document.forms["rsa"].message_Internet.value = alicesmessage;
+ document.setTimeout(copyToBob(alicesmessage), 100000);
+}
+function copyToBob(msg) {
+ document.forms["rsa"].message_Bob.value = msg;
+}
+function switchMode(actor) {
+ mode = actor;
+ if (mode == "bob") {
+  document.forms["rsa"].privateKey_Bob.style.color = "#000000";
+  document.forms["rsa"].privateKey_Bob.disabled = false;
+  document.forms["rsa"].privateKey_Alice.style.color = "#FFF8BC";
+  document.forms["rsa"].privateKey_Alice.disabled = true;
+  document.forms["rsa"].CodeBob.disabled = false;
+  document.forms["rsa"].CodeAlice.disabled = true;
+  document.forms["rsa"].ToBob.disabled = true;
+  document.forms["rsa"].ToAlice.disabled = false;
+  document.forms["rsa"].SwitchBob.disabled = true;
+  document.forms["rsa"].SwitchAlice.disabled = false;
+  document.all.rolle.innerHTML = "aktuell ausgew&auml;hlte Rolle: <b>Bob</b>";
+ }
+ else if (mode == "alice") {
+  document.forms["rsa"].privateKey_Alice.style.color = "#000000";
+  document.forms["rsa"].privateKey_Alice.disabled = false;
+  document.forms["rsa"].privateKey_Bob.style.color = "#FFF8BC";
+  document.forms["rsa"].privateKey_Bob.disabled = true;
+  document.forms["rsa"].CodeAlice.disabled = false;
+  document.forms["rsa"].CodeBob.disabled = true;
+  document.forms["rsa"].ToAlice.disabled = true;
+  document.forms["rsa"].ToBob.disabled = false;
+  document.forms["rsa"].SwitchBob.disabled = false;
+  document.forms["rsa"].SwitchAlice.disabled = true;
+  document.all.rolle.innerHTML = "aktuell ausgew&auml;hlte Rolle: <b>Alice</b>";
+ }
+}
+// --></script>
+
+
+<body onload="javascript:switchMode('bob');Text2NumbersBob()" style="font-family: arial">
+
+  <div align="center"> <table width="733px"> <tr> <td>
+
+
+  <h2 style="margin-top: 20px">Vertraulichkeit durch asymmetrische Kryptographie herstellen</h2>
+
+  <form name="rsa">
+
+  <br>
+
+  <table style="text-align: left;" border="0" cellpadding="0" cellspacing="0">
+
+    <tbody>
+
+      <tr height="50px">
+
+        <td align="center" valign="top" width="250" colspan="2">
+         <input type="button" name="SwitchAlice" onclick="javascript:switchMode('alice')" value="zu Alice' Rolle wechseln" style="font-style: italic">
+	  </td>
+
+        <td align="center" valign="top" width="250">
+	   <div id="rolle" align="center" style="font-style: italic">aktuell ausgew&auml;hlte Rolle: <b>nicht ausgew&auml;hlt</b></div>
+        </td>
+
+        <td align="center" valign="top" width="250" colspan="2">
+         <input type="button" name="SwitchBob" onclick="javascript:switchMode('bob')" value="zu Bobs Rolle wechseln" style="font-style: italic">
+	  </td>
+
+      </tr>
+
+      <tr>
+
+        <td style="text-align: center;" width="250" colspan="2" height="49px">
+         <h4><i>Alice' Computer:</i></h4>
+	  </td>
+
+        <td align="center" valign="top" width="250">
+         <h4><i>Internet:</i></h4>
+        </td>
+
+        <td style="text-align: center;" width="250" colspan="2">
+         <h4><i>Bobs Computer:</i></h4>
+	  </td>
+
+      </tr>
+
+      <tr>
+
+       <td style="width: 95px;" align="center">
+	  privater Schl&uuml;ssel<a href="#keys" style="color: #000000; text-decoration: none">*</a>:<br>
+	  <a href="javascript:copyAlicePrivateKey()"><img src="safe.png" border="0" width="80"></a><br>
+        <input style="position: relative; top: -40px; left: 5px; background-color: rgb(255, 248, 188); color: rgb(200, 200, 200);" name="privateKey_Alice" id="privateKey_A" value="27" size="1">
+	 </td>
+
+       <td style="width: 155px;" align="center" valign="top">
+	  &ouml;ffentlicher Schl&uuml;ssel<a href="#keys" style="color: #000000; text-decoration: none">*</a>:<br><br>
+        <a href="javascript:copyAlicePublicKey()"><img src="alicespage.png" heigt="50" border="0" width="120"></a><br> 
+	  <input name="publicKey_Alice" value="3" size="1" style="position: relative; top: -30px; left: 3px" type="text">
+	  &nbsp; &nbsp; 
+        <input name="modul_Alice" value="55" size="1" style="position: relative; top: -30px; background-color: rgb(204, 255, 204);">
+       </td>
+
+       <td style="width: 250px;" cellpadding="0" cellspacing="0" align="center" valign="bottom">
+        <img style="width: 63px; height: 63px;" src="globe.png"> <br> <br>
+	 </td>
+
+       <td style="width: 155px;" align="center" valign="top">
+	  &ouml;ffentlicher Schl&uuml;ssel:<a href="#keys" style="color: #000000; text-decoration: none">*</a><br><br>
+        <a href="javascript:copyBobsPublicKey()"><img src="bobspage.png" heigt="50" border="0" width="120"></a><br> 
+	  <input name="publicKey_Bob" value="7" size="1" style="position: relative; top: -30px;; left: 3px" type="text">
+	  &nbsp; &nbsp; 
+        <input name="modul_Bob" value="77" size="1" style="position: relative; top: -30px; background-color: rgb(204, 255, 204);">
+	 </td>
+
+       <td style="width: 95px;" align="center">
+	   privater Schl&uuml;ssel<a href="#keys" style="color: #000000; text-decoration: none">*</a>:<br>
+         <a href="javascript:copyBobsPrivateKey()"><img src="safe.png" border="0" width="80"></a><br>
+         <input name="privateKey_Bob" id="privateKey_B" value="43" size="1" style="position: relative; top: -40px; left: 2px; background-color: rgb(255, 248, 188); color: rgb(200, 200, 200);" type="text">
+	 </td>
+
+      </tr>
+
+
+      <tr>
+
+       <td align="right" width="250" colspan="2">
+	  &nbsp; &nbsp; &nbsp;&nbsp; &nbsp; &nbsp; &nbsp;&nbsp; &nbsp; &nbsp; &nbsp; 
+	  Schl&uuml;ssel: &nbsp; &nbsp; Nachricht:  <br>
+        <input name="key_Alice" size="1" value="" type="text"><input name="mod_Alice" size="1" value="" style="background-color: rgb(204, 255, 204);" type="text">&nbsp; &nbsp; <input name="message_Alice" size="1" style="background-color: rgb(153, 204, 204);"> &nbsp;<input onclick="javascript:sendToBob()" value="&gt;&gt;" name="ToBob" type="button"><br>
+        <input onclick="javascript:codeAlice()" name="CodeAlice" value="Schl&uuml;ssel anwenden" type="button">
+	 </td>
+
+       <td align="center" width="250"> &nbsp; <br>
+        <input name="message_Internet" size="1" value=" " style="background-color: rgb(153, 204, 204);" type="text">
+	  <br> <br>
+	 </td>
+
+       <td align="left" width="250" colspan="2">
+	  Nachricht: &nbsp; &nbsp; &nbsp; Schl&uuml;ssel:<br>
+        <input onclick="javascript:sendToAlice()" value="&lt;&lt;" name="ToAlice" type="button">&nbsp; <input name="message_Bob" size="1" value="9" style="background-color: rgb(153, 204, 204);" type="text">
+	  &nbsp; &nbsp; 
+	  <input name="key_Bob" size="1" value="" type="text"> <input name="mod_Bob" size="1" value="" style="background-color: rgb(204, 255, 204);" type="text"><br>
+        <input onclick="javascript:codeBob()" name="CodeBob" value="Schl&uuml;ssel anwenden" type="button">
+	 </td>
+
+      </tr>
+
+
+    
+    </tbody>
+  
+  </table>
+
+
+</form>
+
+
+<p>&nbsp;&nbsp;</p>
+
+
+<p><b>Wie stelle ich Vertraulichkeit durch Verschl&uuml;sseln mit asymmetrischer Kryptographie her?</b></p>
+
+
+<p>Wenn die Animation geladen wird bist Du in der Rolle von Bob.
+Bob hat zwei Schl&uuml;ssel: den vom Webseiten-Symbol (<a href="javascript:copyBobsPublicKey()"><img style="width: 29px; height: 13px;" src="bobspage.png" heigt="50" border="0"></a>) umgeben <b>&ouml;ffentlichen
+Schl&uuml;ssel</b>, den er im Internet
+ver&ouml;ffentlicht hat, und den vom Tresor-Symbol (<a href="javascript:copyAlicePrivateKey()"><img style="width: 17px; height: 13px;" src="safe.png" border="0"></a>) umgeben <b>privaten
+Schl&uuml;ssel</b>, den er sicher verwahrt und niemand anderem mitteilt. &Uuml;ber das
+Internet kann Bob auch den &ouml;ffentlichen Schl&uuml;ssel von Alice
+lesen, den sie dort ver&ouml;ffentlicht hat.</p>
+
+
+<p>Will Bob Alice nun eine geheime Nachricht schreiben, die nur
+Alice wieder entschl&uuml;sseln kann, so sollte er seine Nachricht
+mit dem &ouml;ffentlichen Schl&uuml;ssel von Alice
+verschl&uuml;sseln. Helfe Bob dabei:</p>
+
+
+<ol>
+
+
+  <li>Klicke dazu zun&auml;chst auf das Webseiten-Symbol (<a href="javascript:copyBobsPublicKey()"><img style="width: 29px; height: 13px;" src="bobspage.png" heigt="50" border="0"></a>), das den
+&ouml;ffentlichen Schl&uuml;ssel von Alice umgibt, um diesen
+Schl&uuml;ssel in die Felder "Schl&uuml;ssel" auf Bobs Computer zu kopieren!</li>
+
+
+  <li>Klicke dann im Bereich von Bobs Computer auf den Knopf
+"Schl&uuml;ssel anwenden", um die
+Nachricht mit dem zuvor kopierten Schl&uuml;ssel zu
+verschl&uuml;sseln!</li>
+
+
+  <li>Klicke nun im Bereich von Bobs Computer auf den Knopf
+"&lt;&lt;", um&nbsp;die verschl&uuml;sselte
+Nachricht &uuml;ber das Internet an Alice zu versenden!</li>
+
+
+</ol>
+
+
+<p>Nun ist Alice am Zug, sie m&ouml;chte die Nachricht von
+Bob entschl&uuml;sseln.&nbsp;</p>
+
+
+<ol>
+
+
+  <li>Klicke auf den Knopf "Alice" oben links, um in die Rolle
+von Alice zu wechseln!</li>
+
+
+  <li>Klicke dann auf das Tresor-Symbol (<a href="javascript:copyAlicePrivateKey()"><img alt="" style="border: 0px solid ; width: 17px; height: 13px;" src="safe.png"></a>), das
+den privaten Schl&uuml;ssel von Alice umgibt, um den privaten Schl&uuml;ssel in die Felder "Schl&uuml;ssel" auf
+Alice' Computer zu laden!</li>
+
+
+  <li>Klicke nun&nbsp;im Bereich von Alice' Computer auf den
+Knopf
+"Schl&uuml;ssel anwenden", um die
+Nachricht mit dem zuvor kopierten Schl&uuml;ssel
+zu&nbsp;entschl&uuml;sseln!</li>
+
+
+</ol>
+
+
+Voil&agrave;, die Nachricht ist ausgetauscht, ohne dass der
+Klartext im Internet zu lesen war. Im Unterschied zu symmetrischen
+Verfahren mussten Alice und Bob jedoch niemals&nbsp;ihre geheimen
+Schl&uuml;ssel austauschen!
+<br>
+
+
+<br>
+
+
+<p><span style="font-weight: bold;">Aufgabe:</span></p>
+
+
+<p>Alice m&ouml;chte Bob - und nur Bob! -
+ihren Geburtstag mitteilen. Sie &uuml;bermittelt erst den
+Tag, dann den Monat. Nutze diese Animation und zeige was Alice und Bob machen, so dass Bob
+den Geburtstag von Alice auf sicherem Wege erf&auml;hrt!</p>
+
+
+
+<p><span style="font-style: italic;">Hinweis: </span>Diese
+Simulation unterst&uuml;tzt nur die Verschl&uuml;sselung von
+Kleinbuchstaben, Punkt und Komma &ndash; Zahlen sollten daher
+ausgeschrieben
+werden!</p>
+
+<br>
+
+
+<a name="keys" />
+<p>
+<small>
+* Die beim Start der Animation eingetragenen Schlüsselpaare sind nur Vorschläge. Es gibt verschiedene Schlüsselpaare wie z. B. <a href="RSA-Schluessel.pdf" target="_blank">diese</a>. Wenn Du ein anderes Schlüsselpaar verwenden möchtest, ändere einfach die Einträge in den Textfeldern, die von den Symbolen für den öffentlichen und den privaten Schlüssel umgeben sind.
+</small>
+</p>
+
+
+<br>
+
+
+<br>
+
+<p align="center"><font size="-1">
+ <i> (c) 2010  <a href="http://andreasgramm.de" target="_blank">Andreas Gramm</a></i></font><br>
+<br>
+
+ <a rel="license" href="http://creativecommons.org/licenses/by-sa/3.0/de/" target="_blank">
+  <img src="http://i.creativecommons.org/l/by-sa/3.0/88x31.png" alt="CC BY-SA 3.0"> </a>
+</p>
+
+
+</body>
+</html>

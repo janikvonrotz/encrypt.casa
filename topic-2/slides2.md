@@ -1,11 +1,12 @@
 # Slides Thema 2
 ## Geschichte der Kryptographie
 
-und ein paar neue Begriffe.
+... und ein paar neue Begriffe.
 
 🎯 Sie verstehen was Kryptographie und die symmetrische Verschlüsselung ist.
 
 ---
+
 ### Alltäglich
 
 > Wir begegnen Kryptographie jeden Tag.
@@ -16,6 +17,7 @@ und ein paar neue Begriffe.
 * Aufruf einer Website 🖥️
 
 ---
+
 ### Bei der Arbeit umso wichtiger
 
 > Digitale Informationen müssen geschützt werden.
@@ -25,11 +27,13 @@ und ein paar neue Begriffe.
 * Zugang zu Geräten 💻
 
 ---
+
 ### Herkunft
 
 > Kryptographie ist eine Entdeckung der Mathematik und ist heute allgegenwärtig.
 
 ---
+
 ### Viele Fragen
 
 * Wie funktioniert Kryptographie?
@@ -39,11 +43,13 @@ und ein paar neue Begriffe.
 * Wie kann Kryptographie von durchschnittlichen Benutzern verwendet werden?
 
 ---
+
 ### Funktionsweise
 
 ![](./verschluesselung-und-entschluesselung.png)
 
 ---
+
 ### Begriffe
 
 **Verschlüsselung** 🔒: Herstellung von Klartext-Nachricht in eine Geheimtext-Nachricht (nicht lesbare).
@@ -53,12 +59,14 @@ und ein paar neue Begriffe.
 **Chiffre** 🛡️: Verwendeter Algorithmus zur Verschlüsselung und Entschlüsselung einer Nachricht.
 
 ---
+
 ### Vor dem Computer
 
 * 1500 v. Chr. Tontafeln aus Mesopotamien weisen Anzeichen von Verschlüsselung auf
 * 500 bis 600 v. Chr. verwenden hebräeische Gelehrte eine alphabetische Substitutionschiffre (A = Y, B = W, C = G usw.)
 
 ---
+
 ### In Kriegszeiten besonders gefragt
 
 * Im 18. Jahrundert verwenden britische Streitkräfte Formen der Kryptographie zur Kommunikation zwischen Generälen
@@ -68,6 +76,7 @@ und ein paar neue Begriffe.
 🧠 Nice to know: [GNU/Linux.ch - Was ist eine Turing Maschine?](https://gnulinux.ch/was-ist-eine-turing-maschine)
 
 ---
+
 ### Krypto-Begriffe
 
 Hat nichts mit Bitcoin zu tun.
@@ -77,13 +86,15 @@ Hat nichts mit Bitcoin zu tun.
 * **Kryptologie**: Umfasst Kryptographie und Kryptoanalyse
 
 ---
-### Wo ist der Schlüssel?
+
+### Der gleiche Schlüssel?
 
 ![](./symmentrische-verschluesselung.png)
 
 ℹ️  Der gleiche Schlüssel wird für Ver- und Entschlüsselung verwendet.
 
 ---
+
 ### Symmetrische Verschlüsselung
 
 Es handelt sich hierbei um die symmetrische Verschlüsselung.
@@ -91,7 +102,8 @@ Es handelt sich hierbei um die symmetrische Verschlüsselung.
 ![](./symmetric-vs-asymmetric.png)
 
 ---
-### Ein Beispiel mit Cäsar
+
+### Ein Beispiel von Cäsar
 
 Beispiel anhand einer Ersetzungsschiffre.
 
@@ -100,24 +112,29 @@ Beispiel anhand einer Ersetzungsschiffre.
 Die Position der Buchstaben wird verschoben.
 
 ---
+
+### Aufgaben
+
+🎬 Lösen Sie die [Aufgaben](excercise2.md#Aufgaben) 1 in Gruppen oder Breakout-Rooms.
+
+---
+
+### Sicherheitsprobleme
+
+Sie haben es vermutlich festgestellt, die Cäsar-Verschlüsselung ist keine sichere Verschlüsselung:
+
+* Leicht zu entziffern
+* Schlüssel-Länge ist limitiert
+* Kommunikation über mehre Kanäle
+
+---
+
 ### Cäsar mit Python
+
+Hier die Implementation der Cäsar-Verschlüssel als Python-Programm:
 
 <iframe src="https://trinket.io/embed/python3/50ceaaf323" width="100%" height="356" frameborder="0" marginwidth="0" marginheight="0" allowfullscreen></iframe>
 
----
-### Stärken und Schwächen
-
-der symmetrischen Verschlüsselung:
-
-➕ Ver- und Entschlüssel ist sehr schnell  
-➖ Nicht geeignet für Daten, die übertragen werden
-
----
-
-* Der Sender und Empfänger müssen den Schlüssel kennen -> Austausch über separaten Kanal -> Gefahr von Zugriff durch Unbefugte
-* Geeignet für Verschlüsselung von lokaler Datenbank, Festplatte oder Daten auf Smartphone
-
----
 ### Brute-Force Attacke
 
 Die Cäsar-Verschlüsselung kann relativ einfach geknackt werden:
@@ -127,6 +144,23 @@ Die Cäsar-Verschlüsselung kann relativ einfach geknackt werden:
 ℹ️ Bei Brute-Force Attacke werden zufällige Schlüssel generiert und ausprobiert.
 
 ---
+
+### Stärken und Schwächen
+
+der symmetrischen Verschlüsselung:
+
+➕ Ver- und Entschlüssel ist sehr schnell  
+➖ Nicht geeignet für Daten, die übertragen werden
+
+---
+
+### Mermkale der symmetischen Verschlüsselung
+
+* Der Sender und Empfänger müssen den Schlüssel kennen -> Austausch über separaten Kanal -> Gefahr von Zugriff durch Unbefugte
+* Geeignet für Verschlüsselung von lokaler Datenbank, Festplatte oder Daten auf Smartphone
+
+---
+
 ### Sicherheit
 
 Verschlüsselungsverfahren geheim gehalten oder veröffentlichen?
@@ -138,6 +172,7 @@ Verschlüsselungsverfahren geheim gehalten oder veröffentlichen?
 Die Lösung ...
 
 ---
+
 ### Das von Prinzip von Kerckhoffs
 
 * Prinzip zur Entwicklung von Chiffrierverfahren
@@ -146,6 +181,7 @@ Die Lösung ...
 > Die Sicherheit eines Chiffriersystems darf nicht davon abhängen, ob das benutzte Verfahren zum Ver- und Entschlüsseln bekannt ist. Die Sicherheit soll nur auf der Geheimhaltung von Schlüsseln beruhen.
 
 ---
+
 ### Gute kryptografische Verfahren
 
 erfüllen heute in der Regel diese Kriterien:
@@ -155,6 +191,7 @@ erfüllen heute in der Regel diese Kriterien:
 - Sie durchlaufen erfolgreich alle möglichen Angriffszenarien.
 
 ---
+
 ### Wer untersucht die Verfahren?
 
  * National Institute of Standards and Technology (NIST)

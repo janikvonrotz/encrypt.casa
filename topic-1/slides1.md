@@ -1,30 +1,25 @@
 # Slides Thema 1
 ## Sicherheitsprobleme
 
-und wie man diese behebt.
+... und wie man diese behebt.
 
 🎯 Sie verstehen die Sicherheitsziele des Nachrichtenaustausches.
 
 ---
+
 ### Nachrichtenaustausch
 
 (A)lice schickt eine Nachricht an (B)ob.
 
-```mermaid
-graph LR;
-    A[Alice]-->|Hi Bob|B[Bob];
-```
-
+![](./alice-to-bob.png)
 (E)ve versucht die Nachricht abzuhören und zu verändern.
 
-```mermaid
-graph LR;
-    A[Alice]-->|Hi Bob|E[Eve]-->|Pls give money|B[Bob];
-```
+![](./alice-eve-bob.png)
 
 🧠 Nice to know: Der Name Eve kommt von [Eavesdropping](https://en.wikipedia.org/wiki/Eavesdropping).
 
 ---
+
 ### Sicherheitsprobleme beim Austausch
 
 * **Eve** sollte die Nachricht nicht mitlesen können (Vertraulichkeit)
@@ -33,6 +28,7 @@ graph LR;
 * **Alice** sollte nicht abstreiten könne, dass die Nachricht von ihr ist (Verbindlichkeit)
 
 ---
+
 ### Sicherheitsziele
 
 Daraus leiten sich diese Ziele ab:
@@ -46,6 +42,13 @@ Daraus leiten sich diese Ziele ab:
 * **Verbindlichkeit** 📝: Der Urheber kann nachträglich nicht bestreiten, die Nachricht verfasst zu haben.
 
 ---
+
+### Aufgaben
+
+🎬 Lösen Sie die [Aufgaben](excercise1.md#Aufgaben) 1 in Gruppen oder Breakout-Rooms.
+
+---
+
 ### Massnahmen im Alltag
 
 Im Alltag wenden wir das bereits an.
@@ -57,7 +60,8 @@ Im Alltag wenden wir das bereits an.
 🤔 Kennt ihr noch weitere Beispiele für die Sicherheitsziele?
 
 ---
-### Massnahmen im Rechenzetrum
+
+### Massnahmen im Unternehmen
 
 Dieselben Sicherheitsziele lassen sich für Rechnernetze realisieren.
 

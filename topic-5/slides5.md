@@ -1,7 +1,7 @@
 # Slides Thema 5
 ## Repetition und Digitalzertifikate
 
-Was wir wissen sollten und neu dazu kommt.
+... was wir wissen sollten und neu dazu kommt.
 
 🎯 Sie verstehen Digitalzertifikate im Kontext der Verschlüsselung.
 

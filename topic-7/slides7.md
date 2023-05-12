@@ -1,7 +1,7 @@
 # Slides Thema 7
 ## Sichere Webprotokolle
 
-und wie diese funktionieren.
+... und wie diese funktionieren.
 
 🎯  Sie lernen sichere Protokolle kennen und können damit einen Webseitenaufruf nachvollziehen.
 

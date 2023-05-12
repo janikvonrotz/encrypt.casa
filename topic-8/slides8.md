@@ -1,7 +1,7 @@
 # Slides Thema 8
 ## Unsichere Webprotokolle
 
-im Netzwerk des Unternehmens.
+... im Netzwerk des Unternehmens.
 
 🎯  Sie lernen welche Protokolle unsicher sind.
 

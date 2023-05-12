@@ -1,11 +1,12 @@
 # Slides Thema 4
 ## GnuPG
 
-ist ein Werkzeug zum sicheren Austausch von Nachrichten.
+... ist ein Werkzeug zum sicheren Austausch von Nachrichten.
 
 🎯 Sie verstehen was GnuPG ist und können es anwenden.
 
 ---
+
 ### Pretty Good Privacy
 
 * GnuPG ist eine Implementation von OpenPGP aka PGP
@@ -13,6 +14,7 @@ ist ein Werkzeug zum sicheren Austausch von Nachrichten.
 * PGP setzt auf eine hybride Verschlüsselung
 
 ---
+
 ### Hybride Verschlüsselung
 
 ![](./hybride-Verschluesselung.png)
@@ -31,6 +33,7 @@ ist ein Werkzeug zum sicheren Austausch von Nachrichten.
 Der Sitzungsschlüssel wird mit dem privaten Schlüssel entschlüsselt.
 
 ---
+
 ### E-Mail ist unsicher
 
 > Warum schicken wir Briefe nicht als Postkarten? Mit E-Mail tun wir genau das.
@@ -38,6 +41,7 @@ Der Sitzungsschlüssel wird mit dem privaten Schlüssel entschlüsselt.
 E-Mails werden heute in den meisten Fällen sicher übertragen. Alle anderen [Sicherheitsziele](../topic-1/slides1.md#Sicherheitsziele) werden aber verletzt.
 
 ---
+
 ### E-Mail ist fast unsicher
 
 [![](./sicher-mailen.png)](https://raw.githubusercontent.com/janikvonrotz/encrypt.casa/main/sicher-mailen.png)
@@ -45,6 +49,7 @@ E-Mails werden heute in den meisten Fällen sicher übertragen. Alle anderen [Si
 🤔 Wie gelangt Alice an den öffentlichen Schlüssel von Bob?
 
 ---
+
 ### Direktes Vertrauen
 
 Damit sicher kommuniziert werden kann, braucht es ein direktes Vertrauen.
@@ -59,6 +64,7 @@ Damit sicher kommuniziert werden kann, braucht es ein direktes Vertrauen.
 * Mail
 
 ---
+
 ### Schlüsselbund
 
 GnuPG ist metaphorisch ein Schlüsselbund. Damit verwalten wir:
@@ -69,6 +75,7 @@ GnuPG ist metaphorisch ein Schlüsselbund. Damit verwalten wir:
 * Entschlüsseln und verifizieren von Nachrichten
 
 ---
+
 ### Signieren vs. Verschlüsseln
 
 **Signieren**
@@ -80,11 +87,13 @@ Beim Signieren wird dem **privaten** Schlüssel eine Signatur erstellt. Die Sign
 Beim Verschlüssel wird mit **öffentlichen** Schlüssel des Empfängers die Nachricht verschlüsselt.
 
 ---
+
 ### Digitale Signatur
 
 ![](./digitale-signatur.png)
 
 ---
+
 ### Aufgaben
 
-🎬 Lösen Sie die [Aufgaben](excercise4.md#Aufgaben) 1 in Gruppen oder Breakout-Rooms.
+🎬 Lösen Sie die [Aufgaben](excercise4.md#Aufgaben) 1 und 2 in Gruppen oder Breakout-Rooms.
