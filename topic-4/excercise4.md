@@ -18,8 +18,10 @@ Anschliessend unterschreiben Sie den Vertrag mit ihrem eigenen Schlüssel.
 
 #### Vorbereitung
 
-Installieren Sie als erstes eine GnuPG-Schlüsselverwaltungssoftware: [Kleopatra](https://www.openpgp.org/software/kleopatra/)\
-Alternativ geht auch: [Gpg4win](https://www.gpg4win.org/)
+Installieren Sie als erstes eine GnuPG-Schlüsselverwaltungssoftware:
+
+Windows: [Gpg4win](https://www.gpg4win.org/)\
+Linux: [Kleopatra](https://www.openpgp.org/software/kleopatra/)
 
 Bereiten Sie die Software wie folgt vor.
 

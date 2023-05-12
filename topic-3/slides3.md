@@ -24,7 +24,7 @@ Es gibt noch:
 
 ### Sicherheitsproblem Schlüsseltausch
 
-Bei der asymmetrischen Verschlüsselung brauchen** Sender und Empfänger den gleichen Schlüssel**.
+Bei der symmetrischen Verschlüsselung brauchen **Sender und Empfänger den gleichen Schlüssel**.
 
 Wenn die verschlüsselte Nachricht und der Schlüssel über den **gleichen Kanal** versendet werden, ist die V**erschlüsselung faktsich nutzlos**.
 

@@ -2,7 +2,7 @@
 
 ## Aufgaben
 
-### Aufgabe 1 - Interaktive 
+### Aufgabe 1 - Interaktive Verschlüsselung
 
 Unter dem folgenden Link finden Sie ein einfache Applikation, welche die asymmetrische Verschlüsselung veranschaulicht: [Vertraulichkeit durch asymmetrische Kryptographie herstellen](https://informatik.schule.de/material/asym/Vertraulichkeit-durch-asymmetrische-Kryptographie-herstellen.html)
 
