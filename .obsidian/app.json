@@ -10,5 +10,6 @@
   "newFileLocation": "current",
   "userIgnoreFilters": [
     "node_modules/"
-  ]
+  ],
+  "attachmentFolderPath": "./"
 }

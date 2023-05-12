@@ -43,17 +43,24 @@ Algorithm: `RSA & RSA`
 
 * Versuchen Sie die PDF-Datei zu verfizieren. Es sollte ohne Public Key nicht möglich sein.
 
+![](./kleopatra-verify-file.png)
+
 ![](./cleopatra-verification-failed.png)
 
 * Laden Sie den Public Key herunter: [Adobe-Public-Key.asc](https://github.com/janikvonrotz/encrypt.casa/raw/main/Adobe-Public-Key.asc)
 
 ![](./adobe-public-key.png)
 
-* Importieren Sie den Public Key in ihren Schlüsselbund
-* Verifizieren Sie die PDF-Datei erneut.
+* Importieren Sie den Public Key in ihren Schlüsselbund.
+
+![](./kleoptra-import.png)
+
+* Verifizieren Sie die PDF-Datei erneut. Der Schlüssel wird erkannt, aber nicht vertraut.
 
 ![](./cleopatra-not-trusted.png)
-* Signieren Sie den importierten Schlüssels und verifizieren Sie die PDF-Datei erneut.
+* Zertifizieren Sie den importierten Schlüssels und verifizieren Sie die PDF-Datei erneut.
+
+![](kleopatra-certify.png)
 
 ![](./cleopatra-signed.png)
 
@@ -111,7 +118,7 @@ J6d0
 
 #### Durchführung
 
-🎬 Führen Sie den Ablauf nun selber durch. Falls Sie niemanden zum anschreiben haben, versuchen Sie es mit <adele@gnupp.de>. Das ist ein Bot und sollte den geschilderten Ablauf unterstützen.
+🎬 Führen Sie den beschriebenen Ablauf nun selber durch. Falls Sie niemanden zum anschreiben haben, versuchen Sie es mit <adele@gnupp.de>. Das ist ein Bot und sollte den geschilderten Ablauf unterstützen.
 
 🎬 Führen Sie Ablauf nochmals durch, jedoch signieren Sie die Nachricht, statt Sie zu verschlüsseln.
 
