@@ -20,7 +20,7 @@ Anschliessend unterschreiben Sie den Vertrag mit ihrem eigenen Schlüssel.
 
 Installieren Sie als erstes eine GnuPG-Schlüsselverwaltungssoftware:
 
-Windows: [Gpg4win](https://www.gpg4win.org/)\
+Windows: [Gpg4win](https://www.gpg4win.org/) (Direkter [Link](https://github.com/janikvonrotz/encrypt.casa/raw/main/attachments/gpg4win-4.1.0.exe))\
 Linux: [Kleopatra](https://www.openpgp.org/software/kleopatra/)
 
 Bereiten Sie die Software wie folgt vor.
