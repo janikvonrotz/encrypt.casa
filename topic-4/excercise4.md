@@ -62,7 +62,7 @@ Algorithm: `RSA & RSA`
 ![](./cleopatra-not-trusted.png)
 * Zertifizieren Sie den importierten Schlüssels und verifizieren Sie die PDF-Datei erneut.
 
-![](kleopatra-certify.png)
+![](./kleopatra-certify.png)
 
 ![](./cleopatra-signed.png)
 

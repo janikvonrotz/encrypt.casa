@@ -1,9 +1,9 @@
-const { defaultTheme } = require('vuepress')
-const { searchPlugin } = require('@vuepress/plugin-search')
-const { plausiblePlugin } = require('./plausible')
+import { defaultTheme } from 'vuepress'
+import { searchPlugin } from '@vuepress/plugin-search'
+import { plausiblePlugin } from './plausible'
+import { defineUserConfig } from 'vuepress'
 
-
-module.exports = {
+export default defineUserConfig({
     lang: 'de-CH',
     title: 'encrypt.casa',
     description: 'Kryptographie und Verschlüsselung',
@@ -62,4 +62,4 @@ module.exports = {
             'domain': 'encrypt.casa'
         })
     ],
-}
+})
