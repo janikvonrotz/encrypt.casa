@@ -34,7 +34,7 @@ Algorithm: `RSA & RSA`
 
 * Setzen Sie ein Passwort für den privaten Schlüssel
 
-![](./new-key.png)
+![](new-key.png)
 
 #### Durchführung
 
