@@ -6,6 +6,7 @@
 🎯  Sie lernen sichere Protokolle kennen und können damit einen Webseitenaufruf nachvollziehen.
 
 ---
+
 ### Aufruf einer Webseite
 
 Wenn wir eine Webseite aufrufen, dauert es weniger als eine Sekunde.
@@ -15,6 +16,7 @@ Wenn wir eine Webseite aufrufen, dauert es weniger als eine Sekunde.
 In dieser Sekunde passiert jedoch sehr viel.
 
 ---
+
 ### Nachrichtenaustausch
 
 Wir erinnern uns an:
@@ -32,6 +34,7 @@ graph LR;
 ```
 
 ---
+
 ### URL
 
 Eine Unified Resource Locater (URL) wird in der Adressleiste des Browsers eingegeben.
@@ -39,6 +42,7 @@ Eine Unified Resource Locater (URL) wird in der Adressleiste des Browsers eingeg
 ![](./url.png)
 
 ---
+
 ### IP-Adresse
 
 Im Internet sind Geräte anhand der IP-Adresse erreichbar.  
@@ -47,11 +51,13 @@ Im Internet sind Geräte anhand der IP-Adresse erreichbar.
 ![](./client-server-kommunikation.png)
 
 ---
+
 ### Eigene IP-Adresse mit Python
 
 <iframe src="https://trinket.io/embed/python3/aa282ed1b2" width="100%" height="356" frameborder="0" marginwidth="0" marginheight="0" allowfullscreen></iframe>
 
 ---
+
 ### Hostname
 
 Damit man sich nicht IP-Adressen merken muss, kann einer IP-Adresse ein sprechender Name zugeordnet werden.
@@ -59,6 +65,7 @@ Damit man sich nicht IP-Adressen merken muss, kann einer IP-Adresse ein sprechen
 `93.184.216.34` <-> `www.example.com`.
 
 ---
+
 ### Hostname mit Python
 
 <iframe src="https://trinket.io/embed/python3/3e3fe071aa" width="100%" height="356" frameborder="0" marginwidth="0" marginheight="0" allowfullscreen></iframe>
@@ -71,11 +78,13 @@ Der Domain-Name-System (DNS) Server verwaltet die Zuordnung Hostname und IP-Adre
 ![](./dns-lookup.png)
 
 ---
+
 ### DNS mit Python
 
 <iframe src="https://trinket.io/embed/python3/c2db81fc64" width="100%" height="356" frameborder="0" marginwidth="0" marginheight="0" allowfullscreen></iframe>
 
 ---
+
 ### HTTP
 
 Der Browser kommuniziert mit  dem HyperText Transfer Protocol (HTTP). Das Protokoll ist einfach:
@@ -84,16 +93,19 @@ Der Browser kommuniziert mit  dem HyperText Transfer Protocol (HTTP). Das Protok
 2. Antwort: HTTP Reponse
 
 ---
+
 ### HTTP Request
 
 ![](./http-request.png)
 
 ---
+
 ### HTTP Response
 
 ![](./http-response.png)
 
 ---
+
 ### HTTPS
 
 Die Übertragung der Daten erfolgt in Klartext. Deshalb wurde HyperText Transfer Protocol **Secure** (HTTPS) entwickelt 🧐.
@@ -107,6 +119,7 @@ Der HTTP-Austausch wird hierbei mit einem Verschlüsselungsprotokoll geschützt:
 ![](./tls-ssl.png)
 
 ---
+
 ### SSL/TLS
 
 -   SSL 1.0: Aufgrund von Sicherheitsproblemen nie öffentlich freigegeben.
@@ -123,6 +136,7 @@ Der HTTP-Austausch wird hierbei mit einem Verschlüsselungsprotokoll geschützt:
 Neue Angriffe -> Neue Sicherheitsprobleme -> Neue Algorithmen -> Neue Version
 
 ---
+
 ### TLS
 
 * Verschlüsselungsprotokoll zur sicheren Datenübertragung im Internet
@@ -132,11 +146,13 @@ Neue Angriffe -> Neue Sicherheitsprobleme -> Neue Algorithmen -> Neue Version
 🧠 Good-to-know: Ab Version 1.3 findet Schlüsseltausch nur noch mit Diffie-Hellmann statt
 
 ---
+
 ### TLS-Handshake
 
 ![](./tls-handshake.png)
 
 ---
+
 ### TLS-Handshake mit Curl
 
 ```bash
@@ -244,6 +260,7 @@ curl -v https://example.com
 ```
 
 ---
+
 ### TLS-Handshake mit openssl
 
 ```bash
@@ -413,6 +430,7 @@ Beim Aufruf einer Webseite passiert also folgendes:
 <iframe src="https://trinket.io/embed/python3/e58ac23aee" width="100%" height="356" frameborder="0" marginwidth="0" marginheight="0" allowfullscreen></iframe>
 
 ---
+
 ### Zertifikatsverwaltung
 
 🤔 Es gibt inzwischen Millionen von Webseiten. Wie werden all diese Zertfikate verwaltet?
@@ -420,46 +438,58 @@ Beim Aufruf einer Webseite passiert also folgendes:
 Schauen wir uns dazu eine Statistik an: <https://trends.builtwith.com/ssl>.
 
 ---
+
 ### LetsEncrypt
 
 Let’s Encrypt ist eine **Zertifizierungsstelle**, die Ende 2015 in Betrieb gegangen ist und **kostenlose X.509-Zertifikate** für **Transport Layer Security** anbietet. Die Zertifikate haben eine **Gültigkeit** von jeweils 90 Tagen und können manuell oder automatisch erneuert werden.
 
 ---
+
 ### LetsEncrypt Hierarchy
 
 ![](./letsencrypt-ca.png)
 
 ---
+
 ### LetsEncrypt Challenge
 
-Der Webserver kann mit dem LetsEncrypt eine Verhandlung starten. Bei der Verhandlung wird verifiziert, dass man der **Besitzer der Domäne** ist.
+Der Webserver kann mit dem LetsEncrypt eine Verhandlung starten. Bei der Verhandlung wird verifiziert, dass man der **Besitzer der Domäne** ist. Um den Beweis zu erbringen gibt es zwei Ansätze:
+
+* HTTP Challenge
+* DNS Challenge
 
 Ist die Verhandlung abgeschlossen, können Zertifikate von LetsEncrypt für die verfizierten Domänen bezogen werden.
 
 ---
+
 ### HTTP Challenge
 
-![](./letsencrypt3.png)
+Bei der HTTP Challenge legt man das Gehemeins zur Prüfung für Letsencrypt auf dem **Webserver** ab. Letsencrypt ruft das Gehemeinis mit der Adresse der Domäne auf.
+
+![](letsencrypt-http-challenge.png)
+
 
 ---
+
 ### DNS Challenge
 
-![](./letsencrypt4.png)
+Bei der DNS Challenge stellt man das Gehemeins zur Prüfung für Letsencrypt als **DNS-Eintrag** bereit. Letsencrypt ruft das Gehemeinis über den DNS-Eintrag anhand der Domäne auf.
+
+![](letsencrypt-dns-challenge.png)
 
 ---
-### Challenge ausführen
 
-![](./letsencrypt1.png)
-
----
 ### Zertifikat abholen
 
-![](./letsencrypt2.png)
+Wurde eine Challenge abgewickelt, generiert Letsencrypt ein Zertifikat für die Domäne und gibt dieses zurück.
+
+![](letsencrypt-get-certificate.png)
 
 ---
+
 ### Aufgaben
 
-🎬 Lösen Sie die [Übung](../topic-2/übungen.md) 3.
+🎬 Lösen Sie die [Aufgaben](excercise7.md#Aufgaben) 1 in Gruppen oder Breakout-Rooms.
 
 ---
 

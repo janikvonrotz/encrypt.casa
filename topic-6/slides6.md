@@ -20,6 +20,7 @@ Die Adresse `www.example.com` ist verifizert von `DigiCert Inc`.
 🤔 Wer ist `DigiCert Inc` und warum vertraue ich ihnen?
 
 ---
+
 ### Vertrauensmodelle
 
 Um das zu verstehen, müssen wir zuerst verschiedene Vertrauensmodelle betrachten:
@@ -31,11 +32,13 @@ Um das zu verstehen, müssen wir zuerst verschiedene Vertrauensmodelle betrachte
 Und definieren was Gültigkeit ✅ ist.
 
 ---
+
 ### Gültigkeit
 
 > Gültigkeit bedeutet Vertrauen dahingehend, daß ein öffentliches Schlüsselzertifikat dem angegebenen Eigentümer gehört.
 
 ---
+
 ### Direktes vertrauen
 
 Benutzer vertraut auf die Gültigkeit des Schlüssels, da dessen Herkunft bekannt ist.
@@ -43,6 +46,7 @@ Benutzer vertraut auf die Gültigkeit des Schlüssels, da dessen Herkunft bekann
 ![](./direktes-vertrauen.png)
 
 ---
+
 ### Vertrauenshierarchie
 
 Im hierarchischen Modell gibt es eine Anzahl Root-Zertifikate (Stamm 🌳). Davon werden Zertifizierungsinstanzen und Zertifikate (Äste 🌱 und Blätter 🍃) abgeleitet.
@@ -52,6 +56,7 @@ Im hierarchischen Modell gibt es eine Anzahl Root-Zertifikate (Stamm 🌳). Davo
 ![](./vertrauenshierarchie.png)
 
 ---
+
 ### Web of Trust
 
 Ist eine Kombination der beiden vorherigen Modellen. In sechs Schritten kann man zu jedem Menschen eine Verbindung aufnehmen 🤝.
@@ -63,6 +68,7 @@ Händeschütteln -> Schlüssel austauschen -> Es entsteht ein Netz aus Vertrauen
 ![](./web-of-trust.png)
 
 ---
+
 ### Gültigkeit überprüfen
 
 Die Gültigkeit kann wie folgt geprüft werden:
@@ -74,6 +80,7 @@ Die Gültigkeit kann wie folgt geprüft werden:
 Eine weitere Möglichkeit ist die Prüfung durch Dritte -> Zertifizierungsinstanz
 
 ---
+
 ### Zertifizierungsinstanz (CA)
 
 "Der Hauptzweck einer CA ist grundsätzlich, einen **öffentlichen Schlüssel** mit im Zertifikat enthaltenen **Identifikationsinformationen** zu **verbinden** und somit Dritten zu versichern, daß eine gewisse **Sorgfalt bei der Verbindung** der Identifikationsinformationen verwendet wurde und der Schlüssel gültig ist."
@@ -85,6 +92,7 @@ Dazu die Hierarchie:
 ![](./root-ca-hierarchy.png)
 
 ---
+
 ### Zertifikat verifzieren
 
 🤔 Wie wird das Zertifikat von  `DigiCert Inc` verifiziert?
@@ -110,11 +118,13 @@ Auf Windows werden Zertifikate zentral im *Certificate Manager* verwaltet.
 ![](./certificate-manager.png)
 
 ---
+
 ### Aufgaben
 
 🎬 Lösen Sie die [Aufgaben](excercise6.md#Aufgaben) 1 in Gruppen oder Breakout-Rooms.
 
 ---
+
 ### Zusammenfassung
 
 Der Zugriff auf eine Webseite ist sicher:
@@ -126,6 +136,7 @@ Wenn `https://` verwendet wird.\
 ↪️Der Browser der Root-CA vertraut.
 
 ---
+
 ### Probleme CA
 
 🤔 Kann man den CAs wirklich vertrauen?
@@ -139,6 +150,7 @@ Wenn `https://` verwendet wird.\
 Es werden immer wieder unauthorisierte Zertifikate erstellt.
 
 ---
+
 ### Sicherheit im Web
 
 Unabhängig davon ist aber die Verbindung mit einer Webseite ziemlich sicher.

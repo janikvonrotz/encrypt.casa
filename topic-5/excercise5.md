@@ -4,7 +4,7 @@
 
 ### Aufgabe 1 - Zertifikat betrachten
 
-Wir schauen uns ein Zertifkat an. Öffnen Sie die Adresse <https://example.com> in ihrem Browser und schauen Sie sich das Zertifikat an. Hier das Vorgehen im Firefox:
+Wir schauen uns ein Zertifkat an. Öffnen Sie die Adresse <https://example.com> in ihrem Browser und schauen Sie sich das Zertifikat an. Hier das Vorgehen in Firefox:
 
 ![](./firefox-zertifikat-anzeigen.gif)
 

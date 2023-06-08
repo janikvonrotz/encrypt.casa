@@ -15,6 +15,7 @@ Bei der Arbeit bewegt man sich meistens im Local Area Network (LAN) des Unterneh
 
 
 🤔 Welcher Datenaustausch ist bei eurem Unternehmen sicherer?
+
 - Austausch innerhalb LAN
 - Austausch ausserhalb LAN mit Internet
 
@@ -30,6 +31,12 @@ Im Netzwerk des Unternehmens sind oftmals unsichere Protkolle im Einsatz:
 * **HTTP**: Websites ohne Zertitifikate
 
 🤔 Könnt Ihr das bestätigen?
+
+---
+
+### Aufgaben
+
+🎬 Lösen Sie die [Aufgaben](excercise7.md#Aufgaben) 1 in Gruppen oder Breakout-Rooms.
 
 ---
 
