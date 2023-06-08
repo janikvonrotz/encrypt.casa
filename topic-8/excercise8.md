@@ -46,8 +46,19 @@ Mit Nmap und dem installierten GUI Zenmap können Sie das lokale Netzwerk scanne
 
 Öffnen Sie die Applikation Zenmap und geben Sie als Ziel das lokale Netzwerk ein `192.168.1.0/24` (entsprechend Anpassen). Starten Sie den Scan-Vorgang.
 
+![Capture](zenmap-caputre.png)
 
+Beantworten Sei die folgenden Fragen:
 
+* Wieviele Hosts sind im Netzwerk?
+* Welche Dienste sind im Einsatz?
+* Was wäre ein nächster Schritt
+
+**Internet scannen**
+
+Sie können mit Nmap auch das ganze Internet scannen und Netzwerk-Geräten durchsuchen. Es gibt entsprechende Suchmaschinen wie [Shodan](https://beta.shodan.io). Dazu ein Beispiel zur Webcams.
+
+Mit dem Query <https://beta.shodan.io/search?query=webcamxp> findet man Webcams, welche die Software *webcamxp* einsetzen. Hier ein Beispiel <http://109.233.191.130:8080/>.
 
 ### Aufgabe 3 - Sniffing mit Wireshark
 
