@@ -21,17 +21,11 @@ In dieser Sekunde passiert jedoch sehr viel.
 
 Wir erinnern uns an:
 
-```mermaid
-graph LR;
-    A[Alice]-->|Hi Bob|B[Bob];
-```
+![](alice-hi-bob.png)
 
 Jetzt ist es:
 
-```mermaid
-graph LR;
-    A[Client]-->|Request|B[Server];
-```
+![](client-request-server.png)
 
 ---
 
