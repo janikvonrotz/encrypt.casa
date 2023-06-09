@@ -102,7 +102,7 @@ Ein Digitalzertifikat besteht aus folgenden Elementen:
 
 ### Lebenszyklus eines Digitalzertifikats
 
-Zertifiakte werden ausgestellt, erneuert, unterschrieben, zurückgenommen, validiert, ...
+Zertifikate werden ausgestellt, erneuert, unterschrieben, zurückgenommen, validiert, ...
 
 ![](./certificate-life-cycle.png)
 

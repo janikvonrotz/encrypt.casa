@@ -60,7 +60,11 @@ Sie können mit Nmap auch das ganze Internet scannen und Netzwerk-Geräten durch
 
 Mit dem Query <https://beta.shodan.io/search?query=webcamxp> findet man Webcams, welche die Software *webcamxp* einsetzen. Hier ein Beispiel <http://109.233.191.130:8080/>.
 
-### Aufgabe 3 - Sniffing mit Wireshark
+### Aufgabe 3 - Unternehmens-Check
+
+Führen Sie den Netzwerk-Scan wie oben beschrieben im Unternehmensnetzwerk aus. Falls Sie nicht sicher sind, ob das erlaubt, sprechen Sie sich mit dem IT-Team ab.
+
+### Aufgabe 4 - Sniffing mit Wireshark
 
 Für diese Aufgabe brauchen wir [Wireshark](https://www.wireshark.org/download.html).
 

@@ -21,3 +21,12 @@ Das Zertifikat ist auch im Zertifikats-Manager verfügbar.
 ![](./ansicht-zertifikate.png)
 
 Aktuell ist unklar wie man Zertifikat exportieren und mit Kleopatra importieren kann.
+
+### Aufgabe 2 - Windows-Computer Zertifikat
+
+Versuchen Sie die foglenden Fragen zu beantworten:
+
+* Gibt es ein Zertifikat für den eigenen Computer im Zertifikats-Manager?
+* Wenn ja, wer hat das Zertifikat herausgegeben?
+* Ist das Zertifikat allgemein gültig oder nur innerhalb des Unternehmensnetzwerkes?
+* Für was braucht der Computer ein Zertifikat?
