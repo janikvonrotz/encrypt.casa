@@ -67,10 +67,7 @@ Wenn wir jemanden vertrauen, vertrauen wir dem öffentlichen Schlüssel.
 
 Ein einfacher Abfang-Angriff:
 
-```mermaid
-graph LR;
-    A[Alice]-->|Hier mein Schlüssel|E[Eve]-->|Hier mein Schlüssel|B[Bob];
-```
+![](alice-my-key-bob.png)
 
 🤔 Wie kann Bob den empfangen Schlüssel verifizieren?
 
