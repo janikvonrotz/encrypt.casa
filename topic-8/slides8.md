@@ -36,7 +36,7 @@ Im Netzwerk des Unternehmens sind oftmals unsichere Protkolle im Einsatz:
 
 ### Aufgaben
 
-🎬 Lösen Sie die [Aufgaben](excercise7.md#Aufgaben) 1 in Gruppen oder Breakout-Rooms.
+🎬 Lösen Sie die [Aufgaben](excercise8.md#Aufgaben) 1 in Gruppen oder Breakout-Rooms.
 
 ---
 
