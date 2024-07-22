@@ -1,9 +1,11 @@
-import { defaultTheme } from 'vuepress'
+import { viteBundler } from '@vuepress/bundler-vite'
+import { defaultTheme } from '@vuepress/theme-default'
 import { searchPlugin } from '@vuepress/plugin-search'
 import { plausiblePlugin } from './plausible'
 import { defineUserConfig } from 'vuepress'
 
 export default defineUserConfig({
+    bundler: viteBundler(),
     lang: 'de-CH',
     title: 'encrypt.casa',
     description: 'Kryptographie und Verschlüsselung',
