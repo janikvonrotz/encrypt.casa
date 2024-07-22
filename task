@@ -33,10 +33,10 @@ case "$1" in
         npm install
         ;;
     dev)
-        npm run vue-dev
+        npm run dev
         ;;
     build)
-        npm run vue-build
+        npm run build
         ;;
     serve-build)
         cd .vuepress/dist

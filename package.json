@@ -1,7 +1,7 @@
 {
   "scripts": {
-    "vue-dev": "vuepress dev .",
-    "vue-build": "node build.js && vuepress build ."
+    "dev": "vuepress dev .",
+    "build": "node build.js && vuepress build ."
   },
   "devDependencies": {
     "@vuepress/bundler-vite": "^2.0.0-rc.14",
