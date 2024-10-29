@@ -39,22 +39,22 @@ export default defineUserConfig({
                     text: 'Einführung in die Kryptographie',
                     collapsible: true,
                     children: [
-                        { text: 'Thema 1 - Sicherheitsziele', link: '/topic-1/', collapsible: true, children: ['slides1.md', 'excercise1.md'], },
-                        { text: 'Thema 2 - Geschichte der Kryptographie', link: '/topic-2/', collapsible: true, children: ['slides2.md', 'excercise2.md'], },
-                        { text: 'Thema 3 - Bausteine der Kryptographie', link: '/topic-3/', collapsible: true, children: ['slides3.md', 'excercise3.md'], },
-                        { text: 'Thema 4 - GnuPG', link: '/topic-4/', collapsible: true, children: ['slides4.md', 'excercise4.md'], },
+                        { text: 'Thema 1 - Sicherheitsziele', link: '/topic-1/', collapsible: true, children: ['/topic-1/slides1.md', '/topic-1/excercise1.md'], },
+                        { text: 'Thema 2 - Geschichte der Kryptographie', link: '/topic-2/', collapsible: true, children: ['/topic-2/slides2.md', '/topic-2/excercise2.md'], },
+                        { text: 'Thema 3 - Bausteine der Kryptographie', link: '/topic-3/', collapsible: true, children: ['/topic-3/slides3.md', '/topic-3/excercise3.md'], },
+                        { text: 'Thema 4 - GnuPG', link: '/topic-4/', collapsible: true, children: ['/topic-4/slides4.md', '/topic-4/excercise4.md'], },
                     ]
                 },
                 {
                     text: 'Zertifikate und Protokolle',
                     collapsible: true,
                     children: [
-                        { text: 'Thema 5 - Repetition und Digitalzertifikate', link: '/topic-5/', collapsible: true, children: ['slides5.md', 'excercise5.md'], },
-                        { text: 'Thema 6 - Vertrauen', link: '/topic-6/', collapsible: true, children: ['slides6.md', 'excercise6.md'], },
-                        { text: 'Thema 7 - Sichere Webprotokolle', link: '/topic-7/', collapsible: true, children: ['slides7.md', 'excercise7.md'], },
-                        { text: 'Thema 8 - Unsichere Webprotokolle', link: '/topic-8/', collapsible: true, children: ['slides8.md', 'excercise8.md'], },
+                        { text: 'Thema 5 - Repetition und Digitalzertifikate', link: '/topic-5/', collapsible: true, children: ['/topic-5/slides5.md', '/topic-5/excercise5.md'], },
+                        { text: 'Thema 6 - Vertrauen', link: '/topic-6/', collapsible: true, children: ['/topic-6/slides6.md', '/topic-6/excercise6.md'], },
+                        { text: 'Thema 7 - Sichere Webprotokolle', link: '/topic-7/', collapsible: true, children: ['/topic-7/slides7.md', '/topic-7/excercise7.md'], },
+                        { text: 'Thema 8 - Unsichere Webprotokolle', link: '/topic-8/', collapsible: true, children: ['/topic-8/slides8.md', '/topic-8/excercise8.md'], },
                     ]
-                },
+                }                
             ]
         }
     }),
