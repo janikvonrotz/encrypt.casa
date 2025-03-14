@@ -12,5 +12,6 @@
     "node_modules/"
   ],
   "attachmentFolderPath": "./",
-  "strictLineBreaks": true
+  "strictLineBreaks": true,
+  "trashOption": "none"
 }
